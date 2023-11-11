@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\keyur\\Desktop\\SE_Proj\\MEP1\\API\\API.csproj": {}
+    "C:\\Users\\keyur\\Desktop\\SE_Proj\\MEP1\\E03-Mitarbeitereinsatzplanung\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\keyur\\Desktop\\SE_Proj\\MEP1\\API\\API.csproj": {
+    "C:\\Users\\keyur\\Desktop\\SE_Proj\\MEP1\\E03-Mitarbeitereinsatzplanung\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\keyur\\Desktop\\SE_Proj\\MEP1\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\keyur\\Desktop\\SE_Proj\\MEP1\\E03-Mitarbeitereinsatzplanung\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\keyur\\Desktop\\SE_Proj\\MEP1\\API\\API.csproj",
+        "projectPath": "C:\\Users\\keyur\\Desktop\\SE_Proj\\MEP1\\E03-Mitarbeitereinsatzplanung\\API\\API.csproj",
         "packagesPath": "C:\\Users\\keyur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\keyur\\Desktop\\SE_Proj\\MEP1\\API\\obj\\",
+        "outputPath": "C:\\Users\\keyur\\Desktop\\SE_Proj\\MEP1\\E03-Mitarbeitereinsatzplanung\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\keyur\\AppData\\Roaming\\NuGet\\NuGet.Config"
