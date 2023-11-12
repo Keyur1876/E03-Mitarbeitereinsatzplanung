@@ -3,16 +3,13 @@ using API.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class UsersController : ControllerBase
+    public class UsersController : BaseApiController
     {
         private readonly DataContext _context;
 
-        public UsersController(DataContext context)
+        public UsersController(DataContext context) : base(context)  // Make sure to call the base constructor with the context parameter
         {
             _context = context;
         }
@@ -27,11 +24,11 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<AppUser>> GetUser(int id)
         {
-            var user =await _context.Users.FindAsync(id);
+            var user = await _context.Users.FindAsync(id);
 
             if (user == null)
             {
-                return NotFound(); // Return 404 if user is not found
+                return NotFound(); // Return 404 if the user is not found
             }
 
             return user;
