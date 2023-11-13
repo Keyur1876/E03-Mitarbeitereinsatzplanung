@@ -1,1 +1,4 @@
 API/MEP1.db-shm
+API/bin
+API/MEP1.db-wal
+API/obj

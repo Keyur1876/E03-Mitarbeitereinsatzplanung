@@ -1,5 +1,49 @@
-<h1>{{title}}</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MitarbeiterEinsatzPlanung</title>
+    <style>
+        /* ... Your existing styles ... */
 
-<ul>
-  <li *ngFor="let user of users">{{user.id}} - {{user.userName}} </li>
-</ul>
+        header {
+            background: linear-gradient(to right, #30a134, #45a049);
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+
+        .login-register {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+        }
+
+        .login-register button {
+            margin-left: 10px;
+            padding: 10px 15px;
+            background-color: #fff;
+            color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MitarbeiterEinsatzPlanung</h1>
+    <div class="login-register">
+        <button onclick="location.href='#'">Login</button>
+        <button onclick="location.href='#'">Register</button>
+    </div>
+</header>
+
+<!-- ... Rest of your HTML ... -->
+
+</body>
+</html>
