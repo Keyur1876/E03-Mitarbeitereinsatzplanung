@@ -1,4 +1,15 @@
 API/MEP1.db-shm
 API/bin
 API/MEP1.db-wal
-API/obj
+API/obj/API.csproj.nuget.dgspec.json
+API/obj/project.assets.json
+API/obj/Debug/net7.0/API.assets.cache
+API/obj/project.nuget.cache
+API/obj/Debug/net7.0/API.assets.cache
+API/obj/Debug/net7.0/API.csproj.AssemblyReference.cache
+API/obj/Debug/net7.0/API.csproj.CoreCompileInputs.cache
+API/obj/Debug/net7.0/API.csproj.FileListAbsolute.txt
+API/obj/Debug/net7.0/API.dll
+API/obj/Debug/net7.0/API.pdb
+API/obj/Debug/net7.0/ref/API.dll
+API/obj/Debug/net7.0/refint/API.dll
