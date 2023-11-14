@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">MitarbeiterEinsatzPlanung</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+            <ul class="navbar-nav" *ngIf="loggedIn">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mail</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tasks</a>
+                </li>
+              <!-- <li class="nav-item" (click)="logout()">
+                    <a class="nav-link" href="#">Logout</a>
+                </li> --> 
+            </ul>
+
+            <div class="dropdown" *ngIf = "loggedIn">
+                <a class = "dropdown-toggle text-light">Welcome user</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item">Edit Profile</a>
+                   <!--<a class="dropdown-item" (click)="logout()">LogOut</a> --> 
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center ms-auto">
+                <form *ngIf="!loggedIn" #loginForm="ngForm" class="d-flex" (ngSubmit)="login()" autocomplete="off">
+                    <input 
+                    name = "username"
+                    [(ngModel)]="model.username"
+                    class="form-control me-2" 
+                    type="text" 
+                    placeholder="Username">
+                    <input 
+                    name = "password"
+                    [(ngModel)]="model.password"
+                    class="form-control me-2" 
+                    type="password" 
+                    placeholder="Password">
+                    <button 
+                    class="btn btn-outline-light mx-2"
+                     type="submit"
+                        style="border-color: white; color: white;">Login</button>
+                    
+                </form>
+
+                <form class="d-flex">
+                    <button class="btn btn-outline-light" type="submit"
+                        style="border-color: white; color: white;">Register</button>
+                </form>
+            </div>
+
+        </div>
+    
+</nav>
