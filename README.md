@@ -1,6 +1,6 @@
 # E03-Mitarbeitereinsatzplanung
 
-== Required Software for Project .NET
+== Required Software for .NET
 
 
 -Visual Studio code <https://code.visualstudio.com/>
@@ -10,7 +10,7 @@
 
 -.Postman <https://www.postman.com/downloads/>   
 
-== Required Software for Project Angular
+== Required Software for Angular
 
 -.node.js <https://nodejs.org/en/blog/release/v18.12.0>
 -.Angular CLI <https://angular.io/guide/setup-local>
