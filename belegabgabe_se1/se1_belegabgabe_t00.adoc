@@ -1,9 +1,10 @@
 // --- 1. Projektthema -------------------------
 = SE I - Belegabgabe: E03-Mitarbeitereinsatzplanung
 // --- 2. Teammitglieder -----------------------
-Hoang Phuong Linh Nguyen <s83710@htw-dresden.de>; Nils Weber <s84281@htw-dresden.de>; Anh Thu Hoang <s85622@htw-dresden.de>; Luca Leon Wagner <s85265@htw-dresden.de>; Le Quoc Minh Tran <s87560@htw-dresden.de>; Tom Eckhardt <s00000@htw-dresden.de>; Keyur Hareshbhai Kachhadiya <s85495@htw-dresden.de>; Paulina Kostka <s85455@htw-dresden.de>
+Hoang Phuong Linh Nguyen <s83710@htw-dresden.de>;
+Nils Weber <s84281@htw-dresden.de>; Anh Thu Hoang <s85622@htw-dresden.de>; Luca Leon Wagner <s85265@htw-dresden.de>; Le Quoc Minh Tran <s87560@htw-dresden.de>; Tom Eckhardt <s00000@htw-dresden.de>; Keyur Hareshbhai Kachhadiya <s85495@htw-dresden.de>; Paulina Kostka <s85455@htw-dresden.de>
 // --- 3. Abgabedatum --------------------------
-01. Januar 2020
+26. Januar 2024
 // ---------------------------------------------
 :docs: ../docs
 include::{docs}/_includes/default-attributes.inc.adoc[]
