@@ -41,9 +41,10 @@ Ziel ist es eine "leichtgewichtige" Softwarelösung für eine Auslastungsplanung
  (da jeder Mitarbeiter auf alle Daten Zugriff hat und keine automatisierten Prozesse)
 - umständliche langfristige Planung 
 - mangelhafter Datenschutz
-- konstante Auslastungsplanung unbefriedigend (schwierig Gegenmaßnahmen zu ergreiefen)
+- konstante Auslastungsplanung unbefriedigend (schwierig Gegenmaßnahmen zu ergreifen)
+//ich weiß nicht wie ich richtige Stichpunkte setzen kann
    
-| eine erfolgreiche Lösung wäre | Führen Sie einige wesentliche Vorteile einer erfolgreichen Lösung auf]
+| eine erfolgreiche Lösung wäre | Eine Software die effektiv Mitarbeiter planen kann unter Berücksichtigung von Ausfällen an Mitarbeitern, Auslastung der jeweiligen Projekte und unter Abgleich der tatsächlich geleisteten Stunden.
 |===
 
 ////
