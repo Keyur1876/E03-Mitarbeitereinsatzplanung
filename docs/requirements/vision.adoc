@@ -25,7 +25,8 @@ Siehe <<#glossary, Glossar>>.
 == Positionierung
 
 === Fachliche Motivation
-//Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
+Dieses Projekt ist im Rahmen des Moduls Software Engineering entstanden.
+Ziel ist es eine "leichtgewichtige" Softwarelösung für eine Auslastungsplanung von Mitarbeitenden zu erstellen, um eine kostspielige Investition in eine auf dem Markt vorhandene Softwarelösung zu vermeiden. Die bereits erhältlichen Planngstools umfassen Optionen die in einem Unternehmen mit ca. 50 Mitarbeitern nicht notwendig sind. Daraus geschlussfolgert würde der Kosten-Nutzen-Faktor darauf hindeuten, dass eine solche Softwarelösung nicht im wirtschaftlichen Sinne des Betriebes stehen würde.
 
 === Problem Statement
 //Stellen Sie zusammenfassend das Problem dar, das mit diesem Projekt gelöst werden soll. Das folgende Format kann dazu verwendet werden:
