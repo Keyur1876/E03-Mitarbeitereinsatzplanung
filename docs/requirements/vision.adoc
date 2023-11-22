@@ -12,7 +12,7 @@ Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäte
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das System {project-system-name}, das von <Team> entwickelt wird. Das System wird es <Zielkunde/Auftraggeber> erlauben, <Hauptfunktionen> zu nutzen, um damit <Vorteile> zu erreichen / <Aufgabe> zu erleichtern / <Problem> zu lösen.
+Dieses Visions-Dokument bezieht sich auf das System “Mitarbeitereinsatzplanungs“-System, das von Team 03 entwickelt wird. Das System wird es der Softwareentwicklungsfirma Develappers GmbH ermöglichen, Mitarbeiter gezielt und zeitsparend zu planen. Dies kann sowohl auf langfristige als auch auf kurzfriste Sicht erfolgen, um eine entsprechende Auslastung der Mitarbeiter in den jeweiligen Projekten zu schaffen und bei Bedarf auch Gegenmaßnahmen einleiten zu können.
 
 === Definitionen, Akronyme und Abkürzungen
 //Verweis passend zum Belegabgabe-Template se1_belegabgabe_t00.adoc
