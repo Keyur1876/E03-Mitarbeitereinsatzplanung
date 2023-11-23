@@ -65,12 +65,12 @@ Beispiel:
 
 [cols="1,3"]
 |===
-| Für | [Zielkunde / Nutzer]
-| der / die | [Angabe des Bedarfs oder Chance]
-| Das Produkt / die Lösung ist ein | [Produktkategorie]
-| Die / Das | [Aussage zum Hauptvorteil / Alleinstellungsmerkmal]
-| Im Gegensatz zu | [wesentliche Lösungsalternative]
-| Unser Produkt | [Aussage zum Hauptunterschied]
+| Für | Arbeitnehmer und Arbeitgeber der Firma Develappers GmbH
+| die | ihre Einsatzplanung effizienter gestalten möchten
+| Das Produkt ist eine | Software
+| Die | eine effiziente Auslastungsplanung der Mitarbeitenden ermöglicht
+| Im Gegensatz zum | genutzten Excel-Sheet
+| Unser Produkt | ermöglicht eine automatisierte Planung von Mitarbeitenden über kurze und lange Spannen mit dem Augenmerk auf eine gleichmäßige Auslastung 
 |===
 
 ////
@@ -94,6 +94,20 @@ Beispiel Produkt:
 |===
 | Name | Beschreibung | Verantwortlichkeiten
 
+| Projektteam 03
+| Kursteilnehmer des Moduls SE1,
+die für dieses Projekt zugeteilt wurden.
+| Erstellung einer Software zur effektiven Mitarbeitereinsatzplanung.
+| Auftraggeber
+| Leiter der Softwareentwicklung und der Sicherheitsbeauftragte des Unternehmens Develappers GmbH
+| Ansprechpartner für das Projekt, die
+die Anforderungen an das Tool festlegen.
+| Arbeitende des Unternehmens
+| Alle Mitarbeiter der Develappers GmbH
+| Effektive Planung der Arbeitszeit in Bezug auf aktuelle und erst bevorstehende Projekte.
+| [Benennung des Stakeholder-Typs.]
+| [Kurze Beschreibung des Stakeholders.]
+| [Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
 | [Benennung des Stakeholder-Typs.]
 | [Kurze Beschreibung des Stakeholders.]
 | [Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
