@@ -114,14 +114,17 @@ die Anforderungen an das Tool festlegen.
 |===
 
 === Benutzerumgebung
-Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
+
+Softwareentwicklungsfirma Develappers GmbH
 
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
-. Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind. Ändert sich das?
-. Wie lange dauert die Bearbeitung der Aufgabe? Wie viel Zeit wird für jeden Arbeitsschritt benötigt? Ändert sich das?
+. Die Anzahl der Nutzer entspricht den MitarbeiterInnen der Develappers GmbH. Diese
+kann sich gegebenenfalls ändern.
+. Die Bearbeitungszeit ist abhängig von der Art der Änderungen (Urlaub, Krankheitsfall, Mitarbeit an mehreren Projekten gleichzeitig), die in der Arbeitszeitplanung des jeweiligen Mitarbeiters berücksichtigt werden müssen. 
 . Gibt es besondere Umgebungsbedingungen, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
 . Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig?
 . Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden?
+//hier müssten Stichpunkte sein, jedoch weiß ich immernoch nicht wie ich diese erzeugen kann
 
 Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
