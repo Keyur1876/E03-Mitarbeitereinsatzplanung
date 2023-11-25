@@ -106,9 +106,8 @@ die Anforderungen an das Tool festlegt.
 | Alle Mitarbeiter der Develappers GmbH
 | Effektive Planung der Arbeitszeit in Bezug auf aktuelle und erst bevorstehende Projekte.
 | Datenschutzbeauftragter
-| Prüft interne Abläufe und Arbeitsweise, sowie technische Systeme auf Einhaltung von Sicherheitsaspekten
-| Datenschutzbeauftragter
-| Prüft interne Abläufe und Arbeitsweise, sowie technische Systeme auf Einhaltung von Sicherheitsaspekten
+| Mitarbeiter der Develappers GmbH
+|Prüft interne Abläufe und Arbeitsweise, sowie technische Systeme auf Einhaltung von Sicherheitsaspekten.
 |===
 
 === Benutzerumgebung
