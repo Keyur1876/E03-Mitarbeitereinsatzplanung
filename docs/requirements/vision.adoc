@@ -1,12 +1,12 @@
-= Vision: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+= Vision: E03-Mitarbeitereinsatzplanung
+//Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Einführung
-Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des Systems {project-system-name} zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das System {project-system-name} diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
+Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des Systems zur effektiven Mitarbeitereinsatzplanung zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das System der effektiven Mitarbeitereinsatzplanung diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
 
 === Zweck
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
@@ -26,7 +26,7 @@ Siehe <<#glossary, Glossar>>.
 
 === Fachliche Motivation
 Dieses Projekt ist im Rahmen des Moduls Software Engineering entstanden.
-Ziel ist es eine "leichtgewichtige" Softwarelösung für eine Auslastungsplanung von Mitarbeitenden zu erstellen, um eine kostspielige Investition in eine auf dem Markt vorhandene Softwarelösung zu vermeiden. Die bereits erhältlichen Planngstools umfassen Optionen die in einem Unternehmen mit ca. 50 Mitarbeitern nicht notwendig sind. Daraus geschlussfolgert würde der Kosten-Nutzen-Faktor darauf hindeuten, dass eine solche Softwarelösung nicht im wirtschaftlichen Sinne des Betriebes stehen würde.
+Ziel ist es eine "leichtgewichtige" Softwarelösung für eine Auslastungsplanung von Mitarbeitenden zu erstellen, um eine kostspielige Investition in eine auf dem Markt vorhandene Softwarelösung zu vermeiden. Die bereits erhältlichen Planungstools umfassen Optionen die in einem Unternehmen mit ca. 50 Mitarbeitern nicht notwendig sind. Daraus geschlussfolgert würde der Kosten-Nutzen-Faktor darauf hindeuten, dass eine solche Softwarelösung nicht im wirtschaftlichen Sinne des Betriebes stehen würde.
 
 === Problem Statement
 //Stellen Sie zusammenfassend das Problem dar, das mit diesem Projekt gelöst werden soll. Das folgende Format kann dazu verwendet werden:
