@@ -99,18 +99,16 @@ Beispiel Produkt:
 die für dieses Projekt zugeteilt wurden.
 | Erstellung einer Software zur effektiven Mitarbeitereinsatzplanung.
 | Auftraggeber
-| Leiter der Softwareentwicklung und der Sicherheitsbeauftragte des Unternehmens Develappers GmbH
-| Ansprechpartner für das Projekt, die
-die Anforderungen an das Tool festlegen.
+| Leiter der Softwareentwicklung des Unternehmens Develappers GmbH
+| Ansprechpartner für das Projekt, der
+die Anforderungen an das Tool festlegt.
 | Arbeitende des Unternehmens
 | Alle Mitarbeiter der Develappers GmbH
 | Effektive Planung der Arbeitszeit in Bezug auf aktuelle und erst bevorstehende Projekte.
-| [Benennung des Stakeholder-Typs.]
-| [Kurze Beschreibung des Stakeholders.]
-| [Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
-| [Benennung des Stakeholder-Typs.]
-| [Kurze Beschreibung des Stakeholders.]
-| [Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
+| Datenschutzbeauftragter
+| Prüft interne Abläufe und Arbeitsweise, sowie technische Systeme auf Einhaltung von Sicherheitsaspekten
+| Datenschutzbeauftragter
+| Prüft interne Abläufe und Arbeitsweise, sowie technische Systeme auf Einhaltung von Sicherheitsaspekten
 |===
 
 === Benutzerumgebung
