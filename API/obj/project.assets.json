@@ -1566,19 +1566,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/luca/.nuget/packages/": {}
+    "C:\\Users\\keyur\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/luca/Desktop/Studium/HTW Dresden - Winfo/3. Semester/Software Engineering 1/Project/E03-Mitarbeitereinsatzplanung/API/API.csproj",
+      "projectUniqueName": "C:\\Users\\keyur\\Desktop\\Git_proj\\E03-Mitarbeitereinsatzplanung\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "/Users/luca/Desktop/Studium/HTW Dresden - Winfo/3. Semester/Software Engineering 1/Project/E03-Mitarbeitereinsatzplanung/API/API.csproj",
-      "packagesPath": "/Users/luca/.nuget/packages/",
-      "outputPath": "/Users/luca/Desktop/Studium/HTW Dresden - Winfo/3. Semester/Software Engineering 1/Project/E03-Mitarbeitereinsatzplanung/API/obj/",
+      "projectPath": "C:\\Users\\keyur\\Desktop\\Git_proj\\E03-Mitarbeitereinsatzplanung\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\keyur\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\keyur\\Desktop\\Git_proj\\E03-Mitarbeitereinsatzplanung\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/luca/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\keyur\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -1640,7 +1640,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
