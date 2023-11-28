@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AccountService } from '../services/account.service';
+import { Router } from '@angular/router'; // Import the Router
 
 @Component({
   selector: 'app-nav',
@@ -12,7 +13,7 @@ export class NavComponent implements OnInit {
   loggedIn: boolean = false;
 
 
-  constructor(private accountService: AccountService) {}
+  constructor(private accountService: AccountService, private router: Router) {}
 
   ngOnInit(): void {
     // Initialization logic here
@@ -32,6 +33,8 @@ export class NavComponent implements OnInit {
 
   logout()
   {
-    
+    this.accountService.logout(); // Implement the logout method in your service
+    this.loggedIn = false;
+    this.router.navigate(['/']); // Navigate back to the homepage
   }
 }
