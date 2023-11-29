@@ -2,49 +2,65 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC01 Erstellung und Verwaltung von Projekten
-
+== Use-Case: UC01: Erstellung und Verwaltung von Projekten
 === Kurzbeschreibung
-//<Kurze Beschreibung des Use Case>
+Dieser Use-Case beschreibt sowohl das Erstellen neuer Projekte, als auch die Verwaltung bereits bestehender Projekte durch die Projektleitung.
 
 === Kurzbeschreibung der Akteure
 
-==== <Akteur 1 Name>
+Projektleitung
+
+Möchte ein neues Projekt/Auftrag einpflegen, das/der an die Firma Develappers GmbH vergeben wurde. Bzw. ein bestehendes Projekt/Auftrag anpassen.
+
+//==== <Akteur 1 Name>
 
 === Vorbedingungen
-//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-<Vorbedingung 1>
+Die Projektleitung besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um Änderungen oder das Hizufügen an/von Projekten vornehmen zu können.
+
+//<Vorbedingung 1>
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. …
-. <Standardablauf Schritt n>
+. Der Use Case beginnt, wenn die Projektleitung die Software zur Mitarbeitereinsatzplanung gestartet hat.
+. Die Projektleitung meldet sich mit den benutzerbezogenen Anmeldetedaten an.
+. Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
+. Auswahl der Funktion: Projekte verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Ein Umtermenü erscheint, hier wählt der Benutzer die Funktion:
+.. neues Projekt hinzufügen
+.. Projekt bearbeiten
+. Wählt der Benutzer die Funktion a., wird dieser zu einem Formular weitergeleitet, welches Angaben zu dem neuen Projekt erwartet.
+. Benutzer fügt die geforderten projektbezogenen Daten und Attribute in das Formular ein.
+. Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.
+. Wählt der Benutzer die Funktion b., öffnet sich ein Filtermenü, mit dessen Hilfe das zu bearbeitende Projekt gesucht werden kann.
+. Wurde das entsprechende Projekt ausgewählt, wird der Benutzer zu einem Formular weitergeleitet, welches bereits vorhandene Angaben zu dem Projekt beinhaltet.
+. Der Benutzer kann nun gewünschte Änderungen vornehmen.
+. Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+Wenn der Benutzer die Bearbeitung des Formulars unter den Schritten 7. und 11. abbricht, ohne dass die Schritte 8. und 12. durchgeführt wurden, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
+
+//==== <Alternativer Ablauf 1>
+//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+//. <Ablauf beschreiben>
+//. Der Use Case wird im Schritt <y> fortgesetzt.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
-
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
+---keine Unterabläufe vorhanden---
+//==== <Unterablauf 1>
+//. <Unterablauf 1, Schritt 1>
+//. …
+//. <Unterablauf 1, Schritt n>
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-
-==== <Szenario 1>
+--- keine abweichenden Szenarios vom Standardablauf ---
+//==== <Szenario 1>
 . <Szenario 1, Schritt 1>
 . …
 . <Szenario 1, Schritt n>
