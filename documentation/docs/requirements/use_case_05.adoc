@@ -2,7 +2,7 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC02 <use-case name>
+== Use-Case: UC05 Verwaltung personenbezogener Daten
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>

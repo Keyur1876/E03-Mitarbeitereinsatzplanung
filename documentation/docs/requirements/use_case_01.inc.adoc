@@ -2,23 +2,21 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: Erstellung und Verwaltung von Projekten
+== Use-Case: UC01 Erstellung von Projekten
 === Kurzbeschreibung
-Dieser Use-Case beschreibt sowohl das Erstellen neuer Projekte, als auch die Verwaltung bereits bestehender Projekte durch die Projektleitung.
+
+Dieser Use-Case beschreibt das Erstellen neuer Projekte durch die Projektleitung.
 
 === Kurzbeschreibung der Akteure
 
 Projektleitung
 
-Möchte ein neues Projekt/Auftrag einpflegen, das/der an die Firma Develappers GmbH vergeben wurde. Bzw. ein bestehendes Projekt/Auftrag anpassen.
-
-//==== <Akteur 1 Name>
+Möchte ein neues Projekt/Auftrag einpflegen, das/der an die Firma Develappers GmbH vergeben wurde. 
 
 === Vorbedingungen
 
 Die Projektleitung besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um Änderungen oder das Hizufügen an/von Projekten vornehmen zu können.
 
-//<Vorbedingung 1>
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
@@ -27,22 +25,18 @@ Die Projektleitung besitzt die entsprechenden Zugriffsrechte bzw. die erforderli
 . Die Projektleitung meldet sich mit den benutzerbezogenen Anmeldetedaten an.
 . Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
 . Auswahl der Funktion: Projekte verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
-. Ein Umtermenü erscheint, hier wählt der Benutzer die Funktion:
+. Ein Umtermenü erscheint, hier kann der Benutzer folgende Funktionen auswählen:
 .. neues Projekt hinzufügen
 .. Projekt bearbeiten
 . Wählt der Benutzer die Funktion i., wird dieser zu einem Formular weitergeleitet, welches Angaben zu dem neuen Projekt erwartet.
 . Benutzer fügt die geforderten projektbezogenen Daten und Attribute in das Formular ein.
-. Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.
-. Wählt der Benutzer die Funktion ii., öffnet sich ein Filtermenü, mit dessen Hilfe das zu bearbeitende Projekt gesucht werden kann.
-. Wurde das entsprechende Projekt ausgewählt, wird der Benutzer zu einem Formular weitergeleitet, welches bereits vorhandene Angaben zu dem Projekt beinhaltet.
-. Der Benutzer kann nun gewünschte Änderungen vornehmen.
 . Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-Wenn der Benutzer die Bearbeitung des Formulars unter den Schritten 7. und 11. abbricht, ohne dass die Schritte 8. und 12. durchgeführt wurden, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
+Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 7. abbricht, ohne dass der Schritt 8. durchgeführt wurde, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
 
 //==== <Alternativer Ablauf 1>
 //Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
