@@ -30,10 +30,10 @@ Die Projektleitung besitzt die entsprechenden Zugriffsrechte bzw. die erforderli
 . Ein Umtermenü erscheint, hier wählt der Benutzer die Funktion:
 .. neues Projekt hinzufügen
 .. Projekt bearbeiten
-. Wählt der Benutzer die Funktion a., wird dieser zu einem Formular weitergeleitet, welches Angaben zu dem neuen Projekt erwartet.
+. Wählt der Benutzer die Funktion i., wird dieser zu einem Formular weitergeleitet, welches Angaben zu dem neuen Projekt erwartet.
 . Benutzer fügt die geforderten projektbezogenen Daten und Attribute in das Formular ein.
 . Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.
-. Wählt der Benutzer die Funktion b., öffnet sich ein Filtermenü, mit dessen Hilfe das zu bearbeitende Projekt gesucht werden kann.
+. Wählt der Benutzer die Funktion ii., öffnet sich ein Filtermenü, mit dessen Hilfe das zu bearbeitende Projekt gesucht werden kann.
 . Wurde das entsprechende Projekt ausgewählt, wird der Benutzer zu einem Formular weitergeleitet, welches bereits vorhandene Angaben zu dem Projekt beinhaltet.
 . Der Benutzer kann nun gewünschte Änderungen vornehmen.
 . Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.
@@ -67,10 +67,17 @@ Wenn der Benutzer die Bearbeitung des Formulars unter den Schritten 7. und 11. a
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+* Das System hat die vollständigen Änderungen des Projektes das bearbeitet wurde gespeichert.
+* Das System hat das neu eingepflegte Projekt gespeichert.
+* Falls konkrete Mitarbeiter einem Projekt zugeordnet wurden, so ist diese Zuordnung in der individuellen Einsatzplanung des jeweiligen Mitarbeiters verzeichnet.
 
-==== <Nachbedingung 1>
+//==== <Nachbedingung 1>
 
-=== Besondere Anforderungen
+//=== Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
-==== <Besondere Anforderung 1>
+==== Besondere Anforderungen
+
+Usability
+
+• Der Use Case gehört zu der grundlegenden Funktionalität des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
