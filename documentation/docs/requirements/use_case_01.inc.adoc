@@ -2,7 +2,7 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC01: Erstellung und Verwaltung von Projekten
+== Use-Case: Erstellung und Verwaltung von Projekten
 === Kurzbeschreibung
 Dieser Use-Case beschreibt sowohl das Erstellen neuer Projekte, als auch die Verwaltung bereits bestehender Projekte durch die Projektleitung.
 

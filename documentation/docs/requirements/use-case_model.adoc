@@ -14,9 +14,8 @@ Im nachfolgenden Abschnitt werden alle identifizierten Use Cases, deren Akteure 
 * UC02: Hinzufügen von Aufgaben in Projekten
 * UC03: Verwaltung von kurzftigen und langfristigen Abwesenheitszeiten
 * UC04: Verwaltung personenbezogener Daten
-* UC05: Verwaltung der Arbeitsauslastung
-* UC06: Nutzer- und Rechteverwaltung
-* UC07: Datenimport und -export
+* UC05: Nutzer- und Rechteverwaltung
+* UC06: Datenimport und -export
 
 
 # 2.3 Use Case Diagramm
