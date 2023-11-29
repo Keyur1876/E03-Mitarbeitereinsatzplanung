@@ -36,13 +36,13 @@ Ziel ist es eine "leichtgewichtige" Softwarelösung für eine Auslastungsplanung
 | Das Problem | Im aktuellen Excel-Sheet müssen alle Änderungen wie Feiertage, Urlaube, Abwesenheiten händisch eingetragen werden. Außerdem gibt es kein Rechte- und Rollenmanagement, sowie keine Möglichkeit eine sinnvolle Auslastungsplanung vorzunehmen.
 | betrifft | die Geschäftsführer, sowie die Mitarbeiter der Firma Develappers GmbH
 | die Auswirkung davon ist |
-- hoher Zeitaufwand
-- hohe Fehleranfälligkeit
+*  hoher Zeitaufwand
+*  hohe Fehleranfälligkeit
  (da jeder Mitarbeiter auf alle Daten Zugriff hat und keine automatisierten Prozesse)
-- umständliche langfristige Planung 
-- mangelhafter Datenschutz
-- konstante Auslastungsplanung unbefriedigend (schwierig Gegenmaßnahmen zu ergreifen)
-//ich weiß nicht wie ich richtige Stichpunkte setzen kann
+*  umständliche langfristige Planung 
+*  mangelhafter Datenschutz
+*  konstante Auslastungsplanung unbefriedigend (schwierig Gegenmaßnahmen zu ergreifen)
+//hier müssen die Stichpunkte angepasst werden
    
 | eine erfolgreiche Lösung wäre | Eine Software die effektiv Mitarbeiter planen kann unter Berücksichtigung von Ausfällen an Mitarbeitern, Auslastung der jeweiligen Projekte und unter Abgleich der tatsächlich geleisteten Stunden.
 |===
@@ -115,13 +115,13 @@ die Anforderungen an das Tool festlegt.
 Softwareentwicklungsfirma Develappers GmbH
 
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
-. Die Anzahl der Nutzer entspricht den MitarbeiterInnen der Develappers GmbH. Diese
+* Die Anzahl der Nutzer entspricht den MitarbeiterInnen der Develappers GmbH. Diese
 kann sich gegebenenfalls ändern.
-. Die Bearbeitungszeit ist abhängig von der Anzahl der Änderungen (Urlaub, Krankheitsfall, Mitarbeit an mehreren Projekten gleichzeitig u.ä.), die in der Arbeitszeitplanung des jeweiligen Mitarbeiters berücksichtigt werden müssen.
+* Die Bearbeitungszeit ist abhängig von der Anzahl der Änderungen (Urlaub, Krankheitsfall, Mitarbeit an mehreren Projekten gleichzeitig u.ä.), die in der Arbeitszeitplanung des jeweiligen Mitarbeiters berücksichtigt werden müssen.
 Im Falle eines Datenimports aus anderen Systemen kann es ebenfalls zu einer längeren Bearbeitungszeit kommen. 
 //. Gibt es besondere Umgebungsbedingungen, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
 //Die Anwendung kann sowohl online, als auch offline erfolgen, wenn alle notwendigen Ressourcen (HTML, CSS, JavaScript) einmal geladen wurden.
-. Aktuell wird die Mitarbeitereinsatzplanung über ein Excel-Sheet realisiert, dieses soll jedoch von einer neuen Software abgelöst werden. Das Backend soll dabei auf Basis von ASP.NET entwickelt werden und das Frontend soll auf dem Web-Framework Angular basieren.
+* Aktuell wird die Mitarbeitereinsatzplanung über ein Excel-Sheet realisiert, dieses soll jedoch von einer neuen Software abgelöst werden. Das Backend soll dabei auf Basis von ASP.NET entwickelt werden und das Frontend soll auf dem Web-Framework Angular basieren.
 //. Mittels API sollen Daten aus anderen Systemen importiert werden.
 //hier müssten Stichpunkte sein, jedoch weiß ich immernoch nicht wie ich diese erzeugen kann
 
@@ -142,7 +142,6 @@ Im Falle eines Datenimports aus anderen Systemen kann es ebenfalls zu einer län
 | Historie und Nachverfolgung | mittel | Einsicht in die jeweiligen Änderungen der Mitarbeitenden | 2024
 | Datenimport und -export | hoch | Einbindung von Daten (zum Bsp.: Kranktage, Schulungstage, Urlaubstage, tatsächlich geleistete Stunden) aus anderen Systemen soll möglich sein | 2024
 |Filterung nach Kriterien  | hoch | Ermöglicht eine schnelle selektive Einsicht in die gewünschten Daten | 2024
-| xx | xx | xx | xx
 |===
 
 
@@ -151,11 +150,11 @@ Im Falle eines Datenimports aus anderen Systemen kann es ebenfalls zu einer län
 Hinweise:
 
 
-. Führen Sie die wesentlichen anzuwendenden Standards, Hardware oder andere Plattformanforderungen, Leistungsanforderungen und Umgebungsanforderungen auf
-. Definieren Sie grob die Qualitätsanforderungen für Leistung, Robustheit, Ausfalltoleranz, Benutzbarkeit und ähnliche Merkmale, die nicht von den genannten Features erfasst werden.
-. Notieren Sie alle Entwurfseinschränkungen, externe Einschränkungen, Annahmen oder andere Abhängigkeiten, die wenn Sie geändert werden, das Visions-Dokument beeinflussen. Ein Beispiel wäre die Annahme, dass ein bestimmtes Betriebssystem für die vom System erforderliche Hardware verfügbar ist. Ist das Betriebssystem nicht verfügbar, muss das Visions-Dokument angepasst werden.
-. Definieren Sie alle Dokumentationsanforderugen, inkl. Benutzerhandbücher, Onlinehilfe, Installations-, Kennzeichnungs- und Auslieferungsanforderungen-
-. Definieren Sie die Priorität für diese zusätzlichen Produktanforderungen. Ergänzen Sie, falls sinnvoll, Angaben zu Stabilität, Nutzen, Aufwand und Risiko für diese Anforderungen.
+//. Führen Sie die wesentlichen anzuwendenden Standards, Hardware oder andere Plattformanforderungen, Leistungsanforderungen und Umgebungsanforderungen auf
+//. Definieren Sie grob die Qualitätsanforderungen für Leistung, Robustheit, Ausfalltoleranz, Benutzbarkeit und ähnliche Merkmale, die nicht von den genannten Features erfasst werden.
+//. Notieren Sie alle Entwurfseinschränkungen, externe Einschränkungen, Annahmen oder andere Abhängigkeiten, die wenn Sie geändert werden, das Visions-Dokument beeinflussen. Ein Beispiel wäre die Annahme, dass ein bestimmtes Betriebssystem für die vom System erforderliche Hardware verfügbar ist. Ist das Betriebssystem nicht verfügbar, muss das Visions-Dokument angepasst werden.
+//. Definieren Sie alle Dokumentationsanforderugen, inkl. Benutzerhandbücher, Onlinehilfe, Installations-, Kennzeichnungs- und Auslieferungsanforderungen-
+//. Definieren Sie die Priorität für diese zusätzlichen Produktanforderungen. Ergänzen Sie, falls sinnvoll, Angaben zu Stabilität, Nutzen, Aufwand und Risiko für diese Anforderungen.
 
 [%header, cols="4,1,1"]
 |===
