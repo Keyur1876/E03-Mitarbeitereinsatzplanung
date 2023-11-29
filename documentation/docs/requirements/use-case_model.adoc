@@ -1,26 +1,25 @@
-6= Use-Case Model: {project-name}
+# 2. Use-Case Model: E03-Mitarbeitereinsatzplanung
 Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
-== Allgemeine Informationen
-// ...
+# 2.1 Allgemeine Informationen
+Im nachfolgenden Abschnitt werden alle identifizierten Use Cases, deren Akteure und deren Abläufe vorgestellt.
 
-
-== Identifizierte Use Cases
+# 2.2 Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
-* *UC01*: Erstellung und Verwaltung von Projekten (Abteilungsleiter)
-* *UC02*: Aufgabe in Projekten hinzufügen (Abteilungsleiter/Projektleiter)
-* *UC03*: Verwalten kurzfristige und langfristige Abwesenheitszeiten: Feiertage, Urlaube, Krankheit,... (HR)
-* *UC04*: Verwalten personenbezogener Daten (HR)
-* *UC05*: Verwaltung der Arbeitsauslastung (HR)
-* *UC06*: Nutzer- und Rechtverwaltung (Führungspersonal)
-* *UC07*: Daten Import und Export
+* UC01: Erstellung und Verwaltung von Projekten
+* UC02: Hinzufügen von Aufgaben in Projekten
+* UC03: Verwaltung von kurzftigen und langfristigen Abwesenheitszeiten
+* UC04: Verwaltung personenbezogener Daten
+* UC05: Verwaltung der Arbeitsauslastung
+* UC06: Nutzer- und Rechteverwaltung
+* UC07: Datenimport und -export
 
 
-== Use Case Diagramm
+# 2.3 Use Case Diagramm
 // ...
 
 //Fügen Sie nachfolgend alle detaillierten Use-Cases per Include ein.

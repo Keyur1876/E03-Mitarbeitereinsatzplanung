@@ -21,6 +21,18 @@ Nils Weber <s84281@htw-dresden.de>; Anh Thu Hoang <s85622@htw-dresden.de>; Luca 
 ### 2. Use-Case Model: Projekt E03 Mitarbeitereinsatzplanung
 #### 2.1 Allgemeine Informationen
 
+Im nachfolgenden Abschnitt werden alle identifizierten Use Cases, deren Akteure und deren Abläufe vorgestellt.
+
+#### 2.2 Identifizierte Use Cases
+
+* UC01: Erstellung und Verwaltung von Projekten
+* UC02: Hinzufügen von Aufgaben in Projekten
+* UC03: Verwaltung von kurzftigen und langfristigen Abwesenheitszeiten
+* UC04: Verwaltung personenbezogener Daten
+* UC05: Verwaltung der Arbeitsauslastung
+* UC06: Nutzer- und Rechteverwaltung
+* UC07: Datenimport und -export
+
 
 
 
