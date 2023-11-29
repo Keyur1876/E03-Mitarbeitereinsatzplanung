@@ -5,56 +5,71 @@ ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 == Use-Case: UC05 Verwaltung personenbezogener Daten
 
 === Kurzbeschreibung
-//<Kurze Beschreibung des Use Case>
+Dieser Use-Case beschreibt das Einpflegen neuer Mitarbeiterdaten und die Aktualisierung bestehender Mitarbeiterdaten.
 
 === Kurzbeschreibung der Akteure
 
-==== <Akteur 1 Name>
+Mitarbeiter 
+
+Möchte seine bisher bei der Develappers GmbH hinterlegten persönlichen Daten ändern und ergänzen.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-<Vorbedingung 1>
+Der Mitarbeiter besitzt die entsprechenden Zugriffsrechte bzw. aktuelle Anmeldedaten, um Änderungen an seinen Stammdaten vornehmen zu können.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. …
-. <Standardablauf Schritt n>
+. Der Use Case beginnt, wenn der Mitarbeiter die Software zur Mitarbeitereinsatzplanung gestartet hat.
+. Der Mitarbeiter meldet sich mit den benutzerbezogenen Anmeldetedaten an.
+. Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
+. Auswahl der Funktion: Meine Daten verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Es erscheint ein Formular, welches bereits gespeicherte Daten des Mitarbeiters beinhaltet.
+. Der Mitarbeiter aktualisiert oder fügt neue Daten hinzu.
+. Uber den Button Änderungen Speichern, werden die Aktualisierungen in das System übernommen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 6. abbricht, ohne dass der Schritt 7. durchgeführt wurde, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
+
+//==== <Alternativer Ablauf 1>
+//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+//. <Ablauf beschreiben>
+//. Der Use Case wird im Schritt <y> fortgesetzt.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+---keine Unterabläufe vorhanden---
 
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
+//==== <Unterablauf 1>
+//. <Unterablauf 1, Schritt 1>
+//. …
+//. <Unterablauf 1, Schritt n>
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+--- keine abweichenden Szenarios vom Standardablauf ---
 
-==== <Szenario 1>
-. <Szenario 1, Schritt 1>
-. …
-. <Szenario 1, Schritt n>
+//==== <Szenario 1>
+//. <Szenario 1, Schritt 1>
+//. …
+//. <Szenario 1, Schritt n>
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+* Das System hat die aktualisierten Stammdaten des jeweiligen Mitarbeiters gespeichert.
+* Die jeweiligen Stammdaten können nun auch zu Abrechnungszwecken von der Buchhaltung oder anderen verwalterischen Abteilungen der Firma genutzt werden und sind stets aktuell.
 
-==== <Nachbedingung 1>
+//==== <Nachbedingung 1>
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+Usability
 
-==== <Besondere Anforderung 1>
+• Der Use Case gehört zu der grundlegenden Funktionalität des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
+
+
+//==== <Besondere Anforderung 1>
