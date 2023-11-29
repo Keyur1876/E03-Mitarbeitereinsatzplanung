@@ -2,59 +2,75 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC02 <use-case name>
+== Use-Case: Verwaltung von kurzftigen und langfristigen Abwesenheitszeiten
 
 === Kurzbeschreibung
-//<Kurze Beschreibung des Use Case>
+Dieser Use-Case beschreibt das Hinzufügen und Ändern bestehender oder neuer mitarbeiterbezogener Abwesenheitszeiten. 
 
 === Kurzbeschreibung der Akteure
 
-==== <Akteur 1 Name>
+Projektleitung
+
+Möchte eine eingegangene Krankmeldung eines Mitarbeiters, genehmigte Urlaubszeiten, Fehlzeiten mit/ohne Lohnausgleich in die Mitarbeitereinsatzplanung eintragen.
+//==== <Akteur 1 Name>
 
 === Vorbedingungen
-//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen 
+Die Projektleitung besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um kurzftistige und langfristige Fehlzeiten der jeweiligen Mitarbeiter zu dokumentieren.
 
-<Vorbedingung 1>
+//<Vorbedingung 1>
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. …
-. <Standardablauf Schritt n>
+. Der Use Case beginnt, wenn die Projektleitung die Software zur Mitarbeitereinsatzplanung gestartet hat.
+. Die Projektleitung meldet sich mit den benutzerbezogenen Anmeldetedaten an.
+. Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
+. Auswahl der Funktion: Mitarbeiter verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Es öffnet sich ein Filtermenü, mit dessen Hilfe der jeweilige Mitarbeiter gesucht werden kann.
+. Wurde der entsprechende Mitarbeiter ausgewählt, wird der Benutzer zu der persönlichen Einsatzplanung des Mitarbeiters, in Form eines Jahreskalenders weitergeleitet.
+. Der Benutzer kann nun die jeweiligen Tage anklicken und über ein Drop-Down Menü die gewünschten Fehlzeit-Gründe eintragen.
+. Abschließend werden alle hinzugefügten Fehlzeiten über den Button Änderungen Speichern in das System übernommen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+Wenn der Benutzer die Bearbeitung des Kalenders unter dem Schritt 7 abbricht, ohne dass der Schritt 8. durchgeführt wurden, werden keine Änderungen übernommen und Kalender erscheint im Ursprungszustand.
 
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+//==== <Alternativer Ablauf 1>
+//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas //macht>, dann
+//. <Ablauf beschreiben>
+//. Der Use Case wird im Schritt <y> fortgesetzt.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
+---keine Unterabläufe vorhanden---
+
+//==== <Unterablauf 1>
+//. <Unterablauf 1, Schritt 1>
+//. …
+//. <Unterablauf 1, Schritt n>
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+--- keine abweichenden Szenarios vom Standardablauf ---
 
-==== <Szenario 1>
-. <Szenario 1, Schritt 1>
-. …
-. <Szenario 1, Schritt n>
+//==== <Szenario 1>
+//. <Szenario 1, Schritt 1>
+//. …
+//. <Szenario 1, Schritt n>
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+* Das System hat die vollständigen Abwesenheits-Änderungen des jeweiligen Mitarbeiters gespeichert.
+* Die durch Ausfall betreffenden Mitarbeiter werden in einer visualisierten Darstellung der aktuellen Auslastung aufgenommen.
 
-==== <Nachbedingung 1>
+//==== <Nachbedingung 1>
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+Usability
 
-==== <Besondere Anforderung 1>
+• Der Use Case gehört zu der grundlegenden Funktionalität des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
+//==== <Besondere Anforderung 1>
