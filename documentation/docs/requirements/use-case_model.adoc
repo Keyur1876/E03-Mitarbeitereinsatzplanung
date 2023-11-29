@@ -38,16 +38,16 @@ include::use_case_01.inc.adoc[]
 include::use_case_02.inc.adoc[]
 
 <<<
-include::use_case_03.adoc[]
+include::use_case_03.inc.adoc[]
 
 <<<
-include::use_case_04.adoc[]
+include::use_case_04.inc.adoc[]
 
 <<<
-include::use_case_05.adoc[]
+include::use_case_05.inc.adoc[]
 
 <<<
-include::use_case_06.adoc[]
+include::use_case_06.inc.adoc[]
 
 //<<<
 //include::use_case_07.inc.adoc[]
