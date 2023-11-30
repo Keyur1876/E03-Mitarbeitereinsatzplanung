@@ -22,42 +22,53 @@ Der Datenschutzbeauftragte besitzt die erforderliche Rolle, um Zugriffsrechte zu
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. …
-. <Standardablauf Schritt n>
+. Der Use Case beginnt, wenn der Datenschutzbeauftragte die Software zur Mitarbeitereinsatzplanung gestartet hat.
+. Die Datenschutzbeauftragte meldet sich mit den benutzerbezogenen Anmeldetedaten an.
+. Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
+. Auswahl der Funktion: Software verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Anzeige eines Filtermenüs, mit dessen Hilfe Mitarbeiter gesucht werden können.
+. Wurde der entsprechende Mitarbeiter ausgewählt, können über ein Drop-Down Menü die Zugriffsrechte des jeweiligen Mitarbeiters angepasst werden.
+. Abschließend wird die Zuweisung über den Button Änderungen Speichern in das System übernommen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
-//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+Wenn der Benutzer die Apassung unter dem Schritt 6 abbricht, ohne dass der Schritt 7. durchgeführt wird, werden keine Änderungen übernommen.
+
+//==== <Alternativer Ablauf 1>
+//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+//. <Ablauf beschreiben>
+//. Der Use Case wird im Schritt <y> fortgesetzt.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+---keine Unterabläufe vorhanden---
 
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
+//==== <Unterablauf 1>
+//. <Unterablauf 1, Schritt 1>
+//. …
+//. <Unterablauf 1, Schritt n>
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+--- keine abweichenden Szenarios vom Standardablauf ---
 
-==== <Szenario 1>
-. <Szenario 1, Schritt 1>
-. …
-. <Szenario 1, Schritt n>
+//==== <Szenario 1>
+//. <Szenario 1, Schritt 1>
+//. …
+//. <Szenario 1, Schritt n>
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-==== <Nachbedingung 1>
+//==== <Nachbedingung 1>
+* Das System hat die zugewiesenen Zugriffsrechte gespeichert.
+* Der jeweilige Mitarbeiter besitzt nun erweiterte oder eingeschränkte Zugriffsrechte und damit unterschiedliche Funktionalitäten der Software für die Mitarbeitereinsatzplanung.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+Usability
 
-==== <Besondere Anforderung 1>
+• Der Use Case gehört zu der grundlegenden Funktionalität des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
+
+//==== <Besondere Anforderung 1>
