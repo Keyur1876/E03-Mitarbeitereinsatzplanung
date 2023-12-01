@@ -1,10 +1,31 @@
 // --- 1. Projektthema -------------------------
-= SE I - Belegabgabe: {project-name}
+= SE I - Belegabgabe: E03-Mitarbeitereinsatzplanung
 // --- 2. Teammitglieder -----------------------
-Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>
+Hoang Phuong Linh Nguyen <s83710@htw-dresden.de>;
+Nils Weber <s84281@htw-dresden.de>; Anh Thu Hoang <s85622@htw-dresden.de>; Luca Leon Wagner <s85265@htw-dresden.de>; Le Quoc Minh Tran <s87560@htw-dresden.de>; Tom Eckhardt <s00000@htw-dresden.de>; Keyur Hareshbhai Kachhadiya <s85495@htw-dresden.de>; Paulina Kostka <s85455@htw-dresden.de>
 // --- 3. Abgabedatum --------------------------
-01. Januar 2020
+
+26. Januar 2024
+
 // ---------------------------------------------
+
+# Inhaltsverzeichnis
+
+## Technische Spezifikation
+
+### 1. Vision: Projekt E03 Mitarbeitereinsatzplanung
+#### 1.1 Einführung
+##### 1.1.1 Zweck
+##### 1.1.2 Gültigkeitsbereich (Scope)
+#### 1.2 Positionierung
+#### 1.3 Stakeholder Beschreibungen
+#### 1.4 Produkt-/Lösungsüberblick
+#### 1.5 Zusätzliche Produktanforderungen
+### 2. Use-Case Model: Projekt E03 Mitarbeitereinsatzplanung
+#### 2.1 Allgemeine Informationen
+#### 2.2 Identifizierte Use Cases
+#### 2.3 Use Case Diagramm
+
 :docs: ../docs
 include::{docs}/_includes/default-attributes.inc.adoc[]
 // ---

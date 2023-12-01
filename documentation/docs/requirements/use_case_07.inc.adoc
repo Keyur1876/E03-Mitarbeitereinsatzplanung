@@ -2,45 +2,45 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC02 Projektbezogene Daten ändern
+== Use-Case: UC07: Datenimport und -export
 
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt die Verwaltung bereits bestehender Projekte durch die Projektleitung.
+Dieser Use-Case beschreibt das Importieren von Daten mittels API und das Exportieren von Daten.
 
 === Kurzbeschreibung der Akteure
 
-Projektleitung
+* Datenschutzbeauftragter/Administration
+* Projektleitung
 
-Möchte Änderungen in einem bestehendem Projekt vornehmen.
+Möchte die Software für die Mitarbeitereinsatzplanung immer aktuell halten, somit wird ein Application Programming Interface zwischengeschaltet, um Daten importieren zu können. Außerdem sollen die in der Software enthaltenen Daten exportiert werden können zur Reaisierung einer Backup-Funktionalität.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-Die Projektleitung besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um Änderungen oder das Hizufügen an/von Projekten vornehmen zu können.
-
+Der Datenschutzbeauftragte oder die Projektleitung besitzt die erforderliche Rolle, um Daten importieren und exportieren zu können.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn die Projektleitung die Software zur Mitarbeitereinsatzplanung gestartet hat.
-. Die Projektleitung meldet sich mit den benutzerbezogenen Anmeldetedaten an.
+. Der Use Case beginnt, wenn einer der oben beschriebenen Akteure die Software zur Mitarbeitereinsatzplanung gestartet hat.
+. Der Nutzer meldet sich mit den benutzerbezogenen Anmeldetedaten an.
 . Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
-. Auswahl der Funktion: Projekte verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
-. Ein Umtermenü erscheint, hier kann der Benutzer folgende Funktionen auswählen:
-.. neues Projekt hinzufügen
-.. Projekt bearbeiten
-. Wählt der Benutzer die Funktion ii., öffnet sich ein Filtermenü, mit dessen Hilfe das zu bearbeitende Projekt gesucht werden kann.
-. Wurde das entsprechende Projekt ausgewählt, wird der Benutzer zu einem Formular weitergeleitet, welches bereits vorhandene Angaben zu dem Projekt beinhaltet.
-. Der Benutzer kann nun gewünschte Änderungen vornehmen.
-. Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.
+. Auswahl der Funktion: Software verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Ein Untermenü erscheint, hier kann der Benutzer folgende Funktionen auswählen:
+.. Systemzugriff verwalten
+.. Übertragung von Daten
+. Wählt der Benutzer die Funktion b., kann eine weitere Auswahl getroffen werden:
+.. Daten importieren
+.. Daten sichern
+. Je nach getätigter Auswahl werden Daten aus anderen Systemen in die Mitarbeitereinsatzplanung übertragen oder in Form eines Backups exportiert.
+. Weitere Anweisungen ergeben sich in den mit der Software kooperierenden Systemen.
 . Der Use Case ist abgeschlossen.
 
-
 === Alternative Abläufe
-//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 8. abbricht, ohne dass der Schritt 9. durchgeführt wurde, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
+* Wenn eine Verbindung mittels Application Programming Interface nicht möglich ist, können keine Daten importiert werden.
+* Wenn der Export von Daten einen Fehler aufweist, kann kein Backup erstellt werden.
 
 //==== <Alternativer Ablauf 1>
 //Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
@@ -67,9 +67,10 @@ Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 8. abbricht, o
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-* Das System hat die vollständigen Änderungen des Projektes das bearbeitet wurde gespeichert.
-* Falls konkrete Mitarbeiter einem Projekt zugeordnet wurden, so ist diese Zuordnung in der individuellen Einsatzplanung des jeweiligen Mitarbeiters verzeichnet.
+
 //==== <Nachbedingung 1>
+* Das System hat die zugewiesenen Zugriffsrechte gespeichert.
+* Der jeweilige Mitarbeiter besitzt nun erweiterte oder eingeschränkte Zugriffsrechte und damit unterschiedliche Funktionalitäten der Software für die Mitarbeitereinsatzplanung.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.

@@ -2,20 +2,22 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC01 Erstellung von Projekten
+== Use-Case: UC04 Verwaltung von kurzftigen und langfristigen Abwesenheitszeiten
+
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt das Erstellen neuer Projekte durch die Projektleitung.
+Dieser Use-Case beschreibt das Hinzufügen und Ändern bestehender oder neuer mitarbeiterbezogener Abwesenheitszeiten. 
 
 === Kurzbeschreibung der Akteure
 
 Projektleitung
 
-Möchte ein neues Projekt/Auftrag einpflegen, das/der an die Firma Develappers GmbH vergeben wurde. 
+Möchte eine eingegangene Krankmeldung eines Mitarbeiters, genehmigte Urlaubszeiten, Fehlzeiten mit/ohne Lohnausgleich in die Mitarbeitereinsatzplanung eintragen.
 
 === Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-Die Projektleitung besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um Änderungen oder das Hizufügen an/von Projekten vornehmen zu können.
+Die Projektleitung besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um kurzftistige und langfristige Fehlzeiten der jeweiligen Mitarbeiter zu dokumentieren.
 
 
 === Standardablauf (Basic Flow)
@@ -24,19 +26,17 @@ Die Projektleitung besitzt die entsprechenden Zugriffsrechte bzw. die erforderli
 . Der Use Case beginnt, wenn die Projektleitung die Software zur Mitarbeitereinsatzplanung gestartet hat.
 . Die Projektleitung meldet sich mit den benutzerbezogenen Anmeldetedaten an.
 . Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
-. Auswahl der Funktion: Projekte verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
-. Ein Umtermenü erscheint, hier kann der Benutzer folgende Funktionen auswählen:
-.. neues Projekt hinzufügen
-.. Projekt bearbeiten
-. Wählt der Benutzer die Funktion i., wird dieser zu einem Formular weitergeleitet, welches Angaben zu dem neuen Projekt erwartet.
-. Benutzer fügt die geforderten projektbezogenen Daten und Attribute in das Formular ein.
-. Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.
+. Auswahl der Funktion: Mitarbeiter verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Es öffnet sich ein Filtermenü, mit dessen Hilfe der jeweilige Mitarbeiter gesucht werden kann.
+. Wurde der entsprechende Mitarbeiter ausgewählt, wird der Benutzer zu der persönlichen Einsatzplanung des Mitarbeiters, in Form eines Jahreskalenders weitergeleitet.
+. Der Benutzer kann nun die jeweiligen Tage anklicken und über ein Drop-Down Menü die gewünschten Fehlzeit-Gründe eintragen.
+. Abschließend werden alle hinzugefügten Fehlzeiten über den Button Änderungen Speichern in das System übernommen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 7. abbricht, ohne dass der Schritt 8. durchgeführt wurde, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
+Wenn der Benutzer die Bearbeitung des Kalenders unter dem Schritt 7 abbricht, ohne dass der Schritt 8. durchgeführt wurden, werden keine Änderungen übernommen und Kalender erscheint im Ursprungszustand.
 
 //==== <Alternativer Ablauf 1>
 //Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
@@ -45,7 +45,9 @@ Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 7. abbricht, o
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
 ---keine Unterabläufe vorhanden---
+
 //==== <Unterablauf 1>
 //. <Unterablauf 1, Schritt 1>
 //. …
@@ -61,17 +63,15 @@ Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 7. abbricht, o
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-* Das System hat die vollständigen Änderungen des Projektes das bearbeitet wurde gespeichert.
-* Das System hat das neu eingepflegte Projekt gespeichert.
-* Falls konkrete Mitarbeiter einem Projekt zugeordnet wurden, so ist diese Zuordnung in der individuellen Einsatzplanung des jeweiligen Mitarbeiters verzeichnet.
+* Das System hat die vollständigen Abwesenheits-Änderungen des jeweiligen Mitarbeiters gespeichert.
+* Die durch Ausfall betreffenden Mitarbeiter werden in einer visualisierten Darstellung der aktuellen Auslastung aufgenommen.
 
 //==== <Nachbedingung 1>
 
-//=== Besondere Anforderungen
+=== Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-
-==== Besondere Anforderungen
-
 Usability
 
 • Der Use Case gehört zu der grundlegenden Funktionalität des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
+
+//==== <Besondere Anforderung 1>
