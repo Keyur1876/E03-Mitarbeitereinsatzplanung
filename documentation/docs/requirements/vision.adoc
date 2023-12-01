@@ -33,8 +33,8 @@ Ziel ist es eine "leichtgewichtige" Softwarelösung für eine Auslastungsplanung
 
 [cols="1,3"]
 |===
-| Das Problem | Im aktuellen Excel-Sheet müssen alle Änderungen wie Feiertage, Urlaube, Abwesenheiten händisch eingetragen werden. Außerdem gibt es kein Rechte- und Rollenmanagement, sowie keine Möglichkeit eine sinnvolle Auslastungsplanung vorzunehmen.
-| betrifft | die Geschäftsführer, sowie die Mitarbeiter der Firma Develappers GmbH
+| Das Problem | Im aktuellen Excel-Sheet müssen alle Änderungen wie Feiertage, Urlaube, Abwesenheiten händisch eingetragen werden. Außerdem gibt es kein Rechte- und Rollenmanagement, keine Sicherung durch ein Passwort, sowie keine Möglichkeit eine sinnvolle Auslastungsplanung vorzunehmen.
+| betrifft | Manager, Projektleiter, sowie die interne und externe Mitarbeiter der Firma Develappers GmbH
 | die Auswirkung davon ist |
 *  hoher Zeitaufwand
 *  hohe Fehleranfälligkeit
@@ -65,12 +65,12 @@ Beispiel:
 
 [cols="1,3"]
 |===
-| Für | Arbeitnehmer und Arbeitgeber der Firma Develappers GmbH
+| Für | Manager, Projektleiter, sowie die interne und externe Mitarbeiter der Firma Develappers GmbH
 | die | ihre Einsatzplanung effizienter gestalten möchten
 | Das Produkt ist eine | Software
 | Die | eine effiziente Auslastungsplanung der Mitarbeitenden ermöglicht
 | Im Gegensatz zum | genutzten Excel-Sheet
-| Unser Produkt | ermöglicht eine automatisierte Planung von Mitarbeitenden über kurze und lange Spannen mit dem Augenmerk auf eine gleichmäßige Auslastung 
+| Unser Produkt | ermöglicht eine übersichtliche und effektive Planung von Mitarbeitenden über kurze und lange Spannen mit dem Augenmerk auf eine gleichmäßige Auslastung 
 |===
 
 ////
@@ -103,11 +103,14 @@ die für dieses Projekt zugeteilt wurden.
 | Ansprechpartner für das Projekt, der
 die Anforderungen an das Tool festlegt.
 | Arbeitende des Unternehmens
-| Alle Mitarbeiter der Develappers GmbH
+| Interne und externe Mitarbeiter der Develappers GmbH
 | Effektive Planung der Arbeitszeit in Bezug auf aktuelle und erst bevorstehende Projekte.
-| Datenschutzbeauftragter
+| Projektleitung
 | Mitarbeiter der Develappers GmbH
-|Prüft interne Abläufe und Arbeitsweise, sowie technische Systeme auf Einhaltung von Sicherheitsaspekten.
+|Kann Projekte anlegen, bearbeiten, löschen, sowie die Ressourcen (Zeit, Geld, Mitarbeiter) eines Projektes einsehen.
+| Manager
+| Mitarbeiter der Develappers GmbH
+|Kann Projekte und Mitarbeiter anlegen, bearbeiten, löschen, sowie die Ressourcen (Zeit, Geld, Mitarbeiter) eines Projektes einsehen.
 |===
 
 === Benutzerumgebung
