@@ -15,3 +15,6 @@ API/obj/Debug/net7.0/ref/API.dll
 API/obj/Debug/net7.0/refint/API.dll
 API/obj/Debug/net7.0/API.pdb
 API/obj/Debug/net7.0/API.dll
+.vscode/launch.json
+ssl/localhost-key.pem
+ssl/localhost.pem
