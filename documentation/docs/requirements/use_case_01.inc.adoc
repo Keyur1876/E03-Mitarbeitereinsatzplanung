@@ -5,17 +5,17 @@ ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 == Use-Case: UC01 Erstellung von Projekten
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt das Erstellen neuer Projekte durch die Projektleitung.
+Dieser Use-Case beschreibt das Erstellen neuer Projekte durch den Projektleiter oder Manager .
 
 === Kurzbeschreibung der Akteure
 
-Projektleitung
+Projektleiter/Manager
 
-Möchte ein neues Projekt/Auftrag einpflegen, das/der an die Firma Develappers GmbH vergeben wurde. 
+Möchte ein neues Projekt einpflegen, das von den Mitarbeitern realisiert werden soll.
 
 === Vorbedingungen
 
-Die Projektleitung besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um Änderungen oder das Hizufügen an/von Projekten vornehmen zu können.
+Der Projektleiter/Manager besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, zur Einsicht und um Änderungen oder das Hizufügen an/von Projekten vornehmen zu können.
 
 
 === Standardablauf (Basic Flow)
@@ -23,7 +23,7 @@ Die Projektleitung besitzt die entsprechenden Zugriffsrechte bzw. die erforderli
 
 . Der Use Case beginnt, wenn die Projektleitung die Software zur Mitarbeitereinsatzplanung gestartet hat.
 . Die Projektleitung meldet sich mit den benutzerbezogenen Anmeldetedaten an.
-. Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
+. Kalender-Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
 . Auswahl der Funktion: Projekte verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
 . Ein Umtermenü erscheint, hier kann der Benutzer folgende Funktionen auswählen:
 .. neues Projekt hinzufügen
@@ -36,12 +36,13 @@ Die Projektleitung besitzt die entsprechenden Zugriffsrechte bzw. die erforderli
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
+
+==== <Alternativer Ablauf 1>
 Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 7. abbricht, ohne dass der Schritt 8. durchgeführt wurde, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
 
-//==== <Alternativer Ablauf 1>
-//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-//. <Ablauf beschreiben>
-//. Der Use Case wird im Schritt <y> fortgesetzt.
+==== <Alternativer Ablauf 2>
+Wenn der Benutzer nach Schritt 8. zur Start-Übersicht zurückkehrt und auf den Icon mit einem Kalender klickt, kann dieser das soeben erstellte Projekt über den Kalender einem/oder mehreren bestimmten Mitarbeitern zuweisen.
+
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -61,8 +62,8 @@ Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 7. abbricht, o
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-* Das System hat die vollständigen Änderungen des Projektes das bearbeitet wurde gespeichert.
 * Das System hat das neu eingepflegte Projekt gespeichert.
+* Das System hat die vollständigen Daten des Projektes das hinzugefügt wurde gespeichert.
 * Falls konkrete Mitarbeiter einem Projekt zugeordnet wurden, so ist diese Zuordnung in der individuellen Einsatzplanung des jeweiligen Mitarbeiters verzeichnet.
 
 //==== <Nachbedingung 1>

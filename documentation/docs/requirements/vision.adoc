@@ -121,12 +121,13 @@ Softwareentwicklungsfirma Develappers GmbH
 * Die Anzahl der Nutzer entspricht den MitarbeiterInnen der Develappers GmbH. Diese
 kann sich gegebenenfalls ändern.
 * Die Bearbeitungszeit ist abhängig von der Anzahl der Änderungen (Urlaub, Krankheitsfall, Mitarbeit an mehreren Projekten gleichzeitig u.ä.), die in der Arbeitszeitplanung des jeweiligen Mitarbeiters berücksichtigt werden müssen.
-Im Falle eines Datenimports aus anderen Systemen kann es ebenfalls zu einer längeren Bearbeitungszeit kommen. 
+Auch bei der Erstellung eines Projektes kann die Bearbeitungszeit variieren, je nach Umfang der gegebenen Saten, die in das System eingepflegt werden müssen.
+Im Falle eines Datenimports aus anderen Systemen kann es ebenfalls zu einer längeren Systemlaufzeit kommen. 
 //. Gibt es besondere Umgebungsbedingungen, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
-//Die Anwendung kann sowohl online, als auch offline erfolgen, wenn alle notwendigen Ressourcen (HTML, CSS, JavaScript) einmal geladen wurden.
+* Die Anwendung soll ausschließlich online genutzt werden.
 * Aktuell wird die Mitarbeitereinsatzplanung über ein Excel-Sheet realisiert, dieses soll jedoch von einer neuen Software abgelöst werden. Das Backend soll dabei auf Basis von ASP.NET entwickelt werden und das Frontend soll auf dem Web-Framework Angular basieren.
-//. Mittels API sollen Daten aus anderen Systemen importiert werden.
-//hier müssten Stichpunkte sein, jedoch weiß ich immernoch nicht wie ich diese erzeugen kann
+* Mittels API sollen Daten aus anderen Systemen importiert werden.
+
 
 //Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
@@ -139,10 +140,12 @@ Im Falle eines Datenimports aus anderen Systemen kann es ebenfalls zu einer län
 [%header, cols="4,1,4,1"]
 |===
 | Bedarf | Priorität | Features | Geplantes Release
-| Verwaltung der Mitarbeitereinsatzplanung | hoch | Speiechern, Erstellen, Verändern und Löschung von Auslastungen| 2024
-| Darstellung der prozentualen Auslastung| mittel | Mithilfe von Diagrammen soll die Kapazität für einzelne Mitarbeitende oder Teams dargestellt werden | 2024
+| Verwaltung der Stammdaten von internen und externen Mitarbeitern | hoch | Erstellen, Verändern und Löschung von mitarbeiterbezogenen Daten| 2024
+| Verwaltung von Projekten | hoch | Erstellen, Verändern der Stammdaten und Löschung von neuen und bereits bestehenden Projekten| 2024
+| Darstellung der prozentualen Auslastung| mittel | Mithilfe von Diagrammen soll die Kapazität für einzelne Mitarbeitende oder Teams dargestellt werden und von diesen eingesehen werden können | 2024
+| Zugang zur Software mit einem Passwort| mittel | Vorbeugen von Fehlern, Inkonsistenz der Daten, Datenschutzpannen | 2024
 | Nutzer- und Rechteverwaltung | hoch | Vermeidung von Fehlern, Inkonsistenz der Daten, Datenschutzpannen | 2024
-| Historie und Nachverfolgung | mittel | Einsicht in die jeweiligen Änderungen der Mitarbeitenden | 2024
+| Historie und Nachverfolgung | hoch | Einsicht in die jeweiligen Änderungen der Mitarbeitenden | 2024
 | Datenimport und -export | hoch | Einbindung von Daten (zum Bsp.: Kranktage, Schulungstage, Urlaubstage, tatsächlich geleistete Stunden) aus anderen Systemen soll möglich sein | 2024
 |Filterung nach Kriterien  | hoch | Ermöglicht eine schnelle selektive Einsicht in die gewünschten Daten | 2024
 |===
@@ -165,5 +168,9 @@ Hinweise:
 | Datenschutzkonforme Umsetzung, Datensicherheit | hoch | 2024
 | Softwarelösung soll zuverlässig und einfach bedienbar sein | hoch | 2024 
 | System soll in einem Docker-Container auf Linux-Basis lauffähig sein | hoch | 2024
+|Software soll mit den Internet-Explorern: Safari und Firefox kompatibel sein| hoch | 2024
+|System soll mithilfe des Kommunikationsprotokolls HTTPS realisiert werden, damit Daten möglichst sicher verschlüsselt werden| hoch | 2024
+|Software sollte keine zu großen Verzögerungszeiten aufweisen| hoch | 2024
+
 
 |===
