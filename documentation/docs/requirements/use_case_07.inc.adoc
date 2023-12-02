@@ -10,15 +10,15 @@ Dieser Use-Case beschreibt das Importieren von Daten mittels API und das Exporti
 
 === Kurzbeschreibung der Akteure
 
-* Datenschutzbeauftragter/Administration
-* Projektleitung
+* Manager
+* Administrator
 
-Möchte die Software für die Mitarbeitereinsatzplanung immer aktuell halten, somit wird ein Application Programming Interface zwischengeschaltet, um Daten importieren zu können. Außerdem sollen die in der Software enthaltenen Daten exportiert werden können zur Reaisierung einer Backup-Funktionalität.
+Möchte die Software für die Mitarbeitereinsatzplanung immer aktuell halten, somit wird ein Application Programming Interface zwischengeschaltet, um Daten importieren zu können.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-Der Datenschutzbeauftragte oder die Projektleitung besitzt die erforderliche Rolle, um Daten importieren und exportieren zu können.
+Der Manager/Administrator besitzt die erforderliche Rolle, um Daten importieren zu können.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
@@ -69,8 +69,8 @@ Der Datenschutzbeauftragte oder die Projektleitung besitzt die erforderliche Rol
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 //==== <Nachbedingung 1>
-* Das System hat die zugewiesenen Zugriffsrechte gespeichert.
-* Der jeweilige Mitarbeiter besitzt nun erweiterte oder eingeschränkte Zugriffsrechte und damit unterschiedliche Funktionalitäten der Software für die Mitarbeitereinsatzplanung.
+* Das System enthält neue Daten die mittels API importiert wurden.
+* Bestehende Daten konnten über ein Backup gesichert werden.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.

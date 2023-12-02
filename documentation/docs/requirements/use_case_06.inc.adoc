@@ -10,7 +10,8 @@ Dieser Use-Case beschreibt die Zuweisung von Zugriffsrechten je nach Rolle des B
 
 === Kurzbeschreibung der Akteure
 
-Manager/Administrator
+* Manager
+* Administrator
 
 Möchte die Software für die Mitarbeitereinsatzplanung gemäß der Datenschutzverordnung und aus Sicherheitsgründen, durch die Vergabe von bestimmten Zugriffsrechten verwalten.
 
