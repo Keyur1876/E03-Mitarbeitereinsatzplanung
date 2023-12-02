@@ -5,7 +5,7 @@ ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 == Use-Case: UC01 Erstellung von Projekten
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt das Erstellen neuer Projekte durch den Projektleiter oder Manager .
+Dieser Use-Case beschreibt das Erstellen neuer Projekte durch den Projektleiter oder Manager.
 
 === Kurzbeschreibung der Akteure
 
@@ -21,8 +21,8 @@ Der Projektleiter/Manager besitzt die entsprechenden Zugriffsrechte bzw. die erf
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn die Projektleitung die Software zur Mitarbeitereinsatzplanung gestartet hat.
-. Die Projektleitung meldet sich mit den benutzerbezogenen Anmeldetedaten an.
+. Der Use Case beginnt, wenn der Projektleiter/Manager die Software zur Mitarbeitereinsatzplanung gestartet hat.
+. Projektleiter/Manager meldet sich mit den benutzerbezogenen Anmeldetedaten an.
 . Kalender-Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
 . Auswahl der Funktion: Projekte verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
 . Ein Umtermenü erscheint, hier kann der Benutzer folgende Funktionen auswählen:
