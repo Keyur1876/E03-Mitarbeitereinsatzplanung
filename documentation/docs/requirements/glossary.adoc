@@ -6,14 +6,15 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) der <Projektthema-Systems> definiert. Zur besseren Übersichtlichkeit sind Begriffe, Abkürzungen und Datendefinitionen gesondert aufgeführt.
+In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) der <E03-Mitarbeitereinsatzplanung-Systems> definiert. Zur besseren Übersichtlichkeit sind Begriffe, Abkürzungen und Datendefinitionen gesondert aufgeführt.
 
 == Begriffe
 [%header]
 |===
 | Begriff | Definition und Erläuterung | Synonyme
 //| Kommissionierung | Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags | (keine)
-| xx | xx | xx
+| Docker-Container | "Behälter" für Anwendungen in dem sie laufen können, sie enthalten nur wichtige Daten, die für die Ausführung der Software benötigt werden | Container
+
 |===
 
 
@@ -22,7 +23,9 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 | Abkürzung | Bedeutung | Erläuterung
 //| UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
-| xx | xx | xx
+| HTTPS | Hypertext Transfer Protocol Secure | Kommunikationsprotokoll im World Wide Web, mit dem sich im Gegensatz zu HTTP (Hypertext Transfer Protocol) Daten verschlüsseln lassen und damit Sicher vor Abhörung und Fälschung sind.
+| API | Application Programming Interface | Ist eine Schnittstelle, die es unabhängigen Anwendungen möglich macht miteinander zu kommunizieren und Daten auszutauschen
+| ASP.NET | Active Server Pages.NET |  Framework für die Entwicklung von beliebigen Webanwendungen aus der NET-Familie (Fertigbaukasten)
 |===
 
 == Verzeichnis der Datenstrukturen

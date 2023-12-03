@@ -10,20 +10,22 @@ Dieser Use-Case beschreibt die Zuweisung von Zugriffsrechten je nach Rolle des B
 
 === Kurzbeschreibung der Akteure
 
-Datenschutzbeauftragter/Administration
+* Manager
+* Administrator
 
-Möchte die Software für die Mitarbeitereinsatzplanung gemäß der Datenschutzverordnung und anderer rechtlicher Vorschriften, durch die Vergabe von bestimmten Zugriffsrechten verwalten.
+Möchte die Software für die Mitarbeitereinsatzplanung gemäß der Datenschutzverordnung und aus Sicherheitsgründen, durch die Vergabe von bestimmten Zugriffsrechten verwalten.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-Der Datenschutzbeauftragte besitzt die erforderliche Rolle, um Zugriffsrechte zuzuweisen.
+Der Manager/Administrator besitzt die erforderliche Rolle, um Zugriffsrechte zuzuweisen.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn der Datenschutzbeauftragte die Software zur Mitarbeitereinsatzplanung gestartet hat.
-. Die Datenschutzbeauftragte meldet sich mit den benutzerbezogenen Anmeldetedaten an.
+. Der Use Case beginnt, wenn der Manager/Administrator
+ die Software zur Mitarbeitereinsatzplanung gestartet hat.
+. Der Manager/Administrator meldet sich mit den benutzerbezogenen Anmeldetedaten an.
 . Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
 . Auswahl der Funktion: Software verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
 . Anzeige eines Filtermenüs, mit dessen Hilfe Mitarbeiter gesucht werden können.

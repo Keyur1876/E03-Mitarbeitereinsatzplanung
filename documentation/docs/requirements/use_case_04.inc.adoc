@@ -10,21 +10,21 @@ Dieser Use-Case beschreibt das Hinzufügen und Ändern bestehender oder neuer mi
 
 === Kurzbeschreibung der Akteure
 
-Projektleitung
+Manager
 
 Möchte eine eingegangene Krankmeldung eines Mitarbeiters, genehmigte Urlaubszeiten, Fehlzeiten mit/ohne Lohnausgleich in die Mitarbeitereinsatzplanung eintragen.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-Die Projektleitung besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um kurzftistige und langfristige Fehlzeiten der jeweiligen Mitarbeiter zu dokumentieren.
+Der Manager besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um kurzftistige und langfristige Fehlzeiten der jeweiligen Mitarbeiter zu dokumentieren.
 
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn die Projektleitung die Software zur Mitarbeitereinsatzplanung gestartet hat.
-. Die Projektleitung meldet sich mit den benutzerbezogenen Anmeldetedaten an.
+. Der Use Case beginnt, wenn der Manager die Software zur Mitarbeitereinsatzplanung gestartet hat.
+. Der Manager meldet sich mit den benutzerbezogenen Anmeldetedaten an.
 . Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
 . Auswahl der Funktion: Mitarbeiter verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
 . Es öffnet sich ein Filtermenü, mit dessen Hilfe der jeweilige Mitarbeiter gesucht werden kann.

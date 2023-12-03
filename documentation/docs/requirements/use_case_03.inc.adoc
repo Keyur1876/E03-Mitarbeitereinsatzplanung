@@ -2,44 +2,45 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC03 Hinzufügen von Aufgaben in Projekten
+== Use-Case: UC03 Zuordnung von Mitarbeitern zu Projekten
 
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt das Einpflegen von speziellen Aufgaben, die in dem jeweiligen Projekt realisiert werden sollen.
+Dieser Use-Case beschreibt die Verteilung von Projekten an bestimmte Projektleiter bzw. Mitarbeiter.
 
 === Kurzbeschreibung der Akteure
 
-Projektleitung
+* Manager
 
-Möchte zur besseren Strukturierung und Aufgabenwahrnehmung in einem Projekt, ausgewählte Aufgaben an Mitarbeiter zuweisen.
+Möchte bevorstehende Projekte an Projektleiter zuweisen.
+
+* Projektleiter
+
+Möchte dem ihm zugewiesenen Projekt, Mitarbeiter zuordnen.
 
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen
 
-Die Projektleitung besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um Änderungen an Projekten vornehmen zu können.
+Der Manager/Projektleiter besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um Änderungen an Projekten vornehmen zu können.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn die Projektleitung die Software zur Mitarbeitereinsatzplanung gestartet hat.
-. Die Projektleitung meldet sich mit den benutzerbezogenen Anmeldetedaten an.
+. Der Use Case beginnt, wenn der Projektleiter/Manager die Software zur Mitarbeitereinsatzplanung gestartet hat.
+. Der Projektleiter/Manager meldet sich mit den benutzerbezogenen Anmeldetedaten an.
 . Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
-. Auswahl der Funktion: Projekte verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
-. Ein Umtermenü erscheint, hier kann der Benutzer folgende Funktionen auswählen:
-.. neues Projekt hinzufügen
-.. Projekt bearbeiten
-. Wählt der Benutzer die Funktion ii., öffnet sich ein Filtermenü, mit dessen Hilfe das zu bearbeitende Projekt gesucht werden kann.
-. Wurde das entsprechende Projekt ausgewählt, wird der Benutzer zu einem Formular weitergeleitet, welches bereits vorhandene Angaben zu dem Projekt beinhaltet.
-. Der Benutzer kann nun Aufgaben im Projekt benennen und diese an die jeweiligen Mitarbeiter vergeben.
-. Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.
+. Auf dieser Start-Übersicht kann ein Icon mit einem Kalender angeklickt werden.
+. Nun wird der Benutzer zum Kalender weitergeleitet und kann bestimmte Zeiträume auswählen in denen Projekte geplant sind.
+. Der Benutzer wird nun zur nächsten Seite weitergeleitet.
+. Über ein Drop-Down Menü können nun Mitarbeiter ausgewählt werden, die an diesem Projekt, in einem bestimmten Zeitraum arbeiten sollen.
+. Abschließend werden alle Änderungen über den Button Änderungen Speichern in das System übernommen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 8. abbricht, ohne dass der Schritt 9. durchgeführt wurde, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
+Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 7. abbricht, ohne dass der Schritt 8. durchgeführt wurde, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
 
 //==== <Alternativer Ablauf 1>
 //Wenn <Akteur> im Schritt <x> des Standardablauf <etwas //macht>, dann
@@ -67,8 +68,8 @@ Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 8. abbricht, o
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-* Das System hat die vollständigen Änderungen des Projektes das bearbeitet wurde gespeichert.
-* Falls konkrete Mitarbeiter bei der Aufgabenverteilung in einem Projekt benannt wurden, so ist diese Zuordnung in der individuellen Einsatzplanung des jeweiligen Mitarbeiters verzeichnet.
+* Das System hat die vollständigen Änderungen des Projektes gespeichert.
+* Die Zugehörigkeit der Mitarbeiter zu einem Projekt ist der individuellen Einsatzplanung des jeweiligen Mitarbeiters verzeichnet.
 
 //==== <Nachbedingung 1>
 
