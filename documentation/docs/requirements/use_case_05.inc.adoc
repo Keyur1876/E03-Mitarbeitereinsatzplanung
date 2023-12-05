@@ -2,38 +2,49 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC05 Verwaltung personenbezogener Daten
+== Use-Case: UC05 Projektbezogene Daten ändern
 
 === Kurzbeschreibung
-Dieser Use-Case beschreibt das Einpflegen neuer Mitarbeiterdaten und die Aktualisierung bestehender Mitarbeiterdaten.
+
+Dieser Use-Case beschreibt die Verwaltung bereits bestehender Projekte durch den Projektleiter oder Manager.
 
 === Kurzbeschreibung der Akteure
 
-Mitarbeiter 
+Projektleiter/Manager
 
-Möchte seine bisher bei der Develappers GmbH hinterlegten persönlichen Daten ändern und ergänzen.
+Möchte Änderungen in einem bestehendem Projekt vornehmen.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-Der Mitarbeiter besitzt die entsprechenden Zugriffsrechte bzw. aktuelle Anmeldedaten, um Änderungen an seinen Stammdaten vornehmen zu können.
+Der Projektleiter/Manager besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um Änderungen oder das Hizufügen an/von Projekten vornehmen zu können.
+
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn der Mitarbeiter die Software zur Mitarbeitereinsatzplanung gestartet hat.
-. Der Mitarbeiter meldet sich mit den benutzerbezogenen Anmeldetedaten an.
+. Der Use Case beginnt, wenn der Projektleiter/Manager die Software zur Mitarbeitereinsatzplanung gestartet hat.
+. Die Projektleitung meldet sich mit den benutzerbezogenen Anmeldetedaten an.
 . Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
-. Auswahl der Funktion: Meine Daten verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
-. Es erscheint ein Formular, welches bereits gespeicherte Daten des Mitarbeiters beinhaltet.
-. Der Mitarbeiter aktualisiert oder fügt neue Daten hinzu.
-. Uber den Button Änderungen Speichern, werden die Aktualisierungen in das System übernommen.
+. Auswahl der Funktion: Projekte verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Ein Umtermenü erscheint, hier kann der Benutzer folgende Funktionen auswählen:
+.. neues Projekt hinzufügen
+.. Projekt bearbeiten
+. Wählt der Benutzer die Funktion ii., öffnet sich ein Drop-Down Menü, mit dessen Hilfe das zu bearbeitende Projekt gesucht werden kann.
+. Wurde das entsprechende Projekt ausgewählt, wird der Benutzer zu einem Formular weitergeleitet, welches bereits vorhandene Angaben zu dem Projekt beinhaltet.
+. Der Benutzer kann nun gewünschte Änderungen vornehmen.
+. Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.
 . Der Use Case ist abgeschlossen.
+
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 6. abbricht, ohne dass der Schritt 7. durchgeführt wurde, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
+==== <Alternativer Ablauf 1>
+Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 8. abbricht, ohne dass der Schritt 9. durchgeführt wurde, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
+
+==== <Alternativer Ablauf 2>
+Wenn der Benutzer nach Schritt 9. zur Start-Übersicht zurückkehrt und auf den Icon mit einem Kalender klickt, kann dieser das soeben erstellte Projekt über den Kalender einem/oder mehreren bestimmten Mitarbeitern zuweisen.
 
 //==== <Alternativer Ablauf 1>
 //Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
@@ -60,9 +71,8 @@ Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 6. abbricht, o
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-* Das System hat die aktualisierten Stammdaten des jeweiligen Mitarbeiters gespeichert.
-* Die jeweiligen Stammdaten können nun auch zu Abrechnungszwecken von der Buchhaltung oder anderen verwalterischen Abteilungen der Firma genutzt werden und sind stets aktuell.
-
+* Das System hat die vollständigen Änderungen des Projektes das bearbeitet wurde gespeichert.
+* Falls konkrete Mitarbeiter einem Projekt zugeordnet wurden, so ist diese Zuordnung in der individuellen Einsatzplanung des jeweiligen Mitarbeiters verzeichnet.
 //==== <Nachbedingung 1>
 
 === Besondere Anforderungen
@@ -70,6 +80,5 @@ Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 6. abbricht, o
 Usability
 
 • Der Use Case gehört zu der grundlegenden Funktionalität des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
-
 
 //==== <Besondere Anforderung 1>

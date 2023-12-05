@@ -2,52 +2,52 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC04 Verwaltung von kurzftigen und langfristigen Abwesenheitszeiten
-
+== Use-Case: UC04 Projekt erstellen
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt das Hinzufügen und Ändern bestehender oder neuer mitarbeiterbezogener Abwesenheitszeiten. 
+Dieser Use-Case beschreibt das Erstellen neuer Projekte durch den Projektleiter oder Manager.
 
 === Kurzbeschreibung der Akteure
 
-Manager
+Projektleiter/Manager
 
-Möchte eine eingegangene Krankmeldung eines Mitarbeiters, genehmigte Urlaubszeiten, Fehlzeiten mit/ohne Lohnausgleich in die Mitarbeitereinsatzplanung eintragen.
+Möchte ein neues Projekt einpflegen, das von den Mitarbeitern realisiert werden soll.
 
 === Vorbedingungen
-//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-Der Manager besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um kurzftistige und langfristige Fehlzeiten der jeweiligen Mitarbeiter zu dokumentieren.
+Der Projektleiter/Manager besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, zur Einsicht und um Änderungen oder das Hizufügen an/von Projekten vornehmen zu können.
 
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn der Manager die Software zur Mitarbeitereinsatzplanung gestartet hat.
-. Der Manager meldet sich mit den benutzerbezogenen Anmeldetedaten an.
-. Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
-. Auswahl der Funktion: Mitarbeiter verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
-. Es öffnet sich ein Filtermenü, mit dessen Hilfe der jeweilige Mitarbeiter gesucht werden kann.
-. Wurde der entsprechende Mitarbeiter ausgewählt, wird der Benutzer zu der persönlichen Einsatzplanung des Mitarbeiters, in Form eines Jahreskalenders weitergeleitet.
-. Der Benutzer kann nun die jeweiligen Tage anklicken und über ein Drop-Down Menü die gewünschten Fehlzeit-Gründe eintragen.
-. Abschließend werden alle hinzugefügten Fehlzeiten über den Button Änderungen Speichern in das System übernommen.
+. Der Use Case beginnt, wenn der Projektleiter/Manager die Software zur Mitarbeitereinsatzplanung gestartet hat.
+. Projektleiter/Manager meldet sich mit den benutzerbezogenen Anmeldetedaten an.
+. Kalender-Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet:
+.. Jeden Tag hat Prozzesse von Projekten
+. Auswahl der Funktion: Tagen auswählen und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Ein Umtermenü erscheint, hier kann der Benutzer folgende Funktionen auswählen:
+.. neues Projekt hinzufügen
+.. ausgewählte Projekt bearbeiten 
+. Wählt der Benutzer die Funktion i., wird dieser zu einem Formular weitergeleitet, welches Angaben zu dem neuen Projekt erwartet.
+. Benutzer fügt die geforderten projektbezogenen Daten und Attribute in das Formular ein.
+. Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-Wenn der Benutzer die Bearbeitung des Kalenders unter dem Schritt 7 abbricht, ohne dass der Schritt 8. durchgeführt wurden, werden keine Änderungen übernommen und Kalender erscheint im Ursprungszustand.
 
-//==== <Alternativer Ablauf 1>
-//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-//. <Ablauf beschreiben>
-//. Der Use Case wird im Schritt <y> fortgesetzt.
+==== <Alternativer Ablauf 1>
+Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 7. abbricht, ohne dass der Schritt 8. durchgeführt wurde, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
+
+==== <Alternativer Ablauf 2>
+Wenn der Benutzer nach Schritt 8. zur Start-Übersicht zurückkehrt und auf den Icon mit einem Kalender klickt, kann dieser das soeben erstellte Projekt über den Kalender einem/oder mehreren bestimmten Mitarbeitern zuweisen.
+
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
-
 ---keine Unterabläufe vorhanden---
-
 //==== <Unterablauf 1>
 //. <Unterablauf 1, Schritt 1>
 //. …
@@ -63,15 +63,17 @@ Wenn der Benutzer die Bearbeitung des Kalenders unter dem Schritt 7 abbricht, oh
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-* Das System hat die vollständigen Abwesenheits-Änderungen des jeweiligen Mitarbeiters gespeichert.
-* Die durch Ausfall betreffenden Mitarbeiter werden in einer visualisierten Darstellung der aktuellen Auslastung aufgenommen.
+* Das System hat das neu eingepflegte Projekt gespeichert.
+* Das System hat die vollständigen Daten des Projektes das hinzugefügt wurde gespeichert.
+* Falls konkrete Mitarbeiter einem Projekt zugeordnet wurden, so ist diese Zuordnung in der individuellen Einsatzplanung des jeweiligen Mitarbeiters verzeichnet.
 
 //==== <Nachbedingung 1>
 
-=== Besondere Anforderungen
+//=== Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+==== Besondere Anforderungen
+
 Usability
 
 • Der Use Case gehört zu der grundlegenden Funktionalität des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
-
-//==== <Besondere Anforderung 1>

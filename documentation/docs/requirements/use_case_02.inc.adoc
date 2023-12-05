@@ -2,49 +2,41 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC02 Projektbezogene Daten ändern
+== Use-Case: UC02 Kurzfristige und langfristige Abwesenheitszeiten in der Einsatzplanung eintragen
 
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt die Verwaltung bereits bestehender Projekte durch den Projektleiter oder Manager.
+Dieser Use-Case beschreibt das Hinzufügen und Ändern bestehender oder neuer mitarbeiterbezogener Abwesenheitszeiten. 
 
 === Kurzbeschreibung der Akteure
 
-Projektleiter/Manager
+Manager
 
-Möchte Änderungen in einem bestehendem Projekt vornehmen.
+Möchte eine eingegangene Krankmeldung eines Mitarbeiters, genehmigte Urlaubszeiten, Fehlzeiten mit/ohne Lohnausgleich in die Mitarbeitereinsatzplanung eintragen.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-Der Projektleiter/Manager besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um Änderungen oder das Hizufügen an/von Projekten vornehmen zu können.
+Der Manager besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um kurzftistige und langfristige Fehlzeiten der jeweiligen Mitarbeiter zu dokumentieren.
 
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn der Projektleiter/Manager die Software zur Mitarbeitereinsatzplanung gestartet hat.
-. Die Projektleitung meldet sich mit den benutzerbezogenen Anmeldetedaten an.
+. Der Use Case beginnt, wenn der Manager die Software zur Mitarbeitereinsatzplanung gestartet hat.
+. Der Manager meldet sich mit den benutzerbezogenen Anmeldetedaten an.
 . Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
-. Auswahl der Funktion: Projekte verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
-. Ein Umtermenü erscheint, hier kann der Benutzer folgende Funktionen auswählen:
-.. neues Projekt hinzufügen
-.. Projekt bearbeiten
-. Wählt der Benutzer die Funktion ii., öffnet sich ein Drop-Down Menü, mit dessen Hilfe das zu bearbeitende Projekt gesucht werden kann.
-. Wurde das entsprechende Projekt ausgewählt, wird der Benutzer zu einem Formular weitergeleitet, welches bereits vorhandene Angaben zu dem Projekt beinhaltet.
-. Der Benutzer kann nun gewünschte Änderungen vornehmen.
-. Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.
+. Auswahl der Funktion: Mitarbeiter verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Es öffnet sich ein Filtermenü, mit dessen Hilfe der jeweilige Mitarbeiter gesucht werden kann.
+. Wurde der entsprechende Mitarbeiter ausgewählt, wird der Benutzer zu der persönlichen Einsatzplanung des Mitarbeiters, in Form eines Jahreskalenders weitergeleitet.
+. Der Benutzer kann nun die jeweiligen Tage anklicken und über ein Drop-Down Menü die gewünschten Fehlzeit-Gründe eintragen.
+. Abschließend werden alle hinzugefügten Fehlzeiten über den Button Änderungen Speichern in das System übernommen.
 . Der Use Case ist abgeschlossen.
-
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== <Alternativer Ablauf 1>
-Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 8. abbricht, ohne dass der Schritt 9. durchgeführt wurde, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
-
-==== <Alternativer Ablauf 2>
-Wenn der Benutzer nach Schritt 9. zur Start-Übersicht zurückkehrt und auf den Icon mit einem Kalender klickt, kann dieser das soeben erstellte Projekt über den Kalender einem/oder mehreren bestimmten Mitarbeitern zuweisen.
+Wenn der Benutzer die Bearbeitung des Kalenders unter dem Schritt 7 abbricht, ohne dass der Schritt 8. durchgeführt wurden, werden keine Änderungen übernommen und Kalender erscheint im Ursprungszustand.
 
 //==== <Alternativer Ablauf 1>
 //Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
@@ -53,6 +45,7 @@ Wenn der Benutzer nach Schritt 9. zur Start-Übersicht zurückkehrt und auf den 
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
 ---keine Unterabläufe vorhanden---
 
 //==== <Unterablauf 1>
@@ -63,7 +56,6 @@ Wenn der Benutzer nach Schritt 9. zur Start-Übersicht zurückkehrt und auf den 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 --- keine abweichenden Szenarios vom Standardablauf ---
-
 //==== <Szenario 1>
 //. <Szenario 1, Schritt 1>
 //. …
@@ -71,8 +63,9 @@ Wenn der Benutzer nach Schritt 9. zur Start-Übersicht zurückkehrt und auf den 
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-* Das System hat die vollständigen Änderungen des Projektes das bearbeitet wurde gespeichert.
-* Falls konkrete Mitarbeiter einem Projekt zugeordnet wurden, so ist diese Zuordnung in der individuellen Einsatzplanung des jeweiligen Mitarbeiters verzeichnet.
+* Das System hat die vollständigen Abwesenheits-Änderungen des jeweiligen Mitarbeiters gespeichert.
+* Die durch Ausfall betreffenden Mitarbeiter werden in einer visualisierten Darstellung der aktuellen Auslastung aufgenommen.
+
 //==== <Nachbedingung 1>
 
 === Besondere Anforderungen

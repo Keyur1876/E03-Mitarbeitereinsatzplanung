@@ -2,7 +2,7 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC07: Datenimport und -export
+== Use-Case: UC07: Importieren und Exportieren von Daten
 
 === Kurzbeschreibung
 

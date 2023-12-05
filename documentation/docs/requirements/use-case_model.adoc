@@ -10,13 +10,13 @@ Im nachfolgenden Abschnitt werden alle identifizierten Use Cases, deren Akteure 
 
 # 2.2 Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
-* UC01: Erstellung von Projekten
-* UC02: Projektbezogene Daten ändern
-* UC03: Zuordnung von Mitarbeitern zu Projekten
-* UC04: Verwaltung von kurzftigen und langfristigen         Abwesenheitszeiten
-* UC05: Verwaltung personenbezogener Daten
-* UC06: Nutzer- und Rechteverwaltung
-* UC07: Datenimport und -export
+* UC01: Mitarbeiter Projekten zuordnen
+* UC02: Kurzfristige und langfristige Abwesenheitszeiten in    der Einsatzplanung eintragen
+* UC03: Personenbezogene Daten ändern
+* UC04: Projekt erstellen
+* UC05: Projektbezogene Daten ändern
+* UC06: Ändern von Nutzer- und Zugriffsrechten 
+* UC07: Importieren und Exportieren von Daten
 
 
 # 2.3 Use Case Diagramm

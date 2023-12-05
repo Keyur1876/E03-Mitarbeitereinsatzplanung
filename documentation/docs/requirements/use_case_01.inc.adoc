@@ -2,52 +2,56 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC01 Erstellung von Projekten
+== Use-Case: UC01 Mitarbeiter Projekten zuordnen
+
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt das Erstellen neuer Projekte durch den Projektleiter oder Manager.
+Dieser Use-Case beschreibt die Verteilung von Projekten an bestimmte Projektleiter bzw. Mitarbeiter.
 
 === Kurzbeschreibung der Akteure
 
-Projektleiter/Manager
+* Manager
 
-Möchte ein neues Projekt einpflegen, das von den Mitarbeitern realisiert werden soll.
+Möchte bevorstehende Projekte an Projektleiter zuweisen.
+
+* Projektleiter
+
+Möchte dem ihm zugewiesenen Projekt, Mitarbeiter zuordnen.
+
 
 === Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen
 
-Der Projektleiter/Manager besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, zur Einsicht und um Änderungen oder das Hizufügen an/von Projekten vornehmen zu können.
-
+Der Manager/Projektleiter besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rolle, um Änderungen an Projekten vornehmen zu können.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt, wenn der Projektleiter/Manager die Software zur Mitarbeitereinsatzplanung gestartet hat.
-. Projektleiter/Manager meldet sich mit den benutzerbezogenen Anmeldetedaten an.
-. Kalender-Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet:
-.. Jeden Tag hat Prozzesse von Projekten
-. Auswahl der Funktion: Tagen auswählen und der Benutzer wird zur nächsten Seite weitergeleitet.
-. Ein Umtermenü erscheint, hier kann der Benutzer folgende Funktionen auswählen:
-.. neues Projekt hinzufügen
-.. ausgewählte Projekt bearbeiten 
-. Wählt der Benutzer die Funktion i., wird dieser zu einem Formular weitergeleitet, welches Angaben zu dem neuen Projekt erwartet.
-. Benutzer fügt die geforderten projektbezogenen Daten und Attribute in das Formular ein.
-. Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.
+. Der Projektleiter/Manager meldet sich mit den benutzerbezogenen Anmeldetedaten an.
+. Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
+. Auf dieser Start-Übersicht kann ein Icon mit einem Kalender angeklickt werden.
+. Nun wird der Benutzer zum Kalender weitergeleitet und kann bestimmte Zeiträume auswählen in denen Projekte geplant sind.
+. Der Benutzer wird nun zur nächsten Seite weitergeleitet.
+. Über ein Drop-Down Menü können nun Mitarbeiter ausgewählt werden, die an diesem Projekt, in einem bestimmten Zeitraum arbeiten sollen.
+. Abschließend werden alle Änderungen über den Button Änderungen Speichern in das System übernommen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-
-==== <Alternativer Ablauf 1>
 Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 7. abbricht, ohne dass der Schritt 8. durchgeführt wurde, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
 
-==== <Alternativer Ablauf 2>
-Wenn der Benutzer nach Schritt 8. zur Start-Übersicht zurückkehrt und auf den Icon mit einem Kalender klickt, kann dieser das soeben erstellte Projekt über den Kalender einem/oder mehreren bestimmten Mitarbeitern zuweisen.
-
+//==== <Alternativer Ablauf 1>
+//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas //macht>, dann
+//. <Ablauf beschreiben>
+//. Der Use Case wird im Schritt <y> fortgesetzt.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
 ---keine Unterabläufe vorhanden---
+
 //==== <Unterablauf 1>
 //. <Unterablauf 1, Schritt 1>
 //. …
@@ -56,6 +60,7 @@ Wenn der Benutzer nach Schritt 8. zur Start-Übersicht zurückkehrt und auf den 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 --- keine abweichenden Szenarios vom Standardablauf ---
+
 //==== <Szenario 1>
 //. <Szenario 1, Schritt 1>
 //. …
@@ -63,17 +68,14 @@ Wenn der Benutzer nach Schritt 8. zur Start-Übersicht zurückkehrt und auf den 
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-* Das System hat das neu eingepflegte Projekt gespeichert.
-* Das System hat die vollständigen Daten des Projektes das hinzugefügt wurde gespeichert.
-* Falls konkrete Mitarbeiter einem Projekt zugeordnet wurden, so ist diese Zuordnung in der individuellen Einsatzplanung des jeweiligen Mitarbeiters verzeichnet.
+* Das System hat die vollständigen Änderungen des Projektes gespeichert.
+* Die Zugehörigkeit der Mitarbeiter zu einem Projekt ist der individuellen Einsatzplanung des jeweiligen Mitarbeiters verzeichnet.
 
 //==== <Nachbedingung 1>
 
-//=== Besondere Anforderungen
+=== Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-
-==== Besondere Anforderungen
-
 Usability
 
 • Der Use Case gehört zu der grundlegenden Funktionalität des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
+//==== <Besondere Anforderung 1>
