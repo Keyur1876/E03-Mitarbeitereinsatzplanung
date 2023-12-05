@@ -1,4 +1,6 @@
 ﻿ID;Datum;Name;Beschreibung;Typ;IMP;PRB;MAG;Owner;Gegenmaßnahme
-1;01.12.2019;Teammitglied fällt aus;Mitglied des Teams kann (dauerhaft oder zeitweise) nicht mehr am Projekt teilnehmen; z.B. wegen Krankheit oder Studiengangswechsel;4;20%;0,8;Max Müller;Backup-Rollen nutzen und Know-How zwischen diesen Personen kontinuierlich teilen
-2;-;-;-;-;-;-;-;-;-
-3;-;-;-;-;-;-;-;-;-
+1;05.12.2023;Teammitglied fällt aus;Mitglied des Teams kann (dauerhaft oder zeitweise) nicht mehr am Projekt teilnehmen; Ressourcen;4;20%;0,8;Projektmanagement;Backup-Rollen nutzen und Know-How zwischen diesen Personen kontinuierlich teilen
+2;05.12.2023;Kommunikation;Entstehung von Redundanzen und Missverständnissen durch fehlende Absprachen-;Geschäftlich;4;50%;2;Projektmanagement und Team;Absprachen bzw. bereits erledigte Schritte auf Notion, Git Hub oder Protokoll festhalten. Sollte es zu dringenden Problemen kommen, so kann eine direkte Rücksprache mit den Teammitglieder, Coach oder anderen Ansprechpartnern getroffen werden.
+3;05.12.2023;-;-;-;-;-;-;-;-
+4;05.12.2023;-;-;-;-;-;-;-;-
+5;05.12.2023;-;-;-;-;-;-;-;-
