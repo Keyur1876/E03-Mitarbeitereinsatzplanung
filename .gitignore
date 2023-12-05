@@ -18,3 +18,11 @@ API/obj/Debug/net7.0/API.dll
 .vscode/launch.json
 ssl/localhost-key.pem
 ssl/localhost.pem
+API/obj/Debug/net7.0/API.pdb
+client/ssl/localhost-key.pem
+client/ssl/localhost.pem
+API/appsettings.json
+API/appsettings.Development.json
+# Ignore development-specific app settings
+API/appsettings.Development.json
+API/obj/Debug/net7.0/API.pdb

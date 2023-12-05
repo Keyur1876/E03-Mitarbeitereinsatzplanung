@@ -10,6 +10,8 @@ import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +19,15 @@ import { AppRoutingModule } from './app-routing.module';
     NavComponent,
     HomeComponent,
     EmployeeDashboardComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-    AppRoutingModule, // Add this line to import the AppRoutingModule
+    AppRoutingModule,
+    BsDropdownModule.forRoot(), // Add this line to import the AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

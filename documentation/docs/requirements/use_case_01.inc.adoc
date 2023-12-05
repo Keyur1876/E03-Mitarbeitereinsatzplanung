@@ -23,11 +23,12 @@ Der Projektleiter/Manager besitzt die entsprechenden Zugriffsrechte bzw. die erf
 
 . Der Use Case beginnt, wenn der Projektleiter/Manager die Software zur Mitarbeitereinsatzplanung gestartet hat.
 . Projektleiter/Manager meldet sich mit den benutzerbezogenen Anmeldetedaten an.
-. Kalender-Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
-. Auswahl der Funktion: Projekte verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Kalender-Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet:
+.. Jeden Tag hat Prozzesse von Projekten
+. Auswahl der Funktion: Tagen auswählen und der Benutzer wird zur nächsten Seite weitergeleitet.
 . Ein Umtermenü erscheint, hier kann der Benutzer folgende Funktionen auswählen:
 .. neues Projekt hinzufügen
-.. Projekt bearbeiten
+.. ausgewählte Projekt bearbeiten 
 . Wählt der Benutzer die Funktion i., wird dieser zu einem Formular weitergeleitet, welches Angaben zu dem neuen Projekt erwartet.
 . Benutzer fügt die geforderten projektbezogenen Daten und Attribute in das Formular ein.
 . Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.

@@ -1,19 +1,17 @@
-﻿using API.Data;
+﻿using API;
+using API.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace API.Extensions
+public static class ApplicationsServiceExtensions
 {
-    public static class ApplicationsServiceExtensions
+    public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
     {
-        public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
-        {
-            services.AddDbContext<DataContext>(opt => 
-                opt.UseSqlite(config.GetConnectionString("DefaultConnection")));
+        services.AddDbContext<DataContext>(opt => 
+            opt.UseSqlServer(config.GetConnectionString("DefaultConnection"))); // UseSqlServer instead of UseSqlite
 
-            services.AddCors();
-            services.AddScoped<ITokenService, TokenService>();
+        services.AddCors();
+        services.AddScoped<ITokenService, TokenService>();
 
-            return services;
-        } 
-    }
+        return services;
+    } 
 }
