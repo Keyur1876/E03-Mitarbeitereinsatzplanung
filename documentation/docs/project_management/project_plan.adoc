@@ -6,10 +6,15 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-//Briefly describe the content of the project plan.
+In dem vorliegenden Projektplan werden die Organisation, Arbeitsweise und Ziele des Teams detailliert aufgeschlüsselt.
+Die in diesem Kontext erstellten Dokumente werden im Laufe der Projektarbeit ergänzt und verbessert, nach einem neu gewonnenem Kenntnisstand. Ziel des Projektplans ist es eine Organisationsstruktur zu schaffen, sowohl innerhalb des Teams, als auch gegenüber dem Auftraggeber und anderen Beteiligten.
 
 
 == Projektorganisation
+
+=== Teammitglieder
+
+
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
 
 
