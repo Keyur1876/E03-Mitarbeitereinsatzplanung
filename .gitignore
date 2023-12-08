@@ -32,3 +32,5 @@ API/obj/API.csproj.nuget.g.targets
 API/obj/project.assets.json
 API/obj/project.nuget.cache
 API/obj/Debug/net7.0/API.GeneratedMSBuildEditorConfig.editorconfig
+API/obj/
+API/.DS_Store
