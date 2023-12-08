@@ -1,19 +1,16 @@
-
-
 <div class="container mt-5">
-    <div *ngIf="!registerMode" style="text-align: center;">
+  <div *ngIf="!registerMode" style="text-align: center;">
     <h1>Welcome to Our Software</h1>
-        <div class="text-center">
-        <p class="lead">Efficient Work Planning for a Productive Workplace!</p>
-        <button (click)="registerToggle()" class="btn btn-primary btn-lg me-2">Register</button>
-        </div>
+    <div class="text-center">
+      <p class="lead">Efficient Work Planning for a Productive Workplace!</p>
+      <button (click)="registerToggle()" class="btn btn-primary btn-lg me-2">Register</button>
     </div>
+  </div>
 
-    <div *ngIf="registerMode" class="container">
-        <div class="row justify-content-center"></div>
-       
-            <app-register></app-register>
-        
-    </div>
+  <div *ngIf="registerMode" class="container">
+    <div class="row justify-content-center"></div>
+
+    <app-register></app-register>
+
+  </div>
 </div>
-  

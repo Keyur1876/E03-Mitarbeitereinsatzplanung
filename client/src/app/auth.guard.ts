@@ -4,11 +4,10 @@ import { CanActivate, Router } from '@angular/router';
 import { AccountService } from '../app/services/account.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthGuard implements CanActivate {
-
-  constructor(private accountService: AccountService, private router: Router) { }
+  constructor(private accountService: AccountService, private router: Router) {}
 
   canActivate(): boolean {
     if (this.accountService.isLoggedIn()) {
