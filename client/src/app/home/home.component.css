@@ -1,0 +1,59 @@
+/* Stile für die Sidebar */
+/* Stile für die Sidebar */
+#sidebar {
+  width: 80px;
+  height: calc(100vh - 60px);
+  position: fixed;
+  left: 0;
+  top: 60px;
+  background: #f7f7f7;
+  transition: width 0.5s;
+  overflow-x: hidden;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar ul li {
+  border-bottom: none;
+}
+
+#sidebar ul li a {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  text-decoration: none;
+  color: #808080;
+  transition: background-color 0.3s;
+}
+
+#sidebar ul li a:hover {
+  color: #606060;
+}
+
+#sidebar i {
+  min-width: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.tooltip {
+  flex-grow: 1;
+  padding-left: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  white-space: nowrap;
+}
+
+#sidebar:hover {
+  width: 250px;
+}
+
+#sidebar:hover .tooltip {
+  opacity: 1;
+}
