@@ -36,6 +36,11 @@ Die in diesem Kontext erstellten Dokumente werden im Laufe der Projektarbeit erg
 
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
+Grundlegend wird für die Softwareentwicklung und das gesamte Projektmanagement der Open Unified Process genutzt. Durch den agilen Entwicklungsprozess werden Praktiken und Arbeitsweisen mit jedem Iterationsschritt kontinuierlich verbessert und erweitert. Dies führt dazu, dass die einzelnen Iterationsschritte, nach der Bearbeitung, nicht vollständig abgeschlossen sind. Vielmehr werden diese öfter aufgenommen und mit neuen Informationen ergänzt oder nach Bedarf verbessert. Durch die iterative Arbeitsweise kann das Team sehr gut auf Änderungen seitens der Stakeholder reagieren. Außerdem kann vermieden werden, dass zu viel Zeit für falsche Lösungen aufgewendet wird. 
+Schlussfolgernd ist zu sagen, dass die Einhaltung des Open Unified Prozesses zu einer erfolgreichen Projektumsetzung führt.
+
+Für die Umsetzung erfolgt für jede Phase ein Teammeeting in dem besprochen wird, welche Punkte in dem aktuellen Iterationsschritt bearbeitet werden müssen. Es erfolgt ein gemeinsames Brainstorming aus dem hervorgeht welche Teammitglieder die geforderten Aufgaben übernehmen und wie die Umsetzung dieser erfolgen wird. Außerdem erfolgt ein grundlegender Abgleich des Verständnisses, damit jedes Teammitglied auf dem gleichen Stand ist. Im Falle von Fragen werden diese gemeinschaftlich geklärt oder entsprechend dokumentiert, um dies dem Auftraggeber bei dem nächsten Meeting stellen zu können.
+Zum Schluss erfolgt ein Resume des Meetings in Form eines zusammengefassten Meilensteins, der in der Projektplanung notiert wird. Detailierte Informationen zum aktuellen Iterationsschritt werden in der Iterationsplanung niedergeschrieben.
 
 
 == Meilensteine und Ziele
