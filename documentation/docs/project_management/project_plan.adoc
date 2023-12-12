@@ -40,7 +40,7 @@ Grundlegend wird für die Softwareentwicklung und das gesamte Projektmanagement 
 Schlussfolgernd ist zu sagen, dass die Einhaltung des Open Unified Prozesses zu einer erfolgreichen Projektumsetzung führt.
 
 Für die Umsetzung erfolgt für jede Phase ein Teammeeting in dem besprochen wird, welche Punkte in dem aktuellen Iterationsschritt bearbeitet werden müssen. Es erfolgt ein gemeinsames Brainstorming aus dem hervorgeht welche Teammitglieder die geforderten Aufgaben übernehmen und wie die Umsetzung dieser erfolgen wird. Außerdem erfolgt ein grundlegender Abgleich des Verständnisses, damit jedes Teammitglied auf dem gleichen Stand ist. Im Falle von Fragen werden diese gemeinschaftlich geklärt oder entsprechend dokumentiert, um dies dem Auftraggeber bei dem nächsten Meeting stellen zu können.
-Zum Schluss erfolgt ein Resume des Meetings in Form eines zusammengefassten Meilensteins, der in der Projektplanung notiert wird. Detailierte Informationen zum aktuellen Iterationsschritt werden in der Iterationsplanung niedergeschrieben.
+Zum Schluss erfolgt ein Resume des Meetings in Form eines zusammengefassten Meilensteins, der in der Projektplanung notiert wird. Detaillierte Informationen zum aktuellen Iterationsschritt werden in der Iterationsplanung niedergeschrieben.
 
 
 == Meilensteine und Ziele
