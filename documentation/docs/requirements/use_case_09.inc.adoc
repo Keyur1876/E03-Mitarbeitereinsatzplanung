@@ -1,0 +1,83 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
+
+
+== Use-Case: UC02: Projekt bearbeiten
+
+
+=== Kurzbeschreibung
+
+Dieser Use-Case beschreibt Stammdaten von Projekten.
+
+=== Kurzbeschreibung der Akteure
+
+* Manager
+* Administrator
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+* Benutzer ist erfolgreich angemeldet.
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+. Der Use Case beginnt, wenn der User auf Projekten von Kalendar auswählen.
+. Projektname und Projektbeschreibung wird angezeigt.
+. Auslastung von Projekt wird automatisch gerechnet.
+. Kalendar mit aktuellen Tag wird angezeigt.
+. Gesamtdatem von Task (Summe von Task, fertige Task, bearbeitende Task)
+. Tabelle zur Darstellung von Task zu bearbeiten:
+* Taskname.
+* Fälligkeitsdatum zur Plannung.
+* Status zur Tracking mit Combo Box (In Bearbeitung, Fertig, Überfällig).
+* Task hinzufügen.
+. Tabelle zur Darstellung des kommenden Termin:
+* Termin bearbeiten.
+* Termin hinzufügen.
+. Zuordnung Teamitgliedern in dieser Projekt:
+* Teammiglieder hinzufügen.
+* Teammiglieder löschen.
+. Der Use Case ist abgeschlossen.
+
+=== Alternative Abläufe
+
+* Wenn User die Software nicht benutzen, wird der System automatisch abgemeldet.
+* Wenn Internet-Zugang abgebrochen wird, wurden Änderungen nicht gespeichert.
+
+//==== <Alternativer Ablauf 1>
+//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+//. <Ablauf beschreiben>
+//. Der Use Case wird im Schritt <y> fortgesetzt.
+
+=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+---keine Unterabläufe vorhanden---
+
+//==== <Unterablauf 1>
+//. <Unterablauf 1, Schritt 1>
+//. …
+//. <Unterablauf 1, Schritt n>
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+--- keine abweichenden Szenarios vom Standardablauf ---
+
+//==== <Szenario 1>
+//. <Szenario 1, Schritt 1>
+//. …
+//. <Szenario 1, Schritt n>
+
+=== Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+//==== <Nachbedingung 1>
+* User kann gesamten Plannungsdaten übersehen und bearbeiten.
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+Usability
+
+• Der Use Case gehört zu der grundlegenden Funktionalität des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
+
+//==== <Besondere Anforderung 1>

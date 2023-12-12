@@ -34,11 +34,17 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: row; /* Kinder-Elemente nebeneinander */
-    align-items: flex-start; /* Kinder am Start der Kreuzachse ausrichten */
-    justify-content: flex-start; /* Kinder am Start der Hauptachse ausrichten */
-    height: 100vh; /* Container nimmt die volle Höhe des Viewports ein */
-    margin-top: 100px; /* Abstand von oben */
-    padding-left: 0; /* Entfernt das Padding auf der linken Seite, falls vorhanden */
-  }
+  display: flex;
+  flex-direction: row;
+  /* Kinder-Elemente nebeneinander */
+  align-items: flex-start;
+  /* Kinder am Start der Kreuzachse ausrichten */
+  justify-content: flex-start;
+  /* Kinder am Start der Hauptachse ausrichten */
+  height: 100vh;
+  /* Container nimmt die volle Höhe des Viewports ein */
+  margin-top: 100px;
+  /* Abstand von oben */
+  padding-left: 0;
+  /* Entfernt das Padding auf der linken Seite, falls vorhanden */
+}

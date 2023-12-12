@@ -10,18 +10,25 @@ Im nachfolgenden Abschnitt werden alle identifizierten Use Cases, deren Akteure 
 
 # 2.2 Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
-* UC01: Mitarbeiter Projekten zuordnen
-* UC02: Kurzfristige und langfristige Abwesenheitszeiten in    der Einsatzplanung eintragen
-* UC03: Personenbezogene Daten ändern
-* UC04: Projekt erstellen
-* UC05: Projektbezogene Daten ändern
-* UC06: Ändern von Nutzer- und Zugriffsrechten 
-* UC07: Importieren und Exportieren von Daten
+* UC01: Kalender und Sidebar-Menü übersehen
+* UC02: Projekt bearbeiten
+* UC03: Mitarbeiter Stammdaten hinterlegen
+* UC04: Neue Projekt hinzufügen
+* UC05: Benutzerdatei anmelden
+* UC06: Mitarbeiter hinzufügen
+* UC07: Mitarbeiter bearbeiten
+
 
 
 # 2.3 Use Case Diagramm
 // ...
-image::images.jpg[]
+
+.Usecase-diagramm mit PlantUML
+[plantuml, "{diagramsdir}/use-case_diagram", svg]
+....
+include::{plantumlsdir}/use-case_diagram.puml[]
+....
+
 //Fügen Sie nachfolgend alle detaillierten Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem use_case_01.inc.adoc Template basiert.
 
@@ -32,19 +39,19 @@ Ein `include` entfernt am Anfang und Ende eine möglich Leerzeile, was in Kombin
 ////
 
 <<<
-include::use_case_01.inc.adoc[]
+include::use_case_08.inc.adoc[]
 
 <<<
-include::use_case_02.inc.adoc[]
+include::use_case_09.inc.adoc[]
 
 <<<
-include::use_case_03.inc.adoc[]
+include::use_case_10.inc.adoc[]
 
 <<<
-include::use_case_04.inc.adoc[]
+include::use_case_11.inc.adoc[]
 
 <<<
-include::use_case_05.inc.adoc[]
+include::use_case_12.inc.adoc[]
 
 <<<
 include::use_case_06.inc.adoc[]

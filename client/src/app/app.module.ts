@@ -30,6 +30,6 @@ import { RegisterComponent } from './register/register.component';
     BsDropdownModule.forRoot(), // Add this line to import the AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

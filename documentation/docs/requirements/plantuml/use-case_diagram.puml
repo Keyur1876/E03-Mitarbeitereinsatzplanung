@@ -1,0 +1,37 @@
+@startuml example-usecase-diagram
+left to right direction
+
+' skin parameters for usecase with special stereotype
+skinparam usecase<<unspezifiziert>> {
+  BackgroundColor #eee
+  BorderColor #red
+  StereotypeFontColor #gray
+  StereotypeFontSize 10
+}
+
+actor Projektleiter
+actor Mitarbeiter
+actor Admin
+
+rectangle "Mitarbeitereinsatzplanung" {
+  usecase "UC01: Kalender und sidebar Menu übersehen" as uc01
+  usecase "UC02: Projekt bearbeiten" as uc02
+  usecase "UC03: Mitarbeiter stammdaten hinterlegen" as uc03
+  usecase "UC04: Neue Projekt hinzufügen" as uc04
+  usecase "UC05: Benutzerdatei anmelden" as uc05
+}
+
+Projektleiter -- uc01
+uc01 -- Mitarbeiter
+Projektleiter -- uc02
+Projektleiter .down.> uc02 : ändern
+Admin -- uc02
+Admin .down.> uc02 : ändern
+uc02 -- Mitarbeiter
+Mitarbeiter .down.> uc02 : hinzufügen oder löschen
+Projektleiter -- uc03
+Projektleiter .down.> uc03 : hinzufügen
+uc03 -- Mitarbeiter
+uc04 -- Mitarbeiter
+Projektleiter -- uc05 
+@enduml

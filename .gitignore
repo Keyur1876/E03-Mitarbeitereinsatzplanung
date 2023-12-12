@@ -26,3 +26,13 @@ API/appsettings.Development.json
 # Ignore development-specific app settings
 API/appsettings.Development.json
 API/obj/Debug/net7.0/API.pdb
+API/obj/API.csproj.nuget.dgspec.json
+API/obj/API.csproj.nuget.g.props
+API/obj/API.csproj.nuget.g.targets
+API/obj/project.assets.json
+API/obj/project.nuget.cache
+API/obj/Debug/net7.0/API.GeneratedMSBuildEditorConfig.editorconfig
+API/obj/
+API/.DS_Store
+.DS_Store
+API/appsettings.json
