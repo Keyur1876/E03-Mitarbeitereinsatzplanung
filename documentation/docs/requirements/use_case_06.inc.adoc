@@ -2,7 +2,7 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC06: Ändern von Nutzer- und Zugriffsrechten 
+== Use-Case: UC06: Nutzer- und Zugriffsrechte ändern 
 
 === Kurzbeschreibung
 
