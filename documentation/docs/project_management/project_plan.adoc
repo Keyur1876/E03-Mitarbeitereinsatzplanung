@@ -14,6 +14,22 @@ Die in diesem Kontext erstellten Dokumente werden im Laufe der Projektarbeit erg
 
 === Teammitglieder
 
+|===
+| *Name* | *Informationen zur Person* | *Rolle*
+
+| Hoang Phuong Linh Nguyen | Wirtschaftsinformatik Eigenschaften: kommunikativ, neugierig| Architect 
+| Nils Weber | Wirtschaftsingenieurwesen Eigenschaften: kommunikativ, zielstrebig | Project Manager 
+|Anh Thu Hoang  | Wirtschaftsinformatik Eigenschaften: kommunikativ, neugierig | Architect 
+|Luca Leon Wagner  | Wirtschaftsinformatik Eigenschaften: neugierig, kommunikativ, perfektionistisch | Developer 
+|Le Quoc Minh Tran  | Wirtschaftsinformatik Eigenschaften: ausdauernd, geduldig  | Architect/Developer
+|Tom Eckhardt   | Wirtschaftsingenieurwesen Eigenschaften: kommunikativ | Testing/Analyst
+|Keyur Hareshbhai Kachhadiya    | Informatiker Eigenschaften: neugierig, lernt gerne  | Developer/Architect
+|Paulina Kostka   | Verwaltungsinformatik Eigenschaften: analytisch, perfektionistisch, kommunikativ | Project Manager/Analyst
+|===
+
+
+
+
 
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
 
