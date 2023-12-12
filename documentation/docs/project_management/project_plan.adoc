@@ -56,9 +56,12 @@ Zum Schluss erfolgt ein Resume des Meetings in Form eines zusammengefassten Meil
 
 | I1
 |
-* Mitigate Risk1
-* Develop Use Case 3, Scenario 2
-| Date from/Date to
+* Teammitglieder kontaktieren und kennenlernen
+* Schwächen und Stärken identifizieren zur Rollenverteilung
+* Projektaufgabe verstehen
+* Kontakt mit den Auftraggebern herstellen
+* Kontakt zum Coach aufnehmen
+| 06.11.2023-19.11.2023
 | 15
 
 | I2
