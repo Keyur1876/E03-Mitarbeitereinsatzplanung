@@ -2,7 +2,7 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC03: Neue Projekt hinzufügen
+== Use-Case: UC04: Neue Projekt hinzufügen
 
 
 === Kurzbeschreibung
@@ -27,7 +27,7 @@ Dieser Use-Case beschreibt ein Formular von neue Projekten.
 . Sidebar-Menü und Kalender-Übersicht werden mit verschiedenen Funktionalitäten automatisch geöffnet.
 . Ein Sidebar-Menü erscheint:
 * Kalendar
-* Mitarbeiter auswählen, wird der User auf UC3 (Mitarbeiter Stammdaten hinterlegen) weitergeleitet
+* Mitarbeiter auswählen, wird der User auf UC3 (Mitarbeiter auflisten) weitergeleitet
 * Plannung auswählen, wird der User auf UC4 (Neue Projekt hinzufügen) weitergeleitet
 * Einstellung
 * Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet
@@ -37,7 +37,7 @@ Dieser Use-Case beschreibt ein Formular von neue Projekten.
 * Kundenname
 * Budget
 * Kategorie
-* Zuweisen (Teanleiter)
+* Zuweisen (Teamleiter)
 * Fälligskeitdatum
 * Projektbeschreibung
 * Teammiglieder hinzufügen

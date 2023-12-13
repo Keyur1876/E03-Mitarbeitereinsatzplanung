@@ -12,7 +12,7 @@ Im nachfolgenden Abschnitt werden alle identifizierten Use Cases, deren Akteure 
 // Liste aller identifizierten Use Cases (priorisiert)
 * UC01: Kalender und Sidebar-Menü übersehen
 * UC02: Projekt bearbeiten
-* UC03: Mitarbeiter Stammdaten hinterlegen
+* UC03: Mitarbeiter auflisten
 * UC04: Neue Projekt hinzufügen
 * UC05: Benutzerdatei anmelden
 * UC06: Mitarbeiter hinzufügen
@@ -39,25 +39,25 @@ Ein `include` entfernt am Anfang und Ende eine möglich Leerzeile, was in Kombin
 ////
 
 <<<
-include::use_case_08.inc.adoc[]
+include::use_case_01_ver2.inc.adoc[]
 
 <<<
-include::use_case_09.inc.adoc[]
+include::use_case_02_ver2.inc.adoc[]
 
 <<<
-include::use_case_10.inc.adoc[]
+include::use_case_03_ver2.inc.adoc[]
 
 <<<
-include::use_case_11.inc.adoc[]
+include::use_case_04_ver2.inc.adoc[]
 
 <<<
-include::use_case_12.inc.adoc[]
+include::use_case_05_ver2.inc.adoc[]
 
 <<<
-include::use_case_06.inc.adoc[]
+include::use_case_06_ver2.inc.adoc[]
 
-//<<<
-include::use_case_07.inc.adoc[]
+<<<
+include::use_case_07_ver2.inc.adoc[]
 
 //<<<
 //include::use_case_08.inc.adoc[]

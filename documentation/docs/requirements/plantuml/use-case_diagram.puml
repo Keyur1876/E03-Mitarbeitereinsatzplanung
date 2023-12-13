@@ -16,7 +16,7 @@ actor Admin
 rectangle "Mitarbeitereinsatzplanung" {
   usecase "UC01: Kalender und sidebar Menu übersehen" as uc01
   usecase "UC02: Projekt bearbeiten" as uc02
-  usecase "UC03: Mitarbeiter stammdaten hinterlegen" as uc03
+  usecase "UC03: Mitarbeiter auflisten" as uc03
   usecase "UC04: Neue Projekt hinzufügen" as uc04
   usecase "UC05: Benutzerdatei anmelden" as uc05
 }

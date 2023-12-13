@@ -1,0 +1,92 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
+
+
+== Use-Case: UC03: Mitarbeiter auflisten
+
+
+=== Kurzbeschreibung
+
+Dieser Use-Case beschreibt ein Liste und Daten von alle Mitarbeiter.
+
+=== Kurzbeschreibung der Akteure
+
+* Manager
+* Administrator
+* Mitarbeiter
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+* Benutzer ist erfolgreich angemeldet.
+* Lesen-Zugriff von Mitarbeiter-Liste.
+* Ausführen-Zugriff von Manager/Administration von Mitarbeiter-Daten.
+
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+. Sidebar-Menü und Kalender-Übersicht werden mit verschiedenen Funktionalitäten automatisch geöffnet.
+. Ein Sidebar-Menü erscheint:
+* Kalendar
+* Mitarbeiter auswählen, wird der User auf UC3 (Mitarbeiter Stammdaten hinterlegen) weitergeleitet.
+* Plannung auswählen, wird der User auf UC4 (Neue Projekt hinzufügen) weitergeleitet.
+* Einstellung.
+* Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.
+. Der Use Case wird beginnt, wenn "Mitarbeiter" von Sidebar-Menu klicken.
+. Der User kann beliebige Mitarbeiter suchen.
+. Summe von Mitarbeiter wird angezeigt.
+. Liste von Mitarbeiter mit folgende Daten:
+* Avatar
+* Name
+* Role
+* Abteilung
+. Der User kann nach Abteilung, Role, A-Z von Name filtern.
+. Der User kann Mitarbeiter-Liste als PDF exportieren.
+. IF der User an bestimmte Mitarbeiter klickt, wird der User auf UC6 (Mitarbeiter-Profil bearbeiten) weitergeleitet.
+* Es erscheint ein Formular, welches bereits gespeicherte Daten des Mitarbeiters beinhaltet.
+* Uber den Button Änderungen Speichern, werden die Aktualisierungen in das System übernommen.
+. Der User kann Mitarbeiter hinzufügen.
+. Der Use Case ist abgeschlossen.
+
+=== Alternative Abläufe
+
+* Wenn User die Software nicht benutzen, wird der System automatisch abgemeldet.
+* Wenn Internet-Zugang abgebrochen wird, wurden Änderungen nicht gespeichert.
+
+//==== <Alternativer Ablauf 1>
+//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+//. <Ablauf beschreiben>
+//. Der Use Case wird im Schritt <y> fortgesetzt.
+
+=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+---keine Unterabläufe vorhanden---
+
+//==== <Unterablauf 1>
+//. <Unterablauf 1, Schritt 1>
+//. …
+//. <Unterablauf 1, Schritt n>
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+--- keine abweichenden Szenarios vom Standardablauf ---
+
+//==== <Szenario 1>
+//. <Szenario 1, Schritt 1>
+//. …
+//. <Szenario 1, Schritt n>
+
+=== Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+//==== <Nachbedingung 1>
+* Der User bekommt alle Daten von Mitarbeiter.
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+Usability
+
+• Der Use Case gehört zu der grundlegenden Funktionalität des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
+
+//==== <Besondere Anforderung 1>

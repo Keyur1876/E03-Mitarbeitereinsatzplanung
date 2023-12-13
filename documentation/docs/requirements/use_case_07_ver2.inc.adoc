@@ -2,24 +2,22 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC03: Mitarbeiter Stammdaten hinterlegen
+== Use-Case: UC06: Mitarbeiter hinzufügen
 
 
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt ein Liste und Daten von alle Mitarbeitern.
+Dieser Use-Case beschreibt ein Proil von neue Mitarbeiter.
 
 === Kurzbeschreibung der Akteure
 
 * Manager
 * Administrator
-* Mitarbeiter
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
 * Benutzer ist erfolgreich angemeldet.
-* Lesen-Zugriff von Mitarbeiter-Liste.
 * Ausführen-Zugriff von Manager/Administration von Mitarbeiter-Daten.
 
 
@@ -29,22 +27,15 @@ Dieser Use-Case beschreibt ein Liste und Daten von alle Mitarbeitern.
 . Sidebar-Menü und Kalender-Übersicht werden mit verschiedenen Funktionalitäten automatisch geöffnet.
 . Ein Sidebar-Menü erscheint:
 * Kalendar
-* Mitarbeiter auswählen, wird der User auf UC3 (Mitarbeiter Stammdaten hinterlegen) weitergeleitet.
+* Mitarbeiter auswählen, wird der User auf UC3 (Mitarbeiter auflisten) weitergeleitet.
 * Plannung auswählen, wird der User auf UC4 (Neue Projekt hinzufügen) weitergeleitet.
 * Einstellung.
 * Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.
-. Der Use Case wird beginnt, wenn "Mitarbeiter" von Sidebar-Menu klicken.
-. Summe von Mitarbeiter.
-. Liste von Mitarbeiter mit folgende Daten wird angezeigt:
-* Name
-* Role
-* Ableitung
-. Der User kann beliebige Mitarbeiter suchen.
-. Der User kann nach Abtelung, Role, A-Z von Name filtern.
-. IF der User an bestimmte Mitarbeiter klickt, wird Profil-Seite weitergeleitet.
-* Es erscheint ein Formular, welches bereits gespeicherte Daten des Mitarbeiters beinhaltet.
-* Uber den Button Änderungen Speichern, werden die Aktualisierungen in das System übernommen.
-. Der User kann Mitarbeiter hinzufügen/löschen.
+. Der Use Case wird beginnt, nachdem der User "MA Hinzufügen" aus UC3(Mitarbeiter auflisten) klickt.
+. Es erscheint ein Formular, welches neue Daten des Mitarbeiters beinhaltet.
+. Über den Button Speichern, werden die Aktualisierungen in das System übernommen.
+. Es gibt ein Zurück-Button.
+. Der User kann Eingang abbrechen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
