@@ -28,14 +28,14 @@ body {
   padding: 10px 0;
   padding-top: 40px;
   padding-bottom: 40px;
-  justify-content: center; /* Zentriert die Inhalte horizontal */
-  align-items: center; /* Zentriert die Inhalte vertikal */
-  height: 50px; /* Oder die gewünschte Höhe des Logo-Bereichs */
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
 
 .logo img {
   width: 40px;
-  height: auto; /* Behält das Seitenverhältnis des Logos bei */
+  height: auto;
   transition: width 0.5s;
 }
 
@@ -92,16 +92,19 @@ body {
 
 .text {
   opacity: 0;
-  display: none;
+  display: inline-block;
   white-space: nowrap;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease, width 0s linear 0.5s;
+  width: 0;
+  overflow: hidden;
 }
 
 .sidebar:hover .text, .sidebar:focus-within .text {
-  display: inline;
   opacity: 1;
+  width: auto;
+  transition: opacity 0.3s ease, width 0s linear 0s;
 }
 
 .sidebar:hover .logo img, .sidebar:focus-within .logo img {
-  width: 45px; /* Eine leicht größere Breite für das Logo im ausgeklappten Zustand */
+  width: 45px;
 }
