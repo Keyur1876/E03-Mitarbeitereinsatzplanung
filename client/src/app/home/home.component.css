@@ -1,59 +1,107 @@
-/* Stile für die Sidebar */
-/* Stile für die Sidebar */
-#sidebar {
-  width: 80px;
-  height: calc(100vh - 60px);
-  position: fixed;
-  left: 0;
-  top: 60px;
-  background: #f7f7f7;
-  transition: width 0.5s;
-  overflow-x: hidden;
-  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
-
-#sidebar ul {
-  list-style: none;
-  padding: 0;
+body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
+  padding: 0;
+  background-color: #ffffff;
 }
 
-#sidebar ul li {
-  border-bottom: none;
+.sidebar {
+  background-color: #f6f6f6;
+  color: #4a4a4a;
+  position: fixed;
+  top: 56px;
+  height: calc(100vh - 56px);
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  overflow-x: hidden;
+  transition: width 0.5s;
+  z-index: 1000;
 }
 
-#sidebar ul li a {
+.sidebar:hover, .sidebar:focus-within {
+  width: 200px;
+}
+
+.logo {
+  display: flex;
+  padding: 10px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: center; /* Zentriert die Inhalte horizontal */
+  align-items: center; /* Zentriert die Inhalte vertikal */
+  height: 50px; /* Oder die gewünschte Höhe des Logo-Bereichs */
+}
+
+.logo img {
+  width: 40px;
+  height: auto; /* Behält das Seitenverhältnis des Logos bei */
+  transition: width 0.5s;
+}
+
+.menu-item {
+  position: relative;
   display: flex;
   align-items: center;
-  padding: 20px 15px;
-  text-decoration: none;
-  color: #808080;
+  padding: 15px;
+  cursor: pointer;
   transition: background-color 0.3s;
+  border-radius: 5px;
+  margin: 5px 10px;
+  background-color: transparent;
 }
 
-#sidebar ul li a:hover {
-  color: #606060;
-}
-
-#sidebar i {
-  min-width: 50px;
-  text-align: center;
-  font-size: 20px;
-}
-
-.tooltip {
-  flex-grow: 1;
-  padding-left: 10px;
+.menu-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #3a9630;
+  border-radius: 0 3px 3px 0;
   opacity: 0;
-  transition: opacity 0.5s;
-  white-space: nowrap;
+  transition: opacity 0.3s ease;
 }
 
-#sidebar:hover {
-  width: 250px;
-}
-
-#sidebar:hover .tooltip {
+.menu-item.active::before {
   opacity: 1;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #3a9630;
+  border-radius: 0 3px 3px 0;
+}
+
+.menu-item:first-of-type {
+  margin-top: 30px;
+}
+
+.menu-item:hover {
+  background-color: rgba(74, 168, 56, 0.2);
+}
+
+.material-icons {
+  font-size: 24px;
+  color: #4a4a4a;
+  margin-right: 10px;
+}
+
+.text {
+  opacity: 0;
+  display: none;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .text, .sidebar:focus-within .text {
+  display: inline;
+  opacity: 1;
+}
+
+.sidebar:hover .logo img, .sidebar:focus-within .logo img {
+  width: 45px; /* Eine leicht größere Breite für das Logo im ausgeklappten Zustand */
 }

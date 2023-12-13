@@ -1,15 +1,47 @@
 <div class="container mt-5">
   <div *ngIf="!registerMode" style="text-align: center;">
+    <div class="sidebar">
+      <div class="logo">
+        <!-- Hier können Sie Ihr Logo einfügen -->
+        <img src="assets/images/LogoOhneText.png" alt="Firmenlogo">
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'dashboard'" (click)="setActive('dashboard')">
+        <span class="material-icons">dashboard</span>
+        <span class="text">Dashboard</span>
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'messages'" (click)="setActive('messages')">
+        <span class="material-icons">message</span>
+        <span class="text">Nachrichten</span>
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'employees'" (click)="setActive('employees')">
+        <span class="material-icons">person</span>
+        <span class="text">Mitarbeiter</span>
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'analytics'" (click)="setActive('analytics')">
+        <span class="material-icons">bar_chart</span>
+        <span class="text">Analytik</span>
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'schedule'" (click)="setActive('schedule')">
+        <span class="material-icons">schedule</span>
+        <span class="text">Zeitplan</span>
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'reports'" (click)="setActive('reports')">
+        <span class="material-icons">assessment</span>
+        <span class="text">Berichte</span>
+      </div>
+      <!-- Fügen Sie hier ggf. weitere Menüpunkte hinzu -->
+    </div>
+
     <h1>Welcome to Our Software</h1>
     <div class="text-center">
       <p class="lead">Efficient Work Planning for a Productive Workplace!</p>
       <button (click)="registerToggle()" class="btn btn-primary btn-lg me-2">Register</button>
     </div>
 
-  <div *ngIf="registerMode" class="container">
-    <div class="row justify-content-center"></div>
+    <div *ngIf="registerMode" class="container">
+      <div class="row justify-content-center"></div>
 
-    <app-register></app-register>
+      <app-register></app-register>
 
+    </div>
   </div>
-</div>

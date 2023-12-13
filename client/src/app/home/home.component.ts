@@ -32,4 +32,10 @@ export class HomeComponent implements OnInit {
   cancelRegisterMode(event: boolean) {
     this.registerMode = event;
   }
+
+  activeMenuItem: string = '';
+
+  setActive(menuItem: string): void {
+    this.activeMenuItem = menuItem;
+  }
 }
