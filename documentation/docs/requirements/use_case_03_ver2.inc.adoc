@@ -2,12 +2,12 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC03: Mitarbeiter Stammdaten hinterlegen
+== Use-Case: UC03: Mitarbeiter auflisten
 
 
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt ein Liste und Daten von alle Mitarbeitern.
+Dieser Use-Case beschreibt ein Liste und Daten von alle Mitarbeiter.
 
 === Kurzbeschreibung der Akteure
 
@@ -34,17 +34,19 @@ Dieser Use-Case beschreibt ein Liste und Daten von alle Mitarbeitern.
 * Einstellung.
 * Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.
 . Der Use Case wird beginnt, wenn "Mitarbeiter" von Sidebar-Menu klicken.
-. Summe von Mitarbeiter.
-. Liste von Mitarbeiter mit folgende Daten wird angezeigt:
+. Der User kann beliebige Mitarbeiter suchen.
+. Summe von Mitarbeiter wird angezeigt.
+. Liste von Mitarbeiter mit folgende Daten:
+* Avatar
 * Name
 * Role
-* Ableitung
-. Der User kann beliebige Mitarbeiter suchen.
-. Der User kann nach Abtelung, Role, A-Z von Name filtern.
-. IF der User an bestimmte Mitarbeiter klickt, wird Profil-Seite weitergeleitet.
+* Abteilung
+. Der User kann nach Abteilung, Role, A-Z von Name filtern.
+. Der User kann Mitarbeiter-Liste als PDF exportieren.
+. IF der User an bestimmte Mitarbeiter klickt, wird der User auf UC6 (Mitarbeiter-Profil bearbeiten) weitergeleitet.
 * Es erscheint ein Formular, welches bereits gespeicherte Daten des Mitarbeiters beinhaltet.
 * Uber den Button Änderungen Speichern, werden die Aktualisierungen in das System übernommen.
-. Der User kann Mitarbeiter hinzufügen/löschen.
+. Der User kann Mitarbeiter hinzufügen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
