@@ -12,56 +12,55 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 | Meilenstein | Datum
 
-| Beginn der Iteration | -
-| ... | -
-| Ende der Iteration | -
+| Beginn der Iteration | 20.11.2023
+| Teammeeting | 21.11.2023
+| Teammeeting | 28.11.2023
+| Meeting mit Auftraggeber (Abgleich der erstellten Dokumente) | 30.11.2023
+| Ende der Iteration | 03.12.2023
 |===
 
 
 == Wesentliche Ziele
-//Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-Beispiele:
-
-* Beheben der Usability-Probleme, die von Abteilung X berichtet wurden
-* Ausliefern der Hauptszenarios, die die Integration mit System Y zeigen
-* Present a technical demonstration (demo).
+. Klare Rollenverteilung im Team, damit die Verantwortlichkeiten geklärt werden 
+. Vision ausarbeiten (1. Entwurf) und unklare Anforderungen an das System sammeln 
+. Use Cases aufstellen (1. Entwurf)
+. Use Case Modell entwerfen (1. Entwurf)
+. Teammitglieder mit der entsprechenden Rolle machen sich mit den einzusetzenden Programmen (Microsoft Azure, Azure DevOps) für die spätere Entwicklung vertraut
 
 
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
 
-Die in dieser Iteration geplanten Aufgaben sind in der Work Items List dargestellt (hier Verweis einfügen).
-
-_alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 [%header, cols="3,1,1,1,2,1,1,1,1"]
 |===
-| Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
+| Aufgabe bzw. Beschreibung | Priorität (Skala 1-3, 1=höhste Priorität) | Schätzung der Größe (A-C, A=höhster Aufwand) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| x | x | x | x | x | x | x | x | x
+| Vision erstellen mit den gegebenen Anforderungen | 1 | A | 28.11.2023: nicht vollständig fertiggestellt | Dokument mit der Beschreibung des Projektes der Develappers GmbH | I02 | Paulina Kostka | 4 | 1
+| Use Cases aufstellen | 1 | A | 30.11.2023: fertiggestellt | Dokument mit der Beschreibung des Projektes der Develappers GmbH| I02 | Paulina Kostka | 8 | 8
+| Use Cases Modell erstellen | 2 | B | 30.11.2023: fertiggestellt | Aufgestellte Use Cases| I02 | Anh Thu Hoang  | 3 | 1
+| Wireframe mit Funktionalitäten der Software entwerfen | 1 | A | 30.11.2023: fertiggestellt | Aufgestellte Use Cases| I02 | Le Quoc Minh Tran, Hoang Phuong Linh Nguyen, Anh Thu Hoang  | 4 | 5
 |===
 
 
-== Probleme (optional)
+//== Probleme (optional)
 //Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
 
-[%header, cols="2,1,3"]
-|===
-| Problem | Status | Notizen
+//[%header, cols="2,1,3"]
+//|===
+//| Problem | Status | Notizen
 
-| x | x | x
-|===
+//| x | x | x
+//|===
 
 
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
-
-Beispiele:
-
-* 97% der Testfälle auf Systemebene sind erfolgreich.
-* Gemeinsame Inspektion des Iterations-Ergebnisses (Inkrement) mit den Abteilungen X und Y ergibt positive Rückmeldung.
-* Technische Präsentation / Demo erhält positive Rückmeldungen.
-
+* Der erste Entwurf der Vision wurde abgeglichen beim Meeting mit dem Auftraggeber für gut befunden.
+* 7 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als .adoc vor)
+* Ein zu den Use Cases passendes Modell wurde erstellt.
+* Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern.
 
 == Assessment
 //In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommuniziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
@@ -70,20 +69,28 @@ Beispiele:
 |===
 | Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
 
-| Assessment Datum | ...
-| Teilnehmer | ...
-| Projektstatus	| Zum Beispiel ausgedrückt als rot, gelb oder grün.
+| Assessment Datum | 30.11.2023
+| Teilnehmer | Hoang Phuong Linh Nguyen, Nils Weber, Anh Thu Hoang, Luca Leon Wagner, Le Quoc Minh Tran, Tom Eckhardt, Keyur Hareshbhai Kachhadiya, Paulina Kostka
+| Projektstatus	| gelb
 |===
 
-* Beurteilung im Vergleich zu den Zielen
+*Beurteilung im Vergleich zu den Zielen*
+
+*Ziel 1 erreicht:* jedes Teammitglied verfügt über eine Rolle und weiß über die jeweiligen Aufgaben bescheid.
+*Ziel 2 erreicht:* Der erste Entwurf der Vision wurde verfasst und offene Anforderungen mit dem Auftraggeber besprochen.
+*Ziel 3 erreicht:* Der erste Entwurf von 7 Use Cases wurde ausformuliert und mit dem Auftraggeber besprochen, mit Verbesserungsvorschlägen.
+*Ziel 4 erreicht:* Der erste Entwurf des Use Case Modells steht und muss nach Verbesserung der Use Cases abgeändert werden.
+*Ziel 5 erreicht:* Die entsprechenden Teammitglieder haben sich mit den Programmen: Microsoft Azure, Azure DevOps vertraut gemacht.
+
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
 
-* Geplante vs. erledigte Aufgaben
-//Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
+*Geplante vs. erledigte Aufgaben*
 
-* Beurteilung im Vergleich zu den Bewertungskriterien
-//Document whether you met the evaluation criteria as specified in the Iteration Plan.
-//Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
+Es wurden alle für diesen Iterationsschritt geplanten Aufgaben umgesetzt.
 
-* Andere Belange und Abweichungen
+*Beurteilung im Vergleich zu den Bewertungskriterien*
+
+*Ziel 3:* Es fehlt noch ein Wireframe für einen Use Case.
+
+//* Andere Belange und Abweichungen
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
