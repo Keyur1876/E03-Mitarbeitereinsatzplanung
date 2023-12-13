@@ -26,7 +26,7 @@ Der Manager besitzt die entsprechenden Zugriffsrechte bzw. die erforderliche Rol
 . Der Use Case beginnt, wenn der Manager die Software zur Mitarbeitereinsatzplanung gestartet hat.
 . Der Manager meldet sich mit den benutzerbezogenen Anmeldetedaten an.
 . Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
-. Auswahl der Funktion: Mitarbeiter verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Auswahl der Funktion: Mitarbeiter und der Benutzer wird zur nächsten Seite weitergeleitet.
 . Es öffnet sich ein Filtermenü, mit dessen Hilfe der jeweilige Mitarbeiter gesucht werden kann.
 . Wurde der entsprechende Mitarbeiter ausgewählt, wird der Benutzer zu der persönlichen Einsatzplanung des Mitarbeiters, in Form eines Jahreskalenders weitergeleitet.
 . Der Benutzer kann nun die jeweiligen Tage anklicken und über ein Drop-Down Menü die gewünschten Fehlzeit-Gründe eintragen.

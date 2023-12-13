@@ -9,7 +9,8 @@ Dieser Use-Case beschreibt das Erstellen neuer Projekte durch den Projektleiter 
 
 === Kurzbeschreibung der Akteure
 
-Projektleiter/Manager
+* Projektleiter
+* Manager
 
 Möchte ein neues Projekt einpflegen, das von den Mitarbeitern realisiert werden soll.
 
@@ -23,14 +24,17 @@ Der Projektleiter/Manager besitzt die entsprechenden Zugriffsrechte bzw. die erf
 
 . Der Use Case beginnt, wenn der Projektleiter/Manager die Software zur Mitarbeitereinsatzplanung gestartet hat.
 . Projektleiter/Manager meldet sich mit den benutzerbezogenen Anmeldetedaten an.
-. Kalender-Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet:
-.. Jeden Tag hat Prozzesse von Projekten
-. Auswahl der Funktion: Tagen auswählen und der Benutzer wird zur nächsten Seite weitergeleitet.
-. Ein Umtermenü erscheint, hier kann der Benutzer folgende Funktionen auswählen:
-.. neues Projekt hinzufügen
-.. ausgewählte Projekt bearbeiten 
-. Wählt der Benutzer die Funktion i., wird dieser zu einem Formular weitergeleitet, welches Angaben zu dem neuen Projekt erwartet.
-. Benutzer fügt die geforderten projektbezogenen Daten und Attribute in das Formular ein.
+. Kalender-Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet
+. Dort Auswahl der Funktion: Planung und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Es erscheint ein Formular mit Stammdaten die zu ergänzen sind, um ein neues Projekt anzulegen.
+. Der Benutzer füllt nun folgende Felder aus:
+* Name 
+* Status (Projektanfrage, Beauftragt, Abgeschlossen)
+* Kundenname
+* Budget
+* verantwortlicher Projektleiter und Stellvertreter
+* Zeitplan
+* zugeordnete Mitarbeiter
 . Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.
 . Der Use Case ist abgeschlossen.
 
@@ -64,7 +68,7 @@ Wenn der Benutzer nach Schritt 8. zur Start-Übersicht zurückkehrt und auf den 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 * Das System hat das neu eingepflegte Projekt gespeichert.
-* Das System hat die vollständigen Daten des Projektes das hinzugefügt wurde gespeichert.
+* Das System hat die vollständigen Daten des Projektes das hinzugefügt wurden gespeichert.
 * Falls konkrete Mitarbeiter einem Projekt zugeordnet wurden, so ist diese Zuordnung in der individuellen Einsatzplanung des jeweiligen Mitarbeiters verzeichnet.
 
 //==== <Nachbedingung 1>

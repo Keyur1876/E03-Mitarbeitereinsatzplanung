@@ -2,7 +2,7 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC06: Nutzer- und Zugriffsrechte ändern 
+== Use-Case: UC06: Nutzer- und Zugriffsrechte zuweisen 
 
 === Kurzbeschreibung
 
@@ -13,12 +13,12 @@ Dieser Use-Case beschreibt die Zuweisung von Zugriffsrechten je nach Rolle des B
 * Manager
 * Administrator
 
-Möchte die Software für die Mitarbeitereinsatzplanung gemäß der Datenschutzverordnung und aus Sicherheitsgründen, durch die Vergabe von bestimmten Zugriffsrechten verwalten.
+Möchte die Software für die Mitarbeitereinsatzplanung mithilfe von bestimmten Nutzer- und Zugriffsrechten in ihrer Lesbarkeit und Änderbarkeit einschränken. So werden ungewollte Änderungen vermieden und Mitarbeiterdaten können nicht von jedem eingesehen werden.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-Der Manager/Administrator besitzt die erforderliche Rolle, um Zugriffsrechte zuzuweisen.
+Der Manager/Administrator besitzt die erforderlichen Anmeldedaten, um Rollen und die damit verbundenen Zugriffsrechte zuzuweisen.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
@@ -27,15 +27,21 @@ Der Manager/Administrator besitzt die erforderliche Rolle, um Zugriffsrechte zuz
  die Software zur Mitarbeitereinsatzplanung gestartet hat.
 . Der Manager/Administrator meldet sich mit den benutzerbezogenen Anmeldetedaten an.
 . Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
-. Auswahl der Funktion: Software verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Auswahl der Funktion: Einstellungen und der Benutzer wird zur nächsten Seite weitergeleitet.
 . Anzeige eines Filtermenüs, mit dessen Hilfe Mitarbeiter gesucht werden können.
-. Wurde der entsprechende Mitarbeiter ausgewählt, können über ein Drop-Down Menü die Zugriffsrechte des jeweiligen Mitarbeiters angepasst werden.
+. Der gewünschte Mitarbeiter wird angeklickt und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Es können folgende Rollen je Mitarbeiter zugeordnet werden: 
+* Mitarbeiter intern 
+* Mitarbeiter extern
+* Projektleiter 
+* Manager
+* Administrator
 . Abschließend wird die Zuweisung über den Button Änderungen Speichern in das System übernommen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 
-Wenn der Benutzer die Apassung unter dem Schritt 6 abbricht, ohne dass der Schritt 7. durchgeführt wird, werden keine Änderungen übernommen.
+Wenn der Benutzer die Apassung unter dem Schritt 7. abbricht, ohne dass der Schritt 8. durchgeführt wird, werden keine Änderungen übernommen.
 
 //==== <Alternativer Ablauf 1>
 //Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
@@ -53,12 +59,34 @@ Wenn der Benutzer die Apassung unter dem Schritt 6 abbricht, ohne dass der Schri
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
---- keine abweichenden Szenarios vom Standardablauf ---
+==== Auswahl der Rolle: Mitarbeiter intern oder Mitarbeiter extern
 
-//==== <Szenario 1>
-//. <Szenario 1, Schritt 1>
-//. …
-//. <Szenario 1, Schritt n>
+. Die Rolle Mitarbeiter intern/Mitarbeiter extern wurde einem konkreten Mitarbeiter zugewiesen
+. Der entsprechende Mitarbeiter kann die Software zur Mitarbeitereinsatzplanung nur standardmäßig nutzen. 
+. Einsicht, über Funktion: Mitarbeiter, nur der eigenen Stammdaten, einschließlich aller Funktionen aus UC: 03.
+
+==== Auswahl der Rolle: Mitarbeiter intern
+ 
+. Die Rolle Projektleiter wurde einem konkreten Mitarbeiter zugewiesen
+. Der entsprechende Mitarbeiter kann nun folgende Funktionen nutzen:
+* Einsicht freier Mitarbeiter
+* Stammdaten von Projekten sehen, löschen, ändern
+
+==== Auswahl der Rolle: Manager
+
+. Die Rolle Manager wurde einem konkreten Mitarbeiter zugewiesen
+. Der entsprechende Mitarbeiter kann nun folgende Funktionen nutzen:
+* Mitarbeiter-Stammdaten einsehen, bearbeiten, löschen
+* Stammdaten von Projekten sehen, löschen, ändern
+* Zuweisung von Zugriffsrechten abhängig von der Rolle
+
+==== Auswahl der Rolle: Administrator
+
+. Die Rolle Administrator wurde einem konkreten Mitarbeiter zugewiesen
+. Der entsprechende Mitarbeiter kann nun folgende Funktionen nutzen:
+* Mitarbeiter-Stammdaten einsehen, bearbeiten, löschen
+* Zuweisung von Zugriffsrechten abhängig von der Rolle
+
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.

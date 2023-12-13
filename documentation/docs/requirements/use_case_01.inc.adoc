@@ -30,10 +30,10 @@ Der Manager/Projektleiter besitzt die entsprechenden Zugriffsrechte bzw. die erf
 . Der Use Case beginnt, wenn der Projektleiter/Manager die Software zur Mitarbeitereinsatzplanung gestartet hat.
 . Der Projektleiter/Manager meldet sich mit den benutzerbezogenen Anmeldetedaten an.
 . Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
-. Auf dieser Start-Übersicht kann ein Icon mit einem Kalender angeklickt werden.
-. Nun wird der Benutzer zum Kalender weitergeleitet und kann bestimmte Zeiträume auswählen in denen Projekte geplant sind.
-. Der Benutzer wird nun zur nächsten Seite weitergeleitet.
-. Über ein Drop-Down Menü können nun Mitarbeiter ausgewählt werden, die an diesem Projekt, in einem bestimmten Zeitraum arbeiten sollen.
+. Auf dieser Start-Übersicht kann der  Kalender angeklickt werden.
+. Nun wird der Benutzer zum Kalender weitergeleitet und kann ein Projekt auswählen das für einen bestimmten Zeitraum geplant ist.
+. Es erfolgt eine Weiterleitung zur Projekt-Übersicht, in der verschiedene Details zum Projekt zu sehen sind.
+. Über einen Plus-Button kann ein oder mehrere Mitarbeiter dem Projekt hinzugefügt werden.
 . Abschließend werden alle Änderungen über den Button Änderungen Speichern in das System übernommen.
 . Der Use Case ist abgeschlossen.
 
@@ -42,10 +42,13 @@ Der Manager/Projektleiter besitzt die entsprechenden Zugriffsrechte bzw. die erf
 
 Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 7. abbricht, ohne dass der Schritt 8. durchgeführt wurde, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
 
-//==== <Alternativer Ablauf 1>
-//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas //macht>, dann
-//. <Ablauf beschreiben>
-//. Der Use Case wird im Schritt <y> fortgesetzt.
+==== Alternativer Ablauf 1
+Wenn der Benutzer unter Schritt 4 den Button Mitarbeiter anklickt, dann wird dieser zur Mitarbeiter-Übersicht weitergeleitet.
+
+. Dort kann über einen Filter der Mitarbeiter mithilfe seines Namens gefiltert werden.
+. Benutzer wird zu den hinterlegten Daten des jeweiligen Mitarbeiters weitergeleitet.
+. In dieser Übersicht kann der Mitarbeiter über die Funktionalität Projekt ebenfalls einem Projekt zugeordnet werden.
+. Der Use Case wird im Schritt 8 fortgesetzt.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern

@@ -9,31 +9,41 @@ Dieser Use-Case beschreibt das Einpflegen neuer Mitarbeiterdaten und die Aktuali
 
 === Kurzbeschreibung der Akteure
 
-Mitarbeiter 
+* Manager 
+* Administrator 
 
-Möchte seine bisher bei der Develappers GmbH hinterlegten persönlichen Daten ändern und ergänzen.
+Möchte Stammdaten eines bestimmten Mitarbeiters der Develappers GmbH ändern und ergänzen.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-Der Mitarbeiter besitzt die entsprechenden Zugriffsrechte bzw. aktuelle Anmeldedaten, um Änderungen an seinen Stammdaten vornehmen zu können.
+Benutzer besitzt die entsprechenden Zugriffsrechte bzw. aktuelle Anmeldedaten, um Änderungen an den jeweiligen Stammdaten vornehmen zu können.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn der Mitarbeiter die Software zur Mitarbeitereinsatzplanung gestartet hat.
+. Der Use Case beginnt, wenn der Benutzer die Software zur Mitarbeitereinsatzplanung gestartet hat.
 . Der Mitarbeiter meldet sich mit den benutzerbezogenen Anmeldetedaten an.
 . Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
-. Auswahl der Funktion: Meine Daten verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
-. Es erscheint ein Formular, welches bereits gespeicherte Daten des Mitarbeiters beinhaltet.
-. Der Mitarbeiter aktualisiert oder fügt neue Daten hinzu.
+. Auswahl der Funktion: Mitarbeiter und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Es erscheint eine Übersicht mit allen Mitarbeitern und zusätzlich ein Filtermenü mit dessen Hilfe schneller der Name des entsprechenden Mitarbeiters gefiltert werden kann.
+. Es öffnet sich ein Formular, welches bereits gespeicherte Daten des Mitarbeiters beinhaltet:
+* Vorname, Name
+* Wochenarbeitszeit
+* Status (z.Bsp.:Student, Mitarbeiter, Externer)
+* Namenskürzel
+* Skills
+* Abteilung
+* geplante/vergangene Auslastungsquote
+* Projekt
+. Der Benutzer kann die jeweilige Information ändern oder neu erstellen.
 . Uber den Button Änderungen Speichern, werden die Aktualisierungen in das System übernommen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 6. abbricht, ohne dass der Schritt 7. durchgeführt wurde, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
+Wenn der Benutzer die Bearbeitung des Formulars unter dem Schritt 7. abbricht, ohne dass der Schritt 8. durchgeführt wurde, werden keine Änderungen vorgenommen und das Formular erscheint im Ursprungszustand.
 
 //==== <Alternativer Ablauf 1>
 //Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann

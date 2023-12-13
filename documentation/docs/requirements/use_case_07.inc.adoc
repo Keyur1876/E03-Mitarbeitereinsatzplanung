@@ -26,7 +26,7 @@ Der Manager/Administrator besitzt die erforderliche Rolle, um Daten importieren 
 . Der Use Case beginnt, wenn einer der oben beschriebenen Akteure die Software zur Mitarbeitereinsatzplanung gestartet hat.
 . Der Nutzer meldet sich mit den benutzerbezogenen Anmeldetedaten an.
 . Übersicht mit verschiedenen Funktionalitäten wird automatisch geöffnet.
-. Auswahl der Funktion: Software verwalten und der Benutzer wird zur nächsten Seite weitergeleitet.
+. Auswahl der Funktion: Einstellungen und der Benutzer wird zur nächsten Seite weitergeleitet.
 . Ein Untermenü erscheint, hier kann der Benutzer folgende Funktionen auswählen:
 .. Systemzugriff verwalten
 .. Übertragung von Daten
