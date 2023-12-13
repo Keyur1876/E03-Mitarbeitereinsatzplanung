@@ -2,23 +2,23 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC04: Neue Projekt hinzufügen
+== Use-Case: UC06: Mitarbeiter-Profil bearbeiten
 
 
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt ein Formular von neue Projekten.
+Dieser Use-Case beschreibt ein Proil und Plannung von Mitarbeiter.
 
 === Kurzbeschreibung der Akteure
 
 * Manager
 * Administrator
 
-
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
 * Benutzer ist erfolgreich angemeldet.
+* Ausführen-Zugriff von Manager/Administration von Mitarbeiter-Daten.
 
 
 === Standardablauf (Basic Flow)
@@ -27,21 +27,19 @@ Dieser Use-Case beschreibt ein Formular von neue Projekten.
 . Sidebar-Menü und Kalender-Übersicht werden mit verschiedenen Funktionalitäten automatisch geöffnet.
 . Ein Sidebar-Menü erscheint:
 * Kalendar
-* Mitarbeiter auswählen, wird der User auf UC3 (Mitarbeiter auflisten) weitergeleitet
-* Plannung auswählen, wird der User auf UC4 (Neue Projekt hinzufügen) weitergeleitet
-* Einstellung
-* Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet
-. Der Use Case wird beginnt, wenn "Plannung" von Sidebar-Menu klicken.
-. Benutzer fügt die geforderten projektbezogenen Daten und Attribute in das Formular ein:
-* Projekt name
-* Kundenname
-* Budget
-* Kategorie
-* Zuweisen (Teamleiter)
-* Fälligskeitdatum
-* Projektbeschreibung
-* Teammiglieder hinzufügen
-. Abschließend werden alle hinzugefügten Daten über den Button Änderungen Speichern in das System übernommen.
+* Mitarbeiter auswählen, wird der User auf UC3 (Mitarbeiter Stammdaten hinterlegen) weitergeleitet.
+* Plannung auswählen, wird der User auf UC4 (Neue Projekt hinzufügen) weitergeleitet.
+* Einstellung.
+* Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.
+. Der Use Case wird beginnt, nachdem der User bestimmte Mitarbeiter auswählen.
+. Es erscheint ein Formular, welches bereits gespeicherte Daten des Mitarbeiters beinhaltet.
+* persönliche Information
+* Projekt zuordnen
+* Termin den aktuellen/folgenden Tagen
+* Status von diesem Mitarbeiter (In Arbeit, Krank, Urlaub,...)
+* Uber den Button Änderungen Speichern, werden die Aktualisierungen in das System übernommen.
+. Es gibt ein Zurück-Button.
+. Der User kann Mitarbeiter löschen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
@@ -76,7 +74,7 @@ Dieser Use-Case beschreibt ein Formular von neue Projekten.
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 //==== <Nachbedingung 1>
-* Der User kann einer Plannung von neue Projekt hinzufügen.
+* Der User bekommt alle Daten von Mitarbeiter.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
