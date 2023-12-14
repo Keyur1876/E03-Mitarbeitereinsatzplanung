@@ -2,7 +2,7 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC02: Projekt bearbeiten
+# 2.6. Use-Case 02:Projekt bearbeiten
 
 
 === Kurzbeschreibung

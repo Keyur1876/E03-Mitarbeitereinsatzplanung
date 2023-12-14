@@ -2,7 +2,7 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC04: Neue Projekt hinzufügen
+# 2.8. Use-Case 04:Neue Projekt hinzufügen
 
 
 === Kurzbeschreibung

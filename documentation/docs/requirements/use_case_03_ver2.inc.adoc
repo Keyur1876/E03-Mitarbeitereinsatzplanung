@@ -2,7 +2,7 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC03: Mitarbeiter auflisten
+# 2.7. Use-Case 03:Mitarbeiter auflisten
 
 
 === Kurzbeschreibung

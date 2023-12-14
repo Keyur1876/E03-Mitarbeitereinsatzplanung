@@ -1,14 +1,14 @@
-# 2. Use-Case Model: E03-Mitarbeitereinsatzplanung
+# 2. Use-Case Model:E03-Mitarbeitereinsatzplanung
 Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
-# 2.1 Allgemeine Informationen
+# 2.1. Allgemeine Informationen
 Im nachfolgenden Abschnitt werden alle identifizierten Use Cases, deren Akteure und deren Abläufe vorgestellt.
 
-# 2.2 Identifizierte Use Cases
+# 2.2. Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
 * UC01: Kalender und Sidebar-Menü übersehen
 * UC02: Projekt bearbeiten
@@ -19,7 +19,7 @@ Im nachfolgenden Abschnitt werden alle identifizierten Use Cases, deren Akteure 
 * UC07: Mitarbeiter hinzufügen
 
 
-# 2.3 Use Case Diagramm
+# 2.3. Use Case Diagramm
 // ...
 
 .Usecase-diagramm mit PlantUML

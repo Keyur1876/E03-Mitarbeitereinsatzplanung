@@ -2,7 +2,7 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC01: Kalender und Sidebar-Menü übersehen
+# 2.5. Use-Case 01:Kalender und Sidebar-Menü übersehen
 
 
 === Kurzbeschreibung
