@@ -15,9 +15,8 @@ Im nachfolgenden Abschnitt werden alle identifizierten Use Cases, deren Akteure 
 * UC03: Mitarbeiter auflisten
 * UC04: Neue Projekt hinzufügen
 * UC05: Benutzerdatei anmelden
-* UC06: Mitarbeiter hinzufügen
-* UC07: Mitarbeiter bearbeiten
-
+* UC06: Mitarbeiter bearbeiten
+* UC07: Mitarbeiter hinzufügen
 
 
 # 2.3 Use Case Diagramm

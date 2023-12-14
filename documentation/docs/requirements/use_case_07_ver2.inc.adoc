@@ -2,7 +2,7 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC06: Mitarbeiter-Profil bearbeiten
+== Use-Case: UC07: Mitarbeiter-Profil bearbeiten
 
 
 === Kurzbeschreibung
