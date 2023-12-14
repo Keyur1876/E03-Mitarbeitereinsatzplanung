@@ -38,6 +38,18 @@
       <button (click)="registerToggle()" class="btn btn-primary btn-lg me-2">Register</button>
     </div>
 
+    <div id="right-panel">
+      <!-- Bereich für Neuigkeiten oder Updates -->
+      <div id="news-feed">
+        <h2>News</h2>
+        <ul id="news-list">
+          <li class="news-item">Neue Features im Projektmanagement-Tool verfügbar.</li>
+          <li class="news-item">Wartungsarbeiten am Netzwerk geplant für nächste Woche.</li>
+          <li class="news-item">Teambuilding-Event diesen Freitag um 18 Uhr.</li>
+        </ul>
+      </div>
+    </div>
+
     <div *ngIf="registerMode" class="container">
       <div class="row justify-content-center"></div>
 

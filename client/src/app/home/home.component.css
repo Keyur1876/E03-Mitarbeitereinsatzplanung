@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
+  overflow-y: hidden;
 }
 
 .sidebar {
@@ -107,4 +108,36 @@ body {
 
 .sidebar:hover .logo img, .sidebar:focus-within .logo img {
   width: 45px;
+}
+
+#right-panel {
+  width: 24%;
+  position: fixed;
+  right: 0;
+  top: 56px;
+  height: calc(100vh - 56px);
+  background-color: #f7f7f7; /* hellgrauer Hintergrund */
+  padding: 20px; /* Innenabstand */
+  overflow-y: auto; /* Scrollbalken für den Inhalt */
+  box-shadow: -2px 0px 5px rgba(0,0,0,0.1); /* Schatten für Tiefe */
+}
+
+#news-feed h2 {
+  font-size: 1.5em; /* Größere Schrift für Überschrift */
+  margin-bottom: 10px; /* Abstand unter der Überschrift */
+}
+
+#news-list {
+  list-style: none; /* Keine Listensymbole */
+}
+
+.news-item {
+  background-color: white; /* Weißer Hintergrund für jede Neuigkeit */
+  margin-bottom: 10px; /* Abstand zwischen den Neuigkeiten */
+  padding: 10px; /* Innenabstand */
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1); /* Leichter Schatten */
+}
+
+.news-item{
+  border-left: 4px solid #2ecc71; /* Grün für Teamevents */
 }
