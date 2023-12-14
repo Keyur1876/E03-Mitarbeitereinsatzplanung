@@ -84,3 +84,6 @@ Usability
 * Der Use Case ist grundlegend für das System und erfordert eine benutzerfreundliche Bedienung.
 
 //==== <Besondere Anforderung 1>
+
+=== Wireframe
+image::Web Wireframe1 - Neue Projekt hinzufügen.jpg[]
