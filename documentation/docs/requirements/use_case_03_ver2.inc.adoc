@@ -45,7 +45,7 @@ Dieser Use-Case beschreibt ein Liste und Daten von aller Mitarbeiter.
 . Wenn der Benutzer auf einen bestimmten Mitarbeiter klickt, wird er zu UC6 (Profil und Planung von Mitarbeitern) weitergeleitet.
 * Es erscheint ein Formular mit den bereits gespeicherten Daten des Mitarbeiters.
 * Durch Klicken auf den "Änderungen speichern"-Button werden Aktualisierungen im System übernommen.
-. Der Benutzer kann neue Mitarbeiter hinzufügen.
+. Der Benutzer kann neue Mitarbeiter hinzufügen, leitet den Benutzer zu UC7 (Mitarbeite auflisten) weiter
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe

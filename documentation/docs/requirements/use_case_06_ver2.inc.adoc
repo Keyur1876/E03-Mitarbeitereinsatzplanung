@@ -2,12 +2,12 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC06: Mitarbeiter hinzufügen
+== Use-Case: UC07: Mitarbeiter-Profil bearbeiten
 
 
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt das Hinzufügen neuer Mitarbeiter.
+Dieser Use-Case beschreibt die Verwaltung von Profilinformationen und Planung für Mitarbeiter.
 
 === Kurzbeschreibung der Akteure
 
@@ -17,7 +17,7 @@ Dieser Use-Case beschreibt das Hinzufügen neuer Mitarbeiter.
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-* Der Benutzer ist erfolgreich angemeldet.
+* Der Benutzer ist erfolgreich angemeldet. 
 * Manager/Administrator haben Zugriffsberechtigungen zur Verwaltung von Mitarbeiterdaten.
 
 === Standardablauf (Basic Flow)
@@ -29,19 +29,22 @@ Dieser Use-Case beschreibt das Hinzufügen neuer Mitarbeiter.
 * Auswahl von Mitarbeitern: Leitet den Benutzer zu UC3 (Mitarbeite auflisten) weiter
 * Plannung auswählen, wird der User auf UC4 (Neue Projekt hinzufügen) weitergeleitet
 * Einstellung
-* Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.weitergeleitet.
-. Der Use Case beginnt, nachdem der Benutzer "Mitarbeiter hinzufügen" in UC3 (Mitarbeiter auflisten) auswählt.
-.Es erscheint ein Formular, das neue Daten des Mitarbeiters erfasst.
-. Über den "Speichern"-Button werden die Aktualisierungen im System übernommen.
-. Ein "Zurück"-Button ist verfügbar, um zum vorherigen Bildschirm zurückzukehren.
-. Der Benutzer kann den Vorgang abbrechen.
+* Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.
+. Der Use Case beginnt, nachdem der Benutzer einen bestimmten Mitarbeiter ausgewählt hat.
+. Es erscheint ein Formular, das bereits gespeicherte Daten des Mitarbeiters enthält, darunter:
+* Persönliche Informationen
+* Zuordnung zu Projekten
+* Termine für den aktuellen/folgenden Tage
+* Status des Mitarbeiters (In Arbeit, Krank, Urlaub, usw.)
+. Uber den Button Änderungen Speichern, werden die Aktualisierungen in das System übernommen.
+. Es gibt ein Zurück-Button.
+. Der Benutzer kann Mitarbeiter löschen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 
 * Automatische Abmeldung, wenn die Software nicht genutzt wird.
 * Nichtspeicherung von Änderungen bei Unterbrechung des Internetzugangs.
-
 
 //==== <Alternativer Ablauf 1>
 //Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
@@ -70,12 +73,12 @@ Dieser Use-Case beschreibt das Hinzufügen neuer Mitarbeiter.
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 //==== <Nachbedingung 1>
-* Der Benutzer erhält alle aktualisierten Daten des neuen Mitarbeiters.
+* Der Benutzer erhält alle aktualisierten Daten des Mitarbeiters.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 Usability
 
-* Der Use Case ist grundlegend für das System und muss daher eine benutzerfreundliche Bedienung ermöglichen
+* Der Use Case ist grundlegend für das System und erfordert eine benutzerfreundliche Bedienung.
 
 //==== <Besondere Anforderung 1>
