@@ -7,7 +7,7 @@ ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt eine Kalenderbasierte zur Darstellung der geplanten Projektzuordnungen.
+Dieser Use-Case beschreibt die Kalenderansicht zur Visualisierung geplanter Bei Unterbrechung der Internetverbindung werden Änderungen nicht gespeichert.
 
 === Kurzbeschreibung der Akteure
 
@@ -17,31 +17,31 @@ Dieser Use-Case beschreibt eine Kalenderbasierte zur Darstellung der geplanten P
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-* Benutzer ist erfolgreich angemeldet.
+* Der Benutzer ist erfolgreich angemeldet.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wird Sidebar-Menü und Kalender-Übersicht mit verschiedenen Funktionalitäten automatisch geöffnet.
-. Ein Sidebar-Menü erscheint:
+. Der Use Case beginnt und öffnet automatisch das Sidebar-Menü und die Kalenderübersicht mit verschiedenen Funktionen.
+. Das Sidebar-Menü zeigt folgende Optionen:
 * Kalendar
-* Mitarbeiter auswählen, wird der User auf UC3 (Mitarbeiter Stammdaten hinterlegen) weitergeleitet.
-* Plannung auswählen, wird der User auf UC4 (Neue Projekt hinzufügen) weitergeleitet.
-* Einstellung.
+* Auswahl von Mitarbeitern: Leitet den Benutzer zu UC3 (Mitarbeite auflisten) weiter
+* Plannung auswählen, wird der User auf UC4 (Neue Projekt hinzufügen) weitergeleitet
+* Einstellung
 * Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.
 . Die Farben der Kalendereinträge sind wie folgt:
-* Grün: Projekt fertig oder überragender als Planung
-* Grau: Planung in der Zukunft
-* Rot: Projekt noch nicht fertig und mit langsamem Fortschritt
-* Orange: Projekt in richtiger Prozess
+* Grün: Abgeschlossenes oder übererfülltes Projekt
+* Grau: Zukünftige Planungen
+* Rot: Unvollständiges Projekt mit geringem Fortschritt
+* Orange: Projekt im richtigen Prozess
 . Auswahl von Funktionen:
-* Monaten auswählen.
+* Auswahl von Monaten
 * Projekt auswählen, wird der User auf UC2 (Projekt bearbeiten) weitergeleitet.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 
-* Wenn User die Software nicht benutzen, wird der System automatisch abgemeldet.
+* Wenn der Benutzer die Software nicht nutzt, erfolgt automatisch eine Abmeldung.
 * Wenn Internet-Zugang abgebrochen wird, wurden Änderungen nicht gespeichert.
 
 //==== <Alternativer Ablauf 1>
@@ -71,12 +71,12 @@ Dieser Use-Case beschreibt eine Kalenderbasierte zur Darstellung der geplanten P
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 //==== <Nachbedingung 1>
-* User kann Prozesse in aller Projekten ins Monat übersehen.
+* Der Benutzer kann den Fortschritt aller Projekte im ausgewählten Monat überblicken.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 Usability
 
-• Der Use Case gehört zu der grundlegenden Funktionalität des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
+* Der Use Case ist grundlegend für das System und erfordert eine benutzerfreundliche Bedienung. Projektzuordnungen und ein Sidebar-Menü mit verschiedenen Funktionalitäten.
 
 //==== <Besondere Anforderung 1>
