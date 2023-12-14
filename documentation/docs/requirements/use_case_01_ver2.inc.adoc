@@ -2,33 +2,30 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-# 2.5. Use-Case 01:Kalender und Sidebar-Menü übersehen
+# 2.5. Use-Case 01:Kalender anzeigen
 
 
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt die Kalenderansicht zur Visualisierung geplanter Bei Unterbrechung der Internetverbindung werden Änderungen nicht gespeichert.
+Dieser Use-Case beschreibt die Kalenderansicht zur Visualisierung geplanter ...
+
+ Bei Unterbrechung der Internetverbindung werden Änderungen nicht gespeichert.
 
 === Kurzbeschreibung der Akteure
 
-* Manager
-* Administrator
+* Manager: alle Projekte ansehen
+* Mitarbeiter: eigene Projekte ansehen
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-* Der Benutzer ist erfolgreich angemeldet.
+* Der Benutzer(Manager/Mitarbeiter) ist erfolgreich angemeldet.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt und öffnet automatisch das Sidebar-Menü und die Kalenderübersicht mit verschiedenen Funktionen.
-. Das Sidebar-Menü zeigt folgende Optionen:
-* Kalendar
-* Auswahl von Mitarbeitern: Leitet den Benutzer zu UC3 (Mitarbeite auflisten) weiter
-* Plannung auswählen, wird der User auf UC4 (Neue Projekt hinzufügen) weitergeleitet
-* Einstellung
-* Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.
+. Das Sidebar-Menü zeigt Optionen.
 . Die Farben der Kalendereinträge sind wie folgt:
 * Grün: Abgeschlossenes oder übererfülltes Projekt
 * Grau: Zukünftige Planungen
@@ -43,6 +40,7 @@ Dieser Use-Case beschreibt die Kalenderansicht zur Visualisierung geplanter Bei 
 
 * Wenn der Benutzer die Software nicht nutzt, erfolgt automatisch eine Abmeldung.
 * Wenn Internet-Zugang abgebrochen wird, wurden Änderungen nicht gespeichert.
+* Monat wird gewählt, weitere Monat kann auch anzeigen. 
 
 //==== <Alternativer Ablauf 1>
 //Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
@@ -78,5 +76,7 @@ Dieser Use-Case beschreibt die Kalenderansicht zur Visualisierung geplanter Bei 
 Usability
 
 * Der Use Case ist grundlegend für das System und erfordert eine benutzerfreundliche Bedienung. Projektzuordnungen und ein Sidebar-Menü mit verschiedenen Funktionalitäten.
+
+* Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.
 
 //==== <Besondere Anforderung 1>

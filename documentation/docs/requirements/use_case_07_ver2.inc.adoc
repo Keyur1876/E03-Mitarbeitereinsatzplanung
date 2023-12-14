@@ -2,7 +2,7 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-# 2.11. Use-Case 07:Mitarbeiter hinzufügen
+# 2.11. Use-Case 07:Neue Mitarbeiter hinzufügen
 
 
 === Kurzbeschreibung
@@ -12,7 +12,6 @@ Dieser Use-Case beschreibt das Hinzufügen neuer Mitarbeiter.
 === Kurzbeschreibung der Akteure
 
 * Manager
-* Administrator
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
@@ -24,14 +23,9 @@ Dieser Use-Case beschreibt das Hinzufügen neuer Mitarbeiter.
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt und öffnet automatisch das Sidebar-Menü und die Kalenderübersicht mit verschiedenen Funktionen.
-. Das Sidebar-Menü zeigt folgende Optionen:
-* Kalendar
-* Auswahl von Mitarbeitern: Leitet den Benutzer zu UC3 (Mitarbeite auflisten) weiter
-* Plannung auswählen, wird der User auf UC4 (Neue Projekt hinzufügen) weitergeleitet
-* Einstellung
-* Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.weitergeleitet.
+. Das Sidebar-Menü zeigt Optionen.
 . Der Use Case beginnt, nachdem der Benutzer "Mitarbeiter hinzufügen" in UC3 (Mitarbeiter auflisten) auswählt.
-.Es erscheint ein Formular, das neue Daten des Mitarbeiters erfasst.
+. Es erscheint ein Formular, das neue Daten des Mitarbeiters erfasst.
 . Über den "Speichern"-Button werden die Aktualisierungen im System übernommen.
 . Ein "Zurück"-Button ist verfügbar, um zum vorherigen Bildschirm zurückzukehren.
 . Der Benutzer kann den Vorgang abbrechen.
@@ -41,7 +35,6 @@ Dieser Use-Case beschreibt das Hinzufügen neuer Mitarbeiter.
 
 * Automatische Abmeldung, wenn die Software nicht genutzt wird.
 * Nichtspeicherung von Änderungen bei Unterbrechung des Internetzugangs.
-
 
 //==== <Alternativer Ablauf 1>
 //Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann

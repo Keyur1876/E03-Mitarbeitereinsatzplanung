@@ -2,7 +2,7 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-# 2.9. Use-Case 05:Benutzerdatei anmelden
+# 2.9. Use-Case 05:Benutzerdatei anmelden/abmelden
 
 
 === Kurzbeschreibung
@@ -12,7 +12,6 @@ Dieser Use-Case beschreibt den Anmeldevorgang für Benutzer.
 === Kurzbeschreibung der Akteure
 
 * Manager
-* Administrator
 * Mitarbeiter
 
 
@@ -27,7 +26,7 @@ Dieser Use-Case beschreibt den Anmeldevorgang für Benutzer.
 
 . Der Use Case beginnt, wenn der Projektleiter/Manager die Software zur Mitarbeitereinsatzplanung gestartet hat.
 . Der Projektleiter/Manager meldet sich mit den benutzerbezogenen Anmeldedaten an.
-* IF die Anmeldung erfolgreich ist, wird der Benutzer auf UC1 (Kalender und Sidebar-Menü übersehen) weitergeleitet
+* IF die Anmeldung erfolgreich ist, wird der Benutzer auf UC1 (Kalender anzeigen) weitergeleitet
 * ELSE Wenn der Benutzer sein Passwort vergessen hat, wird Kontakt mit dem Administrator aufgenommen.
 . Der Use Case ist abgeschlossen.
 
