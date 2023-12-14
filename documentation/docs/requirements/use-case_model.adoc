@@ -10,13 +10,13 @@ Im nachfolgenden Abschnitt werden alle identifizierten Use Cases, deren Akteure 
 
 # 2.2. Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
-* UC01: Kalender und Sidebar-Menü übersehen
+* UC01: Kalender anzeigen
 * UC02: Projekt bearbeiten
-* UC03: Mitarbeiter auflisten
+* UC03: Mitarbeiter anzeigen
 * UC04: Neue Projekt hinzufügen
-* UC05: Benutzerdatei anmelden
+* UC05: Benutzerdatei anmelden/abmelden
 * UC06: Mitarbeiter bearbeiten
-* UC07: Mitarbeiter hinzufügen
+* UC07: Neue Mitarbeiter hinzufügen
 
 
 # 2.3. Use Case Diagramm

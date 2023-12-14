@@ -2,7 +2,7 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-# 2.7. Use-Case 03:Mitarbeiter auflisten
+# 2.7. Use-Case 03:Mitarbeiter anzeigen
 
 
 === Kurzbeschreibung
@@ -11,14 +11,12 @@ Dieser Use-Case beschreibt ein Liste und Daten von aller Mitarbeiter.
 
 === Kurzbeschreibung der Akteure
 
-* Manager
-* Administrator
-* Mitarbeiter
-
+* Manager: alle Mitarbeiter anzeigen
+* Mitarbeiter: alle Mitarbeiter anzeigen ohne klicken
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-* Der Benutzer ist erfolgreich angemeldet.
+* Der Benutzer (Manager/Mitarbeiter) ist erfolgreich angemeldet.
 * Leserechte für die Mitarbeiterliste sind vorhanden. 
 * Manager/Administrator haben Zugriff auf die Ausführung von Mitarbeiterdaten.
 
@@ -26,26 +24,17 @@ Dieser Use-Case beschreibt ein Liste und Daten von aller Mitarbeiter.
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt und öffnet automatisch das Sidebar-Menü und die Kalenderübersicht mit verschiedenen Funktionen.
-. Das Sidebar-Menü zeigt folgende Optionen:
-* Kalendar
-* Auswahl von Mitarbeitern: Leitet den Benutzer zu UC3 (Mitarbeite auflisten) weiter
-* Plannung auswählen, wird der User auf UC4 (Neue Projekt hinzufügen) weitergeleitet
-* Einstellung
-* Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.
+. Das Sidebar-Menü zeigt Optionen.
 . Der Use Case beginnt, wenn der Benutzer auf "Mitarbeiter" im Sidebar-Menü klickt.
 . Der Benutzer kann nach beliebigen Mitarbeitern suchen.
 . Die Gesamtanzahl der Mitarbeiter wird angezeigt.
-. Eine Liste von Mitarbeitern wird angezeigt, die folgende Daten enthält:
-* Avatar
-* Name
-* Rolle
-* Abteilung
+. Eine Liste von Mitarbeitern wird angezeigt.
 . Der Benutzer kann nach Abteilung, Rolle oder alphabetisch nach Namen filtern.
 . Der Benutzer kann die Mitarbeiterliste als PDF exportieren.
-. Wenn der Benutzer auf einen bestimmten Mitarbeiter klickt, wird er zu UC6 (Profil und Planung von Mitarbeitern) weitergeleitet.
+. Wenn der Benutzer auf einen bestimmten Mitarbeiter klickt, wird er zu UC6 (Mitarbeiter-Profil bearbeiten) weitergeleitet.
 * Es erscheint ein Formular mit den bereits gespeicherten Daten des Mitarbeiters.
 * Durch Klicken auf den "Änderungen speichern"-Button werden Aktualisierungen im System übernommen.
-. Der Benutzer kann neue Mitarbeiter hinzufügen, leitet den Benutzer zu UC7 (Mitarbeite auflisten) weiter
+. Der Benutzer kann neue Mitarbeiter hinzufügen, leitet den Benutzer zu UC7 (Mitarbeite anzeigen) weiter
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
@@ -86,6 +75,7 @@ Dieser Use-Case beschreibt ein Liste und Daten von aller Mitarbeiter.
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 Usability
 
-• Der Use Case ist grundlegend für das System und erfordert eine benutzerfreundliche Bedienung.
+* Der Use Case ist grundlegend für das System und erfordert eine benutzerfreundliche Bedienung.
 
+* Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.
 //==== <Besondere Anforderung 1>
