@@ -1,5 +1,5 @@
 <div class="container mt-5">
-  <div *ngIf="!registerMode" style="text-align: center;">
+  <div *ngIf="registerMode" style="text-align: center;">
     <div class="sidebar">
       <div class="logo">
         <!-- Hier können Sie Ihr Logo einfügen -->
@@ -32,12 +32,6 @@
       <!-- Fügen Sie hier ggf. weitere Menüpunkte hinzu -->
     </div>
 
-    <h1>Welcome to Our Software</h1>
-    <div class="text-center">
-      <p class="lead">Efficient Work Planning for a Productive Workplace!</p>
-      <button (click)="registerToggle()" class="btn btn-primary btn-lg me-2">Register</button>
-    </div>
-
     <div id="right-panel">
       <!-- Bereich für Neuigkeiten oder Updates -->
       <div id="news-feed">
@@ -48,6 +42,24 @@
           <li class="news-item">Teambuilding-Event diesen Freitag um 18 Uhr.</li>
         </ul>
       </div>
+
+      <!-- Button zum Anzeigen des Formular-Popups -->
+      <button id="add-news-btn" (click)="openPopup()">Neue News hinzufügen</button>
+
+      <!-- Popup-Formular -->
+      <div id="news-form-popup" class="popup" *ngIf="showPopup" (click)="onPopupClick($event)">
+        <div class="popup-content">
+          <span class="close-btn" (click)="closePopup()">&times;</span>
+          <form id="news-form">
+            <h2>Neue News hinzufügen</h2>
+            <label for="news-title">Titel:</label>
+            <input type="text" id="news-title" name="title" required><br><br>
+            <label for="news-content">Inhalt:</label>
+            <textarea id="news-content" name="content" required></textarea><br><br>
+            <button type="submit">Hinzufügen</button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <div *ngIf="registerMode" class="container">
@@ -57,3 +69,4 @@
 
     </div>
   </div>
+</div>

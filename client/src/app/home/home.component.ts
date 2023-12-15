@@ -11,6 +11,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 export class HomeComponent implements OnInit {
   registerMode = false;
   users: any;
+  isLoggedIn = false;
 
   constructor(private http: HttpClient) {}
 
@@ -37,5 +38,24 @@ export class HomeComponent implements OnInit {
 
   setActive(menuItem: string): void {
     this.activeMenuItem = menuItem;
+  }
+
+  showPopup: boolean = false;
+
+  // Funktion zum Öffnen des Popups
+  openPopup(): void {
+    this.showPopup = true;
+  }
+
+  // Funktion zum Schließen des Popups
+  closePopup(): void {
+    this.showPopup = false;
+  }
+
+  // Funktion zum Schließen des Popups bei Klick außerhalb
+  onPopupClick(event: Event): void {
+    if ((event.target as HTMLElement).id === 'news-form-popup') {
+      this.closePopup();
+    }
   }
 }
