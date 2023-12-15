@@ -10,24 +10,32 @@
         <span class="text">Dashboard</span>
       </div>
       <div class="menu-item" [class.active]="activeMenuItem === 'messages'" (click)="setActive('messages')">
+        <span class="material-icons">folder</span>
+        <span class="text">Projekte</span>
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'messages'" (click)="setActive('messages')">
+        <span class="material-icons">task_alt</span>
+        <span class="text">Aufgaben</span>
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'messages'" (click)="setActive('messages')">
         <span class="material-icons">calendar_month</span>
         <span class="text">Kalender</span>
       </div>
       <div class="menu-item" [class.active]="activeMenuItem === 'employees'" (click)="setActive('employees')">
-        <span class="material-icons">person</span>
-        <span class="text">Mitarbeiter</span>
+        <span class="material-icons">chat_bubble</span>
+        <span class="text">Chat</span>
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'employees'" (click)="setActive('employees')">
+        <span class="material-icons">group</span>
+        <span class="text">Team</span>
       </div>
       <div class="menu-item" [class.active]="activeMenuItem === 'analytics'" (click)="setActive('analytics')">
-        <span class="material-icons">bar_chart</span>
-        <span class="text">Analytik</span>
+        <span class="material-icons">notifications</span>
+        <span class="text">Benachrichtigungen</span>
       </div>
       <div class="menu-item" [class.active]="activeMenuItem === 'schedule'" (click)="setActive('schedule')">
-        <span class="material-icons">schedule</span>
-        <span class="text">Zeitplan</span>
-      </div>
-      <div class="menu-item" [class.active]="activeMenuItem === 'reports'" (click)="setActive('reports')">
-        <span class="material-icons">assessment</span>
-        <span class="text">Berichte</span>
+        <span class="material-icons">settings</span>
+        <span class="text">Einstellungen</span>
       </div>
       <!-- Fügen Sie hier ggf. weitere Menüpunkte hinzu -->
     </div>
