@@ -69,7 +69,15 @@
       </div>
     </div>
 
+    <div *ngIf="registerMode" class="container">
+      <div class="row justify-content-center"></div>
+
+      <app-register></app-register>
+
+    </div>
+
     <!-- Login Fenster -->
+    <div *ngIf="!isLoggedIn && !registerMode" style="text-align: center;"></div>
     <div class="login-container">
       <div class="login-box">
         <h2>Willkommen zurück!</h2>
@@ -97,13 +105,6 @@
           </div>
         </form>
       </div>
-    </div>
-
-    <div *ngIf="registerMode" class="container">
-      <div class="row justify-content-center"></div>
-
-      <app-register></app-register>
-
     </div>
   </div>
 </div>
