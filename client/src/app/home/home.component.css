@@ -15,14 +15,14 @@ body {
   height: calc(100vh - 56px);
   bottom: 0;
   left: 0;
-  width: 85px;
+  width: 80px;
   overflow-x: hidden;
   transition: width 0.5s;
   z-index: 1000;
 }
 
 .sidebar:hover, .sidebar:focus-within {
-  width: 200px;
+  width: 250px;
 }
 
 .logo {
