@@ -73,23 +73,27 @@
     <div class="login-container">
       <div class="login-box">
         <h2>Willkommen zurück!</h2>
-        <p>Melden Sie sich an, um auf Ihr Dashboard, Einstellungen und Projekte zuzugreifen.</p>
+        <p class="access-text">Melde dich an, um auf dein Dashboard, Einstellungen und Projekte zuzugreifen.</p>
         <form id="loginForm">
           <div class="input-container">
-            <input type="email" id="email" placeholder="E-Mail" required>
+            <input type="email" id="email" class="input-field" placeholder="E-Mail" required>
           </div>
           <div class="input-container">
-            <input type="password" id="password" placeholder="Passwort" required>
-            <span class="material-icons toggle-password">visibility_off</span>
+            <input type="password" id="password" class="input-field" placeholder="Passwort" #passwordInput required>
+            <span class="material-icons toggle-password" #togglePassword
+              (click)="togglePasswordVisibility()">visibility_off</span>
           </div>
-          <div class="checkbox-container">
-            <input type="checkbox" id="rememberMe">
-            <label for="rememberMe">Angemeldet bleiben</label>
+          <div class="checkbox-forgot-container">
+            <div class="checkbox-container">
+              <input type="checkbox" id="rememberMe">
+              <label for="rememberMe" class="checkbox-label">Angemeldet bleiben</label>
+            </div>
+            <a href="#" class="forgot-password-link">Passwort vergessen?</a>
           </div>
           <button type="submit">Anmelden</button>
-          <div class="footer">
-            <a href="#">Passwort vergessen?</a>
-            <a href="#">Konto erstellen</a>
+          <!-- Text und Button für die Registrierung -->
+          <div class="registration-prompt">
+            Noch keinen Account? <a href="#" class="register-link">Registrieren</a>
           </div>
         </form>
       </div>

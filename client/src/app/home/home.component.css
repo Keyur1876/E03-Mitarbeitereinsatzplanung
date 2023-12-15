@@ -22,7 +22,8 @@ body {
   z-index: 1000;
 }
 
-.sidebar:hover, .sidebar:focus-within {
+.sidebar:hover,
+.sidebar:focus-within {
   width: 230px;
 }
 
@@ -102,13 +103,15 @@ body {
   overflow: hidden;
 }
 
-.sidebar:hover .text, .sidebar:focus-within .text {
+.sidebar:hover .text,
+.sidebar:focus-within .text {
   opacity: 1;
   width: auto;
   transition: opacity 0.3s ease, width 0s linear 0s;
 }
 
-.sidebar:hover .logo img, .sidebar:focus-within .logo img {
+.sidebar:hover .logo img,
+.sidebar:focus-within .logo img {
   width: 45px;
 }
 
@@ -124,7 +127,7 @@ body {
   background-color: #f7f7f7;
   padding: 20px;
   overflow-y: auto;
-  box-shadow: -2px 0px 5px rgba(0,0,0,0.1);
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 #news-feed h2 {
@@ -134,17 +137,18 @@ body {
 }
 
 #news-list {
-  list-style: none; /* Keine Listensymbole */
+  list-style: none;
+  /* Keine Listensymbole */
 }
 
 .news-item {
   background-color: white;
   margin-bottom: 10px;
   padding: 10px;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.news-item{
+.news-item {
   border-left: 4px solid #3a9630;
 }
 
@@ -207,19 +211,23 @@ body {
 
 .login-container {
   display: flex;
-  text-align: center;
-  flex-direction: column; /* Falls das Login-Fenster eine Spaltenstruktur hat */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Stellen Sie sicher, dass dies den gesamten Bildschirm einnimmt */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
 }
 
 .login-box {
-  width: 350px;
+  width: 400px;
   padding: 40px;
-  border-radius: 8px;
+  border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: white;
+  z-index: 1;
 }
 
 h2 {
@@ -231,29 +239,30 @@ p {
   margin-bottom: 30px;
 }
 
+.access-text {
+  opacity: 80%;
+}
+
 .input-container {
   position: relative;
   margin-bottom: 20px;
 }
 
-input[type="email"],
-input[type="password"] {
+/* Gemeinsame Stile für Text- und Passwort-Eingabefelder */
+.input-field {
   width: 100%;
-  padding: 10px;
-  padding-right: 40px;
+  padding: 10px 40px 10px 10px; /* Rechter Padding für das Icon */
   font-size: 14px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
-input[type="password"] {
-  padding-left: 40px;
-}
-
+/* Stil für das Auge-Icon */
 .toggle-password {
   position: absolute;
   right: 10px;
-  top: 11px;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
   color: #757575;
 }
@@ -261,8 +270,37 @@ input[type="password"] {
 .checkbox-container {
   display: flex;
   align-items: center;
+  white-space: nowrap; /* Verhindert, dass der Text umbricht */
+}
+
+.checkbox-forgot-container {
+  display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-label {
+  margin-left: 0px;
+  font-size: 14px;
+}
+
+.forgot-password-link {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap; /* Verhindert, dass der Text umbricht */
+}
+
+.registration-prompt {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-link {
+  color: #1a73e8;
+  text-decoration: none;
+  margin-left: 5px;
 }
 
 input[type="checkbox"] {
@@ -273,7 +311,7 @@ button {
   width: 100%;
   padding: 10px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: #1a73e8;
   color: white;
   cursor: pointer;

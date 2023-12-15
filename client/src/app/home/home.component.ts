@@ -1,5 +1,3 @@
-// src/app/home/home.component.ts
-
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { AccountService } from '../services/account.service';
@@ -16,8 +14,8 @@ export class HomeComponent implements OnInit {
   activeMenuItem: string = '';
   showPopup: boolean = false;
 
-  @ViewChild('passwordInput') passwordInput!: ElementRef;
-  @ViewChild('togglePassword') togglePassword!: ElementRef;
+  @ViewChild('passwordInput') passwordInput!: ElementRef<HTMLInputElement>;
+  @ViewChild('togglePassword') togglePassword!: ElementRef<HTMLSpanElement>;
 
   constructor(private http: HttpClient, private accountService: AccountService) { }
 
@@ -28,19 +26,19 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  registerToggle() {
+  registerToggle(): void {
     this.registerMode = !this.registerMode;
   }
 
-  getUsers() {
+  getUsers(): void {
     this.http.get('https://localhost:5001/api/users').subscribe({
-      next: (response) => (this.users = response),
-      error: (error) => console.log(error),
-      complete: () => console.log('Request has completed'),
+      next: (response) => this.users = response,
+      error: (error) => console.error(error),
+      complete: () => console.log('Request has completed')
     });
   }
 
-  cancelRegisterMode(event: boolean) {
+  cancelRegisterMode(event: boolean): void {
     this.registerMode = event;
   }
 
@@ -65,9 +63,9 @@ export class HomeComponent implements OnInit {
   togglePasswordVisibility(): void {
     const input = this.passwordInput.nativeElement;
     const toggle = this.togglePassword.nativeElement;
-    const type = input.type === 'password' ? 'text' : 'password';
-    input.type = type;
-    toggle.textContent = type === 'password' ? 'visibility_off' : 'visibility';
+    const isPassword = input.type === 'password';
+    input.type = isPassword ? 'text' : 'password';
+    toggle.innerText = isPassword ? 'visibility' : 'visibility_off';
   }
 
   onLoginFormSubmit(event: Event): void {
