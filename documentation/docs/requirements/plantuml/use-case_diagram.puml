@@ -9,29 +9,32 @@ skinparam usecase<<unspezifiziert>> {
   StereotypeFontSize 10
 }
 
-actor Projektleiter
+actor Manager
 actor Mitarbeiter
-actor Admin
+actor Projektleiter
+
 
 rectangle "Mitarbeitereinsatzplanung" {
-  usecase "UC01: Kalender und sidebar Menu übersehen" as uc01
+  usecase "UC01: Kalender anzeigen" as uc01
   usecase "UC02: Projekt bearbeiten" as uc02
   usecase "UC03: Mitarbeiter auflisten" as uc03
   usecase "UC04: Neue Projekt hinzufügen" as uc04
-  usecase "UC05: Benutzerdatei anmelden" as uc05
+  usecase "UC05: Benutzerdatei anmelden/abmelden" as uc05
+  usecase "UC06: Mitarbeiter bearbeiter" as uc06
+  usecase "UC07: Neue Mitarbeiter hinzugefügen" as uc07
 }
 
-Projektleiter -- uc01
+Manager -- uc01
 uc01 -- Mitarbeiter
-Projektleiter -- uc02
-Projektleiter .down.> uc02 : ändern
-Admin -- uc02
-Admin .down.> uc02 : ändern
+Manager -- uc02
 uc02 -- Mitarbeiter
-Mitarbeiter .down.> uc02 : hinzufügen oder löschen
-Projektleiter -- uc03
-Projektleiter .down.> uc03 : hinzufügen
+Manager -- uc03
 uc03 -- Mitarbeiter
-uc04 -- Mitarbeiter
-Projektleiter -- uc05 
+Manager -- uc04
+Projektleiter -- uc04
+Manager -- uc05
+uc05 -- Mitarbeiter
+Manager -- uc06
+uc06 -- Mitarbeiter
+Manager -- uc07
 @enduml

@@ -11,8 +11,8 @@ Dieser Use-Case beschreibt die Verwaltung von Stammdaten für Projekte.
 
 === Kurzbeschreibung der Akteure
 
-* Manager
-* Administrator
+* Manager: alle Projekten bearbeiten
+* Mitarbeiter: eigene Projekte bearbeiten
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
@@ -80,5 +80,7 @@ Informationen wie Projektname, Projektbeschreibung werden angezeigt.
 Usability
 
 • Der Use Case ist grundlegend für das System und erfordert eine benutzerfreundliche Bedienung.
+
+* Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.
 
 //==== <Besondere Anforderung 1>

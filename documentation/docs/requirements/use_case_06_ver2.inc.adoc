@@ -11,8 +11,8 @@ Dieser Use-Case beschreibt die Verwaltung von Profilinformationen und Planung f�
 
 === Kurzbeschreibung der Akteure
 
-* Manager
-* Administrator
+* Manager: alle Mitarbeiter-Profil bearbeiten
+* Mitarbeiter: eigene Profil bearbeiten
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
@@ -24,18 +24,9 @@ Dieser Use-Case beschreibt die Verwaltung von Profilinformationen und Planung f�
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt und öffnet automatisch das Sidebar-Menü und die Kalenderübersicht mit verschiedenen Funktionen.
-. Das Sidebar-Menü zeigt folgende Optionen:
-* Kalendar
-* Auswahl von Mitarbeitern: Leitet den Benutzer zu UC3 (Mitarbeite auflisten) weiter
-* Plannung auswählen, wird der User auf UC4 (Neue Projekt hinzufügen) weitergeleitet
-* Einstellung
-* Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.
+. Das Sidebar-Menü zeigt Optionen.
 . Der Use Case beginnt, nachdem der Benutzer einen bestimmten Mitarbeiter ausgewählt hat.
-. Es erscheint ein Formular, das bereits gespeicherte Daten des Mitarbeiters enthält, darunter:
-* Persönliche Informationen
-* Zuordnung zu Projekten
-* Termine für den aktuellen/folgenden Tage
-* Status des Mitarbeiters (In Arbeit, Krank, Urlaub, usw.)
+. Es erscheint ein Formular, das bereits gespeicherte Daten des Mitarbeiters enthält.
 . Uber den Button Änderungen Speichern, werden die Aktualisierungen in das System übernommen.
 . Es gibt ein Zurück-Button.
 . Der Benutzer kann Mitarbeiter löschen.
@@ -81,4 +72,11 @@ Usability
 
 * Der Use Case ist grundlegend für das System und erfordert eine benutzerfreundliche Bedienung.
 
+* Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.
+
 //==== <Besondere Anforderung 1>
+
+=== Wireframe
+image::Web Wireframe1 - Profil Mitarbeiter bearbeiten.jpg[]
+
+

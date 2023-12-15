@@ -12,8 +12,7 @@ Dieser Use-Case beschreibt das Ausfüllen eines Formulars für neue Projekte.
 === Kurzbeschreibung der Akteure
 
 * Manager
-* Administrator
-
+* Projektleiter
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
@@ -24,22 +23,9 @@ Dieser Use-Case beschreibt das Ausfüllen eines Formulars für neue Projekte.
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt und öffnet automatisch das Sidebar-Menü und die Kalenderübersicht mit verschiedenen Funktionen.
-. Das Sidebar-Menü zeigt folgende Optionen:
-* Kalendar
-* Auswahl von Mitarbeitern: Leitet den Benutzer zu UC3 (Mitarbeite auflisten) weiter
-* Plannung auswählen, wird der User auf UC4 (Neue Projekt hinzufügen) weitergeleitet
-* Einstellung
-* Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.
+. Das Sidebar-Menü zeigt Optionen.
 . Der Use Case beginnt, wenn "Planung" im Sidebar-Menü ausgewählt wird.
-. Der Benutzer fügt die geforderten projektbezogenen Daten und Attribute in das Formular ein:
-* Projektname
-* Kundenname
-* Budget
-* Kategorie
-* Zuweisung (Teamleiter)
-* Fälligskeitdatum
-* Projektbeschreibung
-* Hinzufügen von Teammitgliedern
+. Der Benutzer fügt die geforderten projektbezogenen Daten und Attribute in das Formular ein.
 . Abschließend werden alle hinzugefügten Daten über den "Änderungen speichern"-Button in das System übernommen.
 . Der Use Case ist abgeschlossen.
 
@@ -84,3 +70,6 @@ Usability
 * Der Use Case ist grundlegend für das System und erfordert eine benutzerfreundliche Bedienung.
 
 //==== <Besondere Anforderung 1>
+
+=== Wireframe
+image::Web Wireframe1 - Neue Projekt hinzufügen.jpg[]
