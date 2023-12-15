@@ -1,59 +1,333 @@
-/* Stile für die Sidebar */
-/* Stile für die Sidebar */
-#sidebar {
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  overflow-y: hidden;
+  height: 100%;
+}
+
+/* Code für die Sidebar links*/
+.sidebar {
+  background-color: #f6f6f6;
+  color: #4a4a4a;
+  position: fixed;
+  top: 56px;
+  height: calc(100vh - 56px);
+  bottom: 0;
+  left: 0;
   width: 80px;
-  height: calc(100vh - 60px);
+  overflow-x: hidden;
+  transition: width 0.5s;
+  z-index: 1000;
+}
+
+.sidebar:hover,
+.sidebar:focus-within {
+  width: 230px;
+}
+
+.logo {
+  display: flex;
+  padding: 10px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+  transition: width 0.5s;
+}
+
+.menu-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  margin: 5px 10px;
+  background-color: transparent;
+}
+
+.menu-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #3a9630;
+  border-radius: 0 3px 3px 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.menu-item.active::before {
+  opacity: 1;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #3a9630;
+  border-radius: 0 3px 3px 0;
+}
+
+.menu-item:first-of-type {
+  margin-top: 30px;
+}
+
+.menu-item:hover {
+  background-color: rgba(74, 168, 56, 0.2);
+}
+
+.material-icons {
+  font-size: 24px;
+  color: #4a4a4a;
+  margin-right: 10px;
+}
+
+.text {
+  opacity: 0;
+  display: inline-block;
+  white-space: nowrap;
+  transition: opacity 0.5s ease, width 0s linear 0.5s;
+  width: 0;
+  overflow: hidden;
+}
+
+.sidebar:hover .text,
+.sidebar:focus-within .text {
+  opacity: 1;
+  width: auto;
+  transition: opacity 0.3s ease, width 0s linear 0s;
+}
+
+.sidebar:hover .logo img,
+.sidebar:focus-within .logo img {
+  width: 45px;
+}
+
+
+/* Code für den News Bereich */
+
+#right-panel {
+  width: 24%;
+  position: fixed;
+  right: 0;
+  top: 56px;
+  height: calc(100vh - 56px);
+  background-color: #f7f7f7;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#news-feed h2 {
+  position: relative;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#news-list {
+  list-style: none;
+  /* Keine Listensymbole */
+}
+
+.news-item {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-item {
+  border-left: 4px solid #3a9630;
+}
+
+.news-item:first-child {
+  margin-top: 30px;
+}
+
+/* Popup-Stil */
+.popup {
+  display: none;
   position: fixed;
   left: 0;
-  top: 60px;
-  background: #f7f7f7;
-  transition: width 0.5s;
-  overflow-x: hidden;
-  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#add-news-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-news-btn:hover {
+  background-color: #2980b9;
+}
+
+
+/* Code für das Login Fenster */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+}
+
+.login-box {
+  width: 400px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
   z-index: 1;
 }
 
-#sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+h2 {
+  margin-bottom: 10px;
 }
 
-#sidebar ul li {
-  border-bottom: none;
+p {
+  color: #555;
+  margin-bottom: 30px;
 }
 
-#sidebar ul li a {
+.access-text {
+  opacity: 80%;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Gemeinsame Stile für Text- und Passwort-Eingabefelder */
+.input-field {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* Rechter Padding für das Icon */
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Stil für das Auge-Icon */
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #757575;
+}
+
+.checkbox-container {
   display: flex;
   align-items: center;
-  padding: 20px 15px;
+  white-space: nowrap; /* Verhindert, dass der Text umbricht */
+}
+
+.checkbox-forgot-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-label {
+  margin-left: 0px;
+  font-size: 14px;
+}
+
+.forgot-password-link {
+  color: #1a73e8;
   text-decoration: none;
-  color: #808080;
-  transition: background-color 0.3s;
+  font-size: 14px;
+  white-space: nowrap; /* Verhindert, dass der Text umbricht */
 }
 
-#sidebar ul li a:hover {
-  color: #606060;
+.registration-prompt {
+  margin-top: 20px;
+  font-size: 14px;
 }
 
-#sidebar i {
-  min-width: 50px;
-  text-align: center;
-  font-size: 20px;
+.register-link {
+  color: #1a73e8;
+  text-decoration: none;
+  margin-left: 5px;
 }
 
-.tooltip {
-  flex-grow: 1;
-  padding-left: 10px;
-  opacity: 0;
-  transition: opacity 0.5s;
-  white-space: nowrap;
+input[type="checkbox"] {
+  margin-right: 10px;
 }
 
-#sidebar:hover {
-  width: 250px;
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1a73e8;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-#sidebar:hover .tooltip {
-  opacity: 1;
+button:hover {
+  background-color: #135ab6;
+}
+
+.footer a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer a:not(:last-child) {
+  margin-bottom: 16px;
 }

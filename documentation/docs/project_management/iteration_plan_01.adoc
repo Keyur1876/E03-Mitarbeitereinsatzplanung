@@ -41,6 +41,9 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Use Cases aufstellen | 1 | A | 30.11.2023: fertiggestellt | Dokument mit der Beschreibung des Projektes der Develappers GmbH| I02 | Paulina Kostka | 8 | 8
 | Use Cases Modell erstellen | 2 | B | 30.11.2023: fertiggestellt | Aufgestellte Use Cases| I02 | Anh Thu Hoang  | 3 | 1
 | Wireframe mit Funktionalitäten der Software entwerfen | 1 | A | 30.11.2023: fertiggestellt | Aufgestellte Use Cases| I02 | Le Quoc Minh Tran, Hoang Phuong Linh Nguyen, Anh Thu Hoang  | 4 | 5
+| Entwickeln der Anmeldeoption | 1 | A |  | |  |    |  | 
+| Erste Umsetzung vom Frontend für die Startseite | 1 | A | In Arbeit | Code auf GitHub | I02 |  Luca Wagner  | 4 | 6
+| Einrichten von Azure DevOps und importieren des Repos | 1 | A | 01.12.2023: fertiggestellt | Azure DevOps Portal | I02 |  Luca Wagner, Keyur Hareshbhai Kachhadiya  | 2 | 2
 |===
 
 

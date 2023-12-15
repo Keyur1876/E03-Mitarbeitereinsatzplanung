@@ -2,47 +2,48 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC02: Projekt bearbeiten
+# 2.6. Use-Case 02:Projekt bearbeiten
 
 
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt Stammdaten von Projekten.
+Dieser Use-Case beschreibt die Verwaltung von Stammdaten für Projekte.
 
 === Kurzbeschreibung der Akteure
 
-* Manager
-* Administrator
+* Manager: alle Projekten bearbeiten
+* Mitarbeiter: eigene Projekte bearbeiten
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-* Benutzer ist erfolgreich angemeldet.
+* Der Benutzer ist erfolgreich angemeldet.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn der User auf Projekten von Kalendar auswählen.
-. Projektname und Projektbeschreibung wird angezeigt.
+. Der Use Case beginnt, wenn der Benutzer ein Projekt aus dem Kalender auswählt.
+Informationen wie Projektname, Projektbeschreibung werden angezeigt.
 . Auslastung von Projekt wird automatisch gerechnet.
-. Kalendar mit aktuellen Tag wird angezeigt.
-. Gesamtdatem von Task (Summe von Task, fertige Task, bearbeitende Task)
-. Tabelle zur Darstellung von Task zu bearbeiten:
-* Taskname.
-* Fälligkeitsdatum zur Plannung.
-* Status zur Tracking mit Combo Box (In Bearbeitung, Fertig, Überfällig).
-* Task hinzufügen.
-. Tabelle zur Darstellung des kommenden Termin:
-* Termin bearbeiten.
-* Termin hinzufügen.
-. Zuordnung Teamitgliedern in dieser Projekt:
-* Teammiglieder hinzufügen.
-* Teammiglieder löschen.
+. Der Kalender zeigt den aktuellen Tag an.
+. Gesamtdaten der Tasks werden berechnet und dargestellt:
+* Summe der Tasks
+* Fertige Tasks
+* Bearbeitende Tasks
+. Eine Tabelle zeigt die bearbeitbaren Tasks mit folgenden Details:
+* Taskname
+* Geplantes Fälligkeitsdatum
+* Status (In Bearbeitung, Fertig, Überfällig) mit einer Auswahlbox
+* Möglichkeit zum Hinzufügen von Tasks
+. Eine Tabelle zeigt kommende Termine mit Optionen zum Bearbeiten und Hinzufügen von Terminen.
+. Möglichkeit zur Zuordnung von Teammitgliedern zu diesem Projekt:
+* Teammitgliedern hinzufügen.
+* Teammitgliedern löschen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 
-* Wenn User die Software nicht benutzen, wird der System automatisch abgemeldet.
+* Wenn der Benutzer die Software nicht nutzt,  erfolgt automatisch eine Abmeldung.
 * Wenn Internet-Zugang abgebrochen wird, wurden Änderungen nicht gespeichert.
 
 //==== <Alternativer Ablauf 1>
@@ -72,12 +73,14 @@ Dieser Use-Case beschreibt Stammdaten von Projekten.
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 //==== <Nachbedingung 1>
-* User kann gesamten Plannungsdaten übersehen und bearbeiten.
+* Der Benutzer kann die gesamten Planungsdaten einsehen und bearbeiten.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 Usability
 
-• Der Use Case gehört zu der grundlegenden Funktionalität des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
+• Der Use Case ist grundlegend für das System und erfordert eine benutzerfreundliche Bedienung.
+
+* Abmeldung von User, wird der User auf UC5 (Benutzerdatei anmelden) weitergeleitet.
 
 //==== <Besondere Anforderung 1>

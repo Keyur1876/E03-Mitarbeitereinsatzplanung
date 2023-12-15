@@ -2,17 +2,16 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC05: Benutzerdatei anmelden
+# 2.9. Use-Case 05:Benutzerdatei anmelden/abmelden
 
 
 === Kurzbeschreibung
 
-Dieser Use-Case beschreibt Anmeldungsdaten von User
+Dieser Use-Case beschreibt den Anmeldevorgang für Benutzer.
 
 === Kurzbeschreibung der Akteure
 
 * Manager
-* Administrator
 * Mitarbeiter
 
 
@@ -26,16 +25,15 @@ Dieser Use-Case beschreibt Anmeldungsdaten von User
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt, wenn der Projektleiter/Manager die Software zur Mitarbeitereinsatzplanung gestartet hat.
-. Projektleiter/Manager meldet sich mit den benutzerbezogenen Anmeldetedaten an.
-* IF Erfolgreich gemeldet, wird der User auf UC1 (Kalender und Sidebar-Menü übersehen) weitergeleitet
-* ELSE Der User die Passwort vergisst wird, kontaktieren mit der Admin 
-
+. Der Projektleiter/Manager meldet sich mit den benutzerbezogenen Anmeldedaten an.
+* IF die Anmeldung erfolgreich ist, wird der Benutzer auf UC1 (Kalender anzeigen) weitergeleitet
+* ELSE Wenn der Benutzer sein Passwort vergessen hat, wird Kontakt mit dem Administrator aufgenommen.
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
+* Automatische Abmeldung, wenn die Software nicht genutzt wird.
+* Nichtspeicherung von Änderungen bei Unterbrechung des Internetzugangs.
 
-* Wenn User die Software nicht benutzen, wird der System automatisch abgemeldet.
-* Wenn Internet-Zugang abgebrochen wird, wurden Änderungen nicht gespeichert.
 
 //==== <Alternativer Ablauf 1>
 //Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
@@ -64,12 +62,16 @@ Dieser Use-Case beschreibt Anmeldungsdaten von User
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 //==== <Nachbedingung 1>
-* Der User kann Mitarbeiter-Ersatz-Plannung anmelden und weiter bearbeiten.
+* Der Benutzer kann sich in die Mitarbeiter-Einsatzplanung einloggen und weiterarbeiten.
+
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 Usability
 
-• Der Use Case gehört zu der grundlegenden Funktionalität des Systems und muss daher eine einfache Bedienbarkeit ermöglichen.
+* Der Use Case ist grundlegend für das System und muss daher eine einfache Bedienbarkeit ermöglichen.
 
 //==== <Besondere Anforderung 1>
+
+=== Wireframe
+image::Web Wireframe1 - Benutzer anmelden.jpg[]

@@ -1,15 +1,109 @@
 <div class="container mt-5">
-  <div *ngIf="!registerMode" style="text-align: center;">
-    <h1>Welcome to Our Software</h1>
-    <div class="text-center">
-      <p class="lead">Efficient Work Planning for a Productive Workplace!</p>
-      <button (click)="registerToggle()" class="btn btn-primary btn-lg me-2">Register</button>
+  <div *ngIf="isLoggedIn && !registerMode" style="text-align: center;">
+    <!-- Sidebar auf der linken Seite -->
+    <div class="sidebar">
+      <div class="logo">
+        <img src="assets/images/LogoOhneText.png" alt="Firmenlogo">
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'dashboard'" (click)="setActive('dashboard')">
+        <span class="material-icons">dashboard</span>
+        <span class="text">Dashboard</span>
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'projects'" (click)="setActive('projects')">
+        <span class="material-icons">folder</span>
+        <span class="text">Projekte</span>
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'tasks'" (click)="setActive('tasks')">
+        <span class="material-icons">task_alt</span>
+        <span class="text">Aufgaben</span>
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'calendar'" (click)="setActive('calendar')">
+        <span class="material-icons">calendar_month</span>
+        <span class="text">Kalender</span>
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'chat'" (click)="setActive('chat')">
+        <span class="material-icons">chat_bubble</span>
+        <span class="text">Chat</span>
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'team'" (click)="setActive('team')">
+        <span class="material-icons">group</span>
+        <span class="text">Team</span>
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'notifications'" (click)="setActive('notifications')">
+        <span class="material-icons">notifications</span>
+        <span class="text">Benachrichtigungen</span>
+      </div>
+      <div class="menu-item" [class.active]="activeMenuItem === 'settings'" (click)="setActive('settings')">
+        <span class="material-icons">settings</span>
+        <span class="text">Einstellungen</span>
+      </div>
     </div>
 
-  <div *ngIf="registerMode" class="container">
-    <div class="row justify-content-center"></div>
+    <div id="right-panel">
+      <!-- News Bereich -->
+      <div id="news-feed">
+        <h2>News</h2>
+        <ul id="news-list">
+          <li class="news-item">Neue Features im Projektmanagement-Tool verfügbar.</li>
+          <li class="news-item">Wartungsarbeiten am Netzwerk geplant für nächste Woche.</li>
+          <li class="news-item">Teambuilding-Event diesen Freitag um 18 Uhr.</li>
+        </ul>
+      </div>
 
-    <app-register></app-register>
+      <!-- Button zum Anzeigen des Formular-Popups -->
+      <button id="add-news-btn" (click)="openPopup()">Neue News hinzufügen</button>
 
+      <!-- Popup-Formular -->
+      <div id="news-form-popup" class="popup" *ngIf="showPopup" (click)="onPopupClick($event)">
+        <div class="popup-content">
+          <span class="close-btn" (click)="closePopup()">&times;</span>
+          <form id="news-form">
+            <h2>Neue News hinzufügen</h2>
+            <label for="news-title">Titel:</label>
+            <input type="text" id="news-title" name="title" required><br><br>
+            <label for="news-content">Inhalt:</label>
+            <textarea id="news-content" name="content" required></textarea><br><br>
+            <button type="submit">Hinzufügen</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="registerMode" class="container">
+      <div class="row justify-content-center"></div>
+
+      <app-register></app-register>
+
+    </div>
+
+    <!-- Login Fenster -->
+    <div class="login-container" *ngIf="isLoggedIn">
+      <div class="login-box">
+        <h2>Willkommen zurück!</h2>
+        <p class="access-text">Melde dich an, um auf dein Dashboard, Einstellungen und Projekte zuzugreifen.</p>
+        <form id="loginForm">
+          <div class="input-container">
+            <input type="email" id="email" class="input-field" placeholder="E-Mail" required>
+          </div>
+          <div class="input-container">
+            <input type="password" id="password" class="input-field" placeholder="Passwort" #passwordInput required>
+            <span class="material-icons toggle-password" #togglePassword
+              (click)="togglePasswordVisibility()">visibility_off</span>
+          </div>
+          <div class="checkbox-forgot-container">
+            <div class="checkbox-container">
+              <input type="checkbox" id="rememberMe">
+              <label for="rememberMe" class="checkbox-label">Angemeldet bleiben</label>
+            </div>
+            <a href="#" class="forgot-password-link">Passwort vergessen?</a>
+          </div>
+          <button type="submit">Anmelden</button>
+          <!-- Text und Button für die Registrierung -->
+          <div class="registration-prompt">
+            Noch keinen Account? <a href="#" class="register-link">Registrieren</a>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
