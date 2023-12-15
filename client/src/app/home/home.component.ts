@@ -2,6 +2,7 @@
 
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { AccountService } from '../services/account.service';
 
 @Component({
   selector: 'app-home',
@@ -13,10 +14,13 @@ export class HomeComponent implements OnInit {
   users: any;
   isLoggedIn = false;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private accountService: AccountService) {}
 
   ngOnInit(): void {
     this.getUsers();
+    this.accountService.currentUser$.subscribe(user => {
+      this.isLoggedIn = !!user;
+    });
   }
 
   registerToggle() {
