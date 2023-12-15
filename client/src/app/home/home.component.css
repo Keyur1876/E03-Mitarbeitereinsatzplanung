@@ -22,7 +22,7 @@ body {
 }
 
 .sidebar:hover, .sidebar:focus-within {
-  width: 250px;
+  width: 220px;
 }
 
 .logo {
