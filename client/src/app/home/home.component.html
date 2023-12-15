@@ -1,8 +1,8 @@
 <div class="container mt-5">
   <div *ngIf="isLoggedIn && !registerMode" style="text-align: center;">
+    <!-- Sidebar auf der linken Seite -->
     <div class="sidebar">
       <div class="logo">
-        <!-- Hier können Sie Ihr Logo einfügen -->
         <img src="assets/images/LogoOhneText.png" alt="Firmenlogo">
       </div>
       <div class="menu-item" [class.active]="activeMenuItem === 'dashboard'" (click)="setActive('dashboard')">
@@ -37,11 +37,10 @@
         <span class="material-icons">settings</span>
         <span class="text">Einstellungen</span>
       </div>
-      <!-- Fügen Sie hier ggf. weitere Menüpunkte hinzu -->
     </div>
 
     <div id="right-panel">
-      <!-- Bereich für Neuigkeiten oder Updates -->
+      <!-- News Bereich -->
       <div id="news-feed">
         <h2>News</h2>
         <ul id="news-list">
@@ -67,6 +66,32 @@
             <button type="submit">Hinzufügen</button>
           </form>
         </div>
+      </div>
+    </div>
+
+    <!-- Login Fenster -->
+    <div class="login-container">
+      <div class="login-box">
+        <h2>Willkommen zurück!</h2>
+        <p>Melden Sie sich an, um auf Ihr Dashboard, Einstellungen und Projekte zuzugreifen.</p>
+        <form id="loginForm">
+          <div class="input-container">
+            <input type="email" id="email" placeholder="E-Mail" required>
+          </div>
+          <div class="input-container">
+            <input type="password" id="password" placeholder="Passwort" required>
+            <span class="material-icons toggle-password">visibility_off</span>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="rememberMe">
+            <label for="rememberMe">Angemeldet bleiben</label>
+          </div>
+          <button type="submit">Anmelden</button>
+          <div class="footer">
+            <a href="#">Passwort vergessen?</a>
+            <a href="#">Konto erstellen</a>
+          </div>
+        </form>
       </div>
     </div>
 

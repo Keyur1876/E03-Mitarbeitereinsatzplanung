@@ -7,6 +7,7 @@ body {
   height: 100%;
 }
 
+/* Code für die Sidebar links*/
 .sidebar {
   background-color: #f6f6f6;
   color: #4a4a4a;
@@ -111,6 +112,9 @@ body {
   width: 45px;
 }
 
+
+/* Code für den News Bereich */
+
 #right-panel {
   width: 24%;
   position: fixed;
@@ -196,4 +200,96 @@ body {
 
 #add-news-btn:hover {
   background-color: #2980b9;
+}
+
+
+/* Code für das Login Fenster */
+
+.login-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column; /* Falls das Login-Fenster eine Spaltenstruktur hat */
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Stellen Sie sicher, dass dies den gesamten Bildschirm einnimmt */
+}
+
+.login-box {
+  width: 350px;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="password"] {
+  padding-left: 40px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 11px;
+  cursor: pointer;
+  color: #757575;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1a73e8;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #135ab6;
+}
+
+.footer a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer a:not(:last-child) {
+  margin-bottom: 16px;
 }
