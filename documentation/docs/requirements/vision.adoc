@@ -18,7 +18,7 @@ Dieses Visions-Dokument bezieht sich auf das System “Mitarbeitereinsatzplanung
 //Verweis passend zum Belegabgabe-Template se1_belegabgabe_t00.adoc
 Siehe <<#glossary, Glossar>>.
 
-=== Referenzen
+//=== Referenzen
 (hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
 
 
