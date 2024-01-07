@@ -8,10 +8,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace API.Data.Migrations
+namespace API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20231205121929_InitialCreate")]
+    [Migration("20240102161501_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -40,6 +40,9 @@ namespace API.Data.Migrations
 
                     b.Property<string>("UserName")
                         .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("UserRolle")
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 

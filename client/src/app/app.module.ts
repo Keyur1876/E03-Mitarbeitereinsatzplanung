@@ -4,30 +4,33 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-
-import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
-import { HomeComponent } from './home/home.component';
-import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';  // Import AppRoutingModule
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { AppComponent } from './app.component';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { HomeComponent } from './home/home.component';
+import { ProjectComponent } from './project/project.component';
+import { UserListComponent } from './user-list/user-list.component';
 import { RegisterComponent } from './register/register.component';
+import { SchedulerComponent } from './scheduler/scheduler.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
+    LoginFormComponent,
     HomeComponent,
-    EmployeeDashboardComponent,
+    ProjectComponent,
+    UserListComponent,
     RegisterComponent,
+    SchedulerComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-    AppRoutingModule,
-    BsDropdownModule.forRoot(), // Add this line to import the AppRoutingModule
+    AppRoutingModule,  // Add this line to import the AppRoutingModule
+    BsDropdownModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

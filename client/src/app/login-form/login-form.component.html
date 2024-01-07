@@ -1,0 +1,36 @@
+ <!-- Login Fenster -->
+ <div style="text-align: center;">
+    <div class="login-container">
+      <div class="login-box">
+        <h2>Willkommen zurück!</h2>
+        <p class="access-text">Melde dich an, um auf dein Dashboard, Einstellungen und Projekte zuzugreifen.</p>
+
+
+        <form id="loginForm" #loginForm = "ngForm" (ngSubmit)="login()" autocomplete="off">
+          <div class="input-container">
+            <input name = "username"
+            [(ngModel)] = "model.username"
+             type="email" id="email" class="input-field" placeholder="E-Mail" required>
+          </div>
+          <div class="input-container">
+            <input name = "password"
+            [(ngModel)] = "model.password"
+            type="password" id="password" class="input-field" placeholder="Passwort" #passwordInput required>
+          </div>
+          <div class="checkbox-forgot-container">
+            <div class="checkbox-container">
+              <input type="checkbox" id="rememberMe">
+              <label for="rememberMe" class="checkbox-label">Angemeldet bleiben</label>
+            </div>
+            <a href="#" class="forgot-password-link">Passwort vergessen?</a>
+          </div>
+          <button type="submit">Login</button>
+          <!-- Text und Button für die Registrierung -->
+          <div class="registration-prompt">
+            Noch keinen Account? <a href="#" class="register-link" routerLink="/register">Registrieren</a>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

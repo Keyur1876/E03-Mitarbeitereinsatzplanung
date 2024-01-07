@@ -17,7 +17,7 @@
         <span class="material-icons">task_alt</span>
         <span class="text">Aufgaben</span>
       </div>
-      <div class="menu-item" [class.active]="activeMenuItem === 'calendar'" (click)="setActive('calendar')">
+      <div class="menu-item" [class.active]="activeMenuItem === 'calendar'" (click)="setActive('calendar')" routerLink="/scheduler">
         <span class="material-icons">calendar_month</span>
         <span class="text">Kalender</span>
       </div>
@@ -25,7 +25,7 @@
         <span class="material-icons">chat_bubble</span>
         <span class="text">Chat</span>
       </div>
-      <div class="menu-item" [class.active]="activeMenuItem === 'team'" (click)="setActive('team')">
+      <div class="menu-item" [class.active]="activeMenuItem === 'team'" (click)="setActive('team')" routerLink="/user-list">
         <span class="material-icons">group</span>
         <span class="text">Team</span>
       </div>
@@ -72,40 +72,6 @@
     <div *ngIf="registerMode" class="container">
       <div class="row justify-content-center"></div>
 
-      <app-register></app-register>
+      
 
     </div>
-
-    <!-- Login Fenster -->
-    <div *ngIf="isLoggedIn && !registerMode" style="text-align: center;">
-      <div class="login-container">
-        <div class="login-box">
-          <h2>Willkommen zurück!</h2>
-          <p class="access-text">Melde dich an, um auf dein Dashboard, Einstellungen und Projekte zuzugreifen.</p>
-          <form id="loginForm">
-            <div class="input-container">
-              <input type="email" id="email" class="input-field" placeholder="E-Mail" required>
-            </div>
-            <div class="input-container">
-              <input type="password" id="password" class="input-field" placeholder="Passwort" #passwordInput required>
-              <span class="material-icons toggle-password" #togglePassword
-                (click)="togglePasswordVisibility()">visibility_off</span>
-            </div>
-            <div class="checkbox-forgot-container">
-              <div class="checkbox-container">
-                <input type="checkbox" id="rememberMe">
-                <label for="rememberMe" class="checkbox-label">Angemeldet bleiben</label>
-              </div>
-              <a href="#" class="forgot-password-link">Passwort vergessen?</a>
-            </div>
-            <button type="submit">Anmelden</button>
-            <!-- Text und Button für die Registrierung -->
-            <div class="registration-prompt">
-              Noch keinen Account? <a href="#" class="register-link">Registrieren</a>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
