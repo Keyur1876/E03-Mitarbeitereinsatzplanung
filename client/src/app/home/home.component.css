@@ -159,9 +159,9 @@ body {
 }
 
 .account-name {
-  white-space: nowrap; /* Kein Zeilenumbruch */
-  overflow: hidden;
-  text-overflow: ellipsis; /* Text mit Ellipsis (...) abschneiden, wenn zu groß */
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px; /* Setzen Sie die Breite auf den gewünschten Wert */
 }
 
 .account-role {
