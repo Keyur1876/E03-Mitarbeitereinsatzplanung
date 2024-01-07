@@ -12,8 +12,8 @@ body {
   background-color: #f6f6f6;
   color: #4a4a4a;
   position: fixed;
-  top: 56px;
-  height: calc(100vh - 56px);
+  top: 0px;
+  height: 100vh;
   bottom: 0;
   left: 0;
   width: 80px;
