@@ -2,7 +2,7 @@
   <div *ngIf="isLoggedIn && !registerMode" style="text-align: center;">
     <!-- Sidebar auf der linken Seite -->
     <div class="sidebar">
-      <div class="sidebar-content">
+      <div class="menu-items">
         <div class="logo">
           <img src="assets/images/LogoOhneText.png" alt="Firmenlogo">
         </div>
@@ -40,18 +40,18 @@
           <span class="material-icons">settings</span>
           <span class="text">Einstellungen</span>
         </div>
+      </div>
 
-        <!-- Account Section -->
-        <div class="sidebar-section account">
-          <img src="\assets\images\profile_placeholder.jpg" alt="Profilbild" class="profile-pic">
-          <div class="account-info">
-            <div class="account-name">Jane Doe</div>
-            <div class="account-role">Administrator</div>
-          </div>
-          <button class="logout-button">
-            <span class="material-icons logout-icon">logout</span>
-          </button>
+      <!-- Account Section -->
+      <div class="sidebar-section account">
+        <img src="\assets\images\profile_placeholder.jpg" alt="Profilbild" class="profile-pic">
+        <div class="account-info">
+          <div class="account-name">Max Mustermann</div>
+          <div class="account-role">Administrator</div>
         </div>
+        <button class="logout-button">
+          <span class="material-icons logout-icon">logout</span>
+        </button>
       </div>
 
       <!--
