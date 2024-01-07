@@ -2,45 +2,61 @@
   <div *ngIf="isLoggedIn && !registerMode" style="text-align: center;">
     <!-- Sidebar auf der linken Seite -->
     <div class="sidebar">
-      <div class="logo">
-        <img src="assets/images/LogoOhneText.png" alt="Firmenlogo">
-      </div>
-      <div class="menu-item" [class.active]="activeMenuItem === 'dashboard'" (click)="setActive('dashboard')">
-        <span class="material-icons">dashboard</span>
-        <span class="text">Dashboard</span>
-      </div>
-      <div class="menu-item" [class.active]="activeMenuItem === 'projects'" (click)="setActive('projects')">
-        <span class="material-icons">folder</span>
-        <span class="text">Projekte</span>
-      </div>
-      <div class="menu-item" [class.active]="activeMenuItem === 'tasks'" (click)="setActive('tasks')">
-        <span class="material-icons">task_alt</span>
-        <span class="text">Aufgaben</span>
-      </div>
-      <div class="menu-item" [class.active]="activeMenuItem === 'calendar'" (click)="setActive('calendar')" routerLink="/scheduler">
-        <span class="material-icons">calendar_month</span>
-        <span class="text">Kalender</span>
-      </div>
-      <div class="menu-item" [class.active]="activeMenuItem === 'chat'" (click)="setActive('chat')">
-        <span class="material-icons">chat_bubble</span>
-        <span class="text">Chat</span>
-      </div>
-      <div class="menu-item" [class.active]="activeMenuItem === 'team'" (click)="setActive('team')" routerLink="/user-list">
-        <span class="material-icons">group</span>
-        <span class="text">Team</span>
-      </div>
-      <div class="menu-item" [class.active]="activeMenuItem === 'notifications'" (click)="setActive('notifications')">
-        <span class="material-icons">notifications</span>
-        <span class="text">Benachrichtigungen</span>
-      </div>
-      <div class="menu-item" [class.active]="activeMenuItem === 'settings'" (click)="setActive('settings')">
-        <span class="material-icons">settings</span>
-        <span class="text">Einstellungen</span>
-      </div>
-    </div>
+      <div class="sidebar-content">
+        <div class="logo">
+          <img src="assets/images/LogoOhneText.png" alt="Firmenlogo">
+        </div>
+        <div class="menu-item" [class.active]="activeMenuItem === 'dashboard'" (click)="setActive('dashboard')">
+          <span class="material-icons">dashboard</span>
+          <span class="text">Dashboard</span>
+        </div>
+        <div class="menu-item" [class.active]="activeMenuItem === 'projects'" (click)="setActive('projects')">
+          <span class="material-icons">folder</span>
+          <span class="text">Projekte</span>
+        </div>
+        <div class="menu-item" [class.active]="activeMenuItem === 'tasks'" (click)="setActive('tasks')">
+          <span class="material-icons">task_alt</span>
+          <span class="text">Aufgaben</span>
+        </div>
+        <div class="menu-item" [class.active]="activeMenuItem === 'calendar'" (click)="setActive('calendar')"
+          routerLink="/scheduler">
+          <span class="material-icons">calendar_month</span>
+          <span class="text">Kalender</span>
+        </div>
+        <div class="menu-item" [class.active]="activeMenuItem === 'chat'" (click)="setActive('chat')">
+          <span class="material-icons">chat_bubble</span>
+          <span class="text">Chat</span>
+        </div>
+        <div class="menu-item" [class.active]="activeMenuItem === 'team'" (click)="setActive('team')"
+          routerLink="/user-list">
+          <span class="material-icons">group</span>
+          <span class="text">Team</span>
+        </div>
+        <div class="menu-item" [class.active]="activeMenuItem === 'notifications'" (click)="setActive('notifications')">
+          <span class="material-icons">notifications</span>
+          <span class="text">Benachrichtigungen</span>
+        </div>
+        <div class="menu-item" [class.active]="activeMenuItem === 'settings'" (click)="setActive('settings')">
+          <span class="material-icons">settings</span>
+          <span class="text">Einstellungen</span>
+        </div>
 
+        <!-- Account Section -->
+        <div class="sidebar-section account">
+          <img src="\assets\images\profile_placeholder.jpg" alt="Profilbild" class="profile-pic">
+          <div class="account-info">
+            <div class="account-name">Jane Doe</div>
+            <div class="account-role">Administrator</div>
+          </div>
+          <button class="logout-button">
+            <span class="material-icons logout-icon">logout</span>
+          </button>
+        </div>
+      </div>
+
+      <!--
+      
     <div id="right-panel">
-      <!-- News Bereich -->
       <div id="news-feed">
         <h2>News</h2>
         <ul id="news-list">
@@ -50,10 +66,8 @@
         </ul>
       </div>
 
-      <!-- Button zum Anzeigen des Formular-Popups -->
       <button id="add-news-btn" (click)="openPopup()">Neue News hinzufügen</button>
 
-      <!-- Popup-Formular -->
       <div id="news-form-popup" class="popup" *ngIf="showPopup" (click)="onPopupClick($event)">
         <div class="popup-content">
           <span class="close-btn" (click)="closePopup()">&times;</span>
@@ -69,9 +83,11 @@
       </div>
     </div>
 
-    <div *ngIf="registerMode" class="container">
-      <div class="row justify-content-center"></div>
+    -->
 
-      
+      <div *ngIf="registerMode" class="container">
+        <div class="row justify-content-center"></div>
 
-    </div>
+
+
+      </div>

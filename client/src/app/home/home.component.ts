@@ -62,3 +62,19 @@ export class HomeComponent implements OnInit {
 
 
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const accountSection = document.querySelector('.sidebar-section.account') as HTMLElement;
+
+  // Event-Listener, um die Klassen zu toggeln
+  accountSection.addEventListener('click', () => {
+    accountSection.classList.toggle('expanded');
+  });
+
+  // Event-Listener, um die Klasse zu entfernen, wenn außerhalb geklickt wird
+  document.addEventListener('click', (event) => {
+    if (!accountSection.contains(event.target as Node)) {
+      accountSection.classList.remove('expanded');
+    }
+  });
+});

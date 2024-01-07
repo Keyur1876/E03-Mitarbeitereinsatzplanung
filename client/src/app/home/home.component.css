@@ -115,15 +115,86 @@ body {
   width: 45px;
 }
 
+.sidebar-section.account {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+  position: relative;
+}
+
+.account-flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: opacity 0.3s, visibility 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.account-name {
+  font-weight: bold;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.account-role {
+  font-size: 0.8em; /* Kleinere Schriftgröße */
+  color: rgba(0, 0, 0, 0.6); /* 70% Opacity für den Text */
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: auto;
+  transition: opacity 0.3s, visibility 0.3s, color 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.logout-icon {
+  color: #4a4a4a; /* Ursprüngliche Farbe des Icons */
+  transition: color 0.2s ease; /* Sanfter Übergang für die Farbe */
+}
+
+.logout-icon:hover {
+  color: #888888;
+}
+
+/* Anpassungen, wenn die Sidebar gehovert ist */
+.sidebar:hover .account-info,
+.sidebar:focus-within .account-info,
+.sidebar:hover .logout-button,
+.sidebar:focus-within .logout-button {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 /* Code für den News Bereich */
-
 #right-panel {
   width: 24%;
   position: fixed;
   right: 0;
-  top: 56px;
-  height: calc(100vh - 56px);
+  top: 0px;
+  height: 100vh;
   background-color: #f7f7f7;
   padding: 20px;
   overflow-y: auto;
