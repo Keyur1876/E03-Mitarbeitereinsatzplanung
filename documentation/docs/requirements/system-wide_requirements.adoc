@@ -1,12 +1,13 @@
-= System-Wide Requirements: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+= System-Wide Requirements: E03-Mitarbeitereinsatzplanung
+Hoang Phuong Linh Nguyen <s83710@htw-dresden.de>;
+Nils Weber <s84281@htw-dresden.de>; Anh Thu Hoang <s85622@htw-dresden.de>; Luca Leon Wagner <s85265@htw-dresden.de>; Le Quoc Minh Tran <s87560@htw-dresden.de>; Tom Eckhardt <s00000@htw-dresden.de>; Keyur Hareshbhai Kachhadiya <s85495@htw-dresden.de>; Paulina Kostka <s85455@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Einführung
-In diesem Dokument werden die systemweiten Anforderungen für das Projekt <Thema> spezifiziert. Die Gliederung erfolgt nach der FURPS+ Anforderungsklassifikation:
+In diesem Dokument werden die systemweiten Anforderungen für das Projekt E03-Mitarbeitereinsatzplanung spezifiziert. Die Gliederung erfolgt nach der FURPS+ Anforderungsklassifikation:
 
 * Systemweite funktionale Anforderungen (F),
 * Qualitätsanforderungen für Benutzbarkeit, Zuverlässigkeit, Effizienz und Wartbarkeit (URPS) sowie
@@ -18,39 +19,70 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 == Systemweite funktionale Anforderungen
 //Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
 
+*SWFA-1: Die Software muss alle Projekt- und Stammdaten dauerhaft speichern können*
+
+Nach Speicherung der neuen Daten muss das System in der Lage sein, bei erneuter Anmeldung die zuvor gespeicherten Daten anzeigen zu können.
+Zu Testzwecken werden effundene Daten in eine Mitarbeiterkartei eingetragen und nach Speicherung und erneuter Anmeldung wieder abgerufen.
+
+*SWFA-2: Die Software muss in der Lage sein, den Zugriff auf sensible Daten je nach Rolle einzuschränken*
+
+Der Administrator und die internen und externen Mitarbeiter verfügen über unterschiedliche Zugriffsrechte, sodass die einzelnen Mitarbeiter die Stammdaten anderer Mitarbeiter nicht einsehen können und es zu keinen Verletzungen des Datenschutzes kommt. Außerdem dürfen Mitarbeiter keine Änderungen an Projekten vornehmen, weil sie nicht dazu Berechtigt sind.
+Zu Testzwecken erfolgt eine Anmeldung über den Administrator-Login und Mitarbeiter-Login, um die gewünschten Einschränkungen zu prüfen.
+
+*SWFA-3: Die Software muss über API, Daten aus einem anderen System übertragen können*
+
+Die Urlaubstage und Krankmeldungen werden mithilfe ein externes Programmes(Urlaubsverwaltung.cloud) gespeichert und sollen aus diesem in die Mitarbeitereinsatzplanung übertragen werden können.
+Da die Daten der Mitarbeiter unseres Auftraggebers nicht in vollem Umfang preisgegeben werden können, kann zum Testzweck nur geprüft werden, ob die Schnittstelle mit dem externen Programm grundsätzlich funktioniert.
 
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
 
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
+*NFAU-1: Die Systemoberfläche muss selbsterklärend und einfach zu bedienen sein*
+
+Zur Überprüfung der einfachen Nutzung der Software erhält ein Testnutzer ohne vorherige Kenntnise einen Testzugang. Beim Testen der Software muss auf externe Hilfe verzichtet werden.
 
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
+*NFAR-1: Die Software muss robust gegenüber Abstürzen und Daenverlusten sein*
+
+Zu Testzwecken wir die Software gestartet und die Internetverbindung bewusst unterbrochen.
+
+*NFAR-2: Die Software soll zu jedem Zeitpunkt nutzbar sein*
+
+Zu Testzwecken wird zu willkürklichen Zeiten das Programm gestartet.
 
 === Effizienz (Performance)
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
+*NFAP-1: Die Nutzbarkeit der Software muss gewährleistet sein, wenn alle Mitarbeiter mit einem Zugang gleichzeitig angemeldet sind*
+
+Zu Testzwecken werden mehrere Anmeldungen gleichzeitig vorgenommen.
 
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
+*NFAS-1: Das Entwicklerteam muss eine Installationsanleitung der Software, dem Auftraggeber zur Verfügung stellen. Damit wird eine transparente Installation gewährleistet*
+
+*NFAS-2: Die Software muss auf folgenden Browsern lauffähig sein:*
+
+* Safari
+* Firefox
 
 
 == Zusätzliche Anforderungen
 
 === Einschränkungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Ressourcenbegrenzungen
-* zu nutzende Komponenten / Bibliotheken / Frameworks
-* Vorgaben für die Programmiersprache
-* zu unterstützende Plattformen / Betriebssysteme
-* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
+* Zur Entwicklung und Nutzung der Software soll HTTPS genutzt werden.
+* Die Nutzung der Software soll nur Online erfolgen.
+* Vermeidung von längeren Verzögerungszeiten.
 
 === Organisatorische Randbedingungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Anforderungen an Betrieb, Management und Wartung der Anwendung
-* zu beachtende Standards, Normen und Regeln
+* Die Software muss verhindern können, dass Unbefugte Einsicht in die Daten nehmen können.
+* Die Software muss personenbezogene Daten schützen können.
 
 === Rechtliche Anforderungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Lizensierung der Anwendung
-* Datenschutz
+* Lizensierung der Anwendung durch Auftraggeber
+* Die Software muss der DSGVO entsprechen.
