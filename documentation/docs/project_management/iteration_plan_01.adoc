@@ -1,5 +1,6 @@
 = Iteration Plan 01: {E03-Projekteinsatzplanung}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Hoang Phuong Linh Nguyen <s83710@htw-dresden.de>;
+Nils Weber <s84281@htw-dresden.de>; Anh Thu Hoang <s85622@htw-dresden.de>; Luca Leon Wagner <s85265@htw-dresden.de>; Le Quoc Minh Tran <s87560@htw-dresden.de>; Tom Eckhardt <s00000@htw-dresden.de>; Keyur Hareshbhai Kachhadiya <s85495@htw-dresden.de>; Paulina Kostka <s85455@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -79,7 +80,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 *Beurteilung im Vergleich zu den Zielen*
 
-*Ziel 1 erreicht:* jedes Teammitglied verfügt über eine Rolle und weiß über die jeweiligen Aufgaben bescheid.
+*Ziel 1 erreicht:* jedes Teammitglied verfügt über eine Rolle, jedoch weist die konkrete Aufgabenverteilung Defizite auf.
 *Ziel 2 erreicht:* Der erste Entwurf der Vision wurde verfasst und offene Anforderungen mit dem Auftraggeber besprochen.
 *Ziel 3 erreicht:* Der erste Entwurf von 7 Use Cases wurde ausformuliert und mit dem Auftraggeber besprochen, mit Verbesserungsvorschlägen.
 *Ziel 4 erreicht:* Der erste Entwurf des Use Case Modells steht und muss nach Verbesserung der Use Cases abgeändert werden.
@@ -89,7 +90,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 *Geplante vs. erledigte Aufgaben*
 
-Es wurden alle für diesen Iterationsschritt geplanten Aufgaben umgesetzt.
+Es wurden alle, bis auf Zeil 1, für diesen Iterationsschritt geplanten Aufgaben umgesetzt.
 
 *Beurteilung im Vergleich zu den Bewertungskriterien*
 

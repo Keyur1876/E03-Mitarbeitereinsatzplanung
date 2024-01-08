@@ -1,5 +1,6 @@
-= Projektplan: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+= Projektplan: E03-Mitarbeitereinsatzplanung
+Hoang Phuong Linh Nguyen <s83710@htw-dresden.de>;
+Nils Weber <s84281@htw-dresden.de>; Anh Thu Hoang <s85622@htw-dresden.de>; Luca Leon Wagner <s85265@htw-dresden.de>; Le Quoc Minh Tran <s87560@htw-dresden.de>; Tom Eckhardt <s00000@htw-dresden.de>; Keyur Hareshbhai Kachhadiya <s85495@htw-dresden.de>; Paulina Kostka <s85455@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -17,9 +18,9 @@ Die in diesem Kontext erstellten Dokumente werden im Laufe der Projektarbeit erg
 |===
 | *Name* | *Informationen zur Person* | *Rolle*
 
-| Hoang Phuong Linh Nguyen | Wirtschaftsinformatik Eigenschaften: kommunikativ, neugierig| Architect 
+| Hoang Phuong Linh Nguyen | Wirtschaftsinformatik Eigenschaften: kommunikativ, neugierig| Architect/Analyst 
 | Nils Weber | Wirtschaftsingenieurwesen Eigenschaften: kommunikativ, zielstrebig | Project Manager 
-|Anh Thu Hoang  | Wirtschaftsinformatik Eigenschaften: kommunikativ, neugierig | Architect 
+|Anh Thu Hoang  | Wirtschaftsinformatik Eigenschaften: kommunikativ, neugierig | Architect/Analyst 
 |Luca Leon Wagner  | Wirtschaftsinformatik Eigenschaften: neugierig, kommunikativ, perfektionistisch | Developer 
 |Le Quoc Minh Tran  | Wirtschaftsinformatik Eigenschaften: ausdauernd, geduldig  | Architect/Developer
 |Tom Eckhardt   | Wirtschaftsingenieurwesen Eigenschaften: kommunikativ | Testing/Analyst
@@ -70,9 +71,34 @@ Die *Meetings mit* unserem *Auftraggeber* werden vorallem genutzt, um Lücken zu
 
 | I2
 |
-* Iterationsplan I02
+* Meeting mit dem Coach durchführen
+* Meetings mit dem Auftraggeber durchführen
+* Rollenverteilung im Team vornehmen
+* Entwürfe der Vision, Use-Cases, Use-Case-Model
+* detaillierte Anforderungen mit dem Auftraggeber herausarbeiten
 | 20.11.2023-03.12.2023
 | 14
+
+| I3 
+|
+* Meeting mit dem Coach durchführen
+* Meetings mit dem Auftraggeber durchführen
+* Entwürfe der Vision, Use-Cases, Use-Case-Model diskutieren und Änderungen besprechen
+* Anforderungen des Auftraggebers verfeinerter in die Use-Cases einbinden
+* Risikoliste aufstellen
+* Projektplan und Iterationspläne 1 und 2 aufstellen
+| 04.12.2023-17.12.2023
+| 14
+
+| I4 
+|
+* Meeting mit dem Coach durchführen
+* Meetings mit dem Auftraggeber durchführen
+* Entwürfe der Vision, Use-Cases, Use-Case-Model final fertigstellen
+* Anforderungen des Auftraggebers verfeinerter in die Use-Cases einbinden
+* Risikoliste aufstellen
+* Projektplan und Iterationspläne 1 und 2 aufstellen
+| 04.12.2023-17.12.2023
 |===
 
 
@@ -82,3 +108,12 @@ Die *Meetings mit* unserem *Auftraggeber* werden vorallem genutzt, um Lücken zu
 
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
+
+*Problem 1*: Bei der Bearbeitung des Projektes haben wir Redundanzen festgestellt, sodass mehrere thematisch gleiche Dokumente erstllt wurden.
+*Lösung 1*: Bisher erstellte Dokumente (Use-Cases) wurden im Team besprochen und zusammengeführt, sodass Redundazen behoben wurden.
+
+*Problem 2*: Mangelhafte explizite Aufgabenverteilung im Team.
+*Lösung2*: Aufgabenverteilung erfolgt im Teammeeting und wird unter Git Hub dokumentiert.
+
+*Problem 3*: Aufkommen von Missverständnissen bezüglich der Umsetzung der Anforderungen des Arbeitgebers
+*Lösung 3*: Zusammenführung aller Ideen bezüglich der Use-Cases im Teammeeting und Veranschaulichung mithilfe eines Tafelbildes.
