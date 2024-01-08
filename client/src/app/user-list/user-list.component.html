@@ -1,7 +1,18 @@
 <h1>{{title}}</h1>
 
-<ul>
-  <li *ngFor="let user of users">
-    {{user.id}}-{{user.userName}}-{{user.userRolle}}
-  </li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Username</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.userName}}</td>
+      <td>{{user.userRole}}</td>
+    </tr>
+  </tbody>
+</table>
