@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { AccountService } from '../services/account.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,7 @@ export class HomeComponent implements OnInit {
   @ViewChild('passwordInput') passwordInput!: ElementRef<HTMLInputElement>;
   @ViewChild('togglePassword') togglePassword!: ElementRef<HTMLSpanElement>;
 
-  constructor(private http: HttpClient, private accountService: AccountService) { }
+  constructor(private http: HttpClient, private accountService: AccountService, private router: Router) { }
 
   ngOnInit(): void {
     this.getUsers();
@@ -58,6 +59,11 @@ export class HomeComponent implements OnInit {
     if ((event.target as HTMLElement).id === 'news-form-popup') {
       this.closePopup();
     }
+  }
+
+  logout() {
+    this.accountService.logout();
+    this.router.navigate(['/login']);
   }
 
 
