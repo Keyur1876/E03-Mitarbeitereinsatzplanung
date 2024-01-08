@@ -1,7 +1,7 @@
 // account.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, map } from 'rxjs';
+import { BehaviorSubject, Observable, map } from 'rxjs';
 import { User } from '../_models/user';
 
 @Injectable({
@@ -11,6 +11,7 @@ export class AccountService {
   baseUrl = 'https://localhost:5001/api/';
   private currentUserSource = new BehaviorSubject<User | null>(null);
   currentUser$ = this.currentUserSource.asObservable();
+ 
 
 
   constructor(private http: HttpClient) { }
@@ -40,7 +41,9 @@ export class AccountService {
 
 }
   
-    
+getCurrentUser(): User | null {
+  return this.currentUserSource.value;
+}
 
 
 
@@ -56,6 +59,7 @@ export class AccountService {
       localStorage.removeItem('user');
       this.currentUserSource.next(null);
     }
+    
 
 
 }

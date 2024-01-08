@@ -14,5 +14,8 @@ namespace API.Entities
 
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
+
+        [Column(TypeName = "nvarchar(100)")] // Adjust the size according to your needs
+        public string UserRolle { get; set; }
     }
 }

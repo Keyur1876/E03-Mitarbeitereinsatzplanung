@@ -12,8 +12,8 @@ body {
   background-color: #f6f6f6;
   color: #4a4a4a;
   position: fixed;
-  top: 56px;
-  height: calc(100vh - 56px);
+  top: 0px;
+  height: 100vh;
   bottom: 0;
   left: 0;
   width: 80px;
@@ -115,15 +115,99 @@ body {
   width: 45px;
 }
 
+.sidebar-section.account {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.account-flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-left: 8px;
+  margin-right: 5px;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: opacity 0.3s, visibility 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.account-name {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px; /* Setzen Sie die Breite auf den gewünschten Wert */
+}
+
+.account-role {
+  margin-top: 4px;
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: auto;
+  transition: opacity 0.3s, visibility 0.3s, color 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.logout-icon {
+  color: #4a4a4a; /* Ursprüngliche Farbe des Icons */
+  transition: color 0.2s ease; /* Sanfter Übergang für die Farbe */
+}
+
+.logout-icon:hover {
+  color: #888888;
+}
+
+/* Anpassungen, wenn die Sidebar gehovert ist */
+.sidebar:hover .account-info,
+.sidebar:focus-within .account-info,
+.sidebar:hover .logout-button,
+.sidebar:focus-within .logout-button {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 /* Code für den News Bereich */
-
 #right-panel {
   width: 24%;
   position: fixed;
   right: 0;
-  top: 56px;
-  height: calc(100vh - 56px);
+  top: 0px;
+  height: 100vh;
   background-color: #f7f7f7;
   padding: 20px;
   overflow-y: auto;
@@ -206,128 +290,3 @@ body {
   background-color: #2980b9;
 }
 
-
-/* Code für das Login Fenster */
-
-.login-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: auto;
-}
-
-.login-box {
-  width: 400px;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  z-index: 1;
-}
-
-h2 {
-  margin-bottom: 10px;
-}
-
-p {
-  color: #555;
-  margin-bottom: 30px;
-}
-
-.access-text {
-  opacity: 80%;
-}
-
-.input-container {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-/* Gemeinsame Stile für Text- und Passwort-Eingabefelder */
-.input-field {
-  width: 100%;
-  padding: 10px 40px 10px 10px; /* Rechter Padding für das Icon */
-  font-size: 14px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-
-/* Stil für das Auge-Icon */
-.toggle-password {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  color: #757575;
-}
-
-.checkbox-container {
-  display: flex;
-  align-items: center;
-  white-space: nowrap; /* Verhindert, dass der Text umbricht */
-}
-
-.checkbox-forgot-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.checkbox-label {
-  margin-left: 0px;
-  font-size: 14px;
-}
-
-.forgot-password-link {
-  color: #1a73e8;
-  text-decoration: none;
-  font-size: 14px;
-  white-space: nowrap; /* Verhindert, dass der Text umbricht */
-}
-
-.registration-prompt {
-  margin-top: 20px;
-  font-size: 14px;
-}
-
-.register-link {
-  color: #1a73e8;
-  text-decoration: none;
-  margin-left: 5px;
-}
-
-input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-  background-color: #1a73e8;
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-button:hover {
-  background-color: #135ab6;
-}
-
-.footer a {
-  color: #1a73e8;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.footer a:not(:last-child) {
-  margin-bottom: 16px;
-}

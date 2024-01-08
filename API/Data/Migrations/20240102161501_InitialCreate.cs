@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace API.Data.Migrations
+namespace API.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration
@@ -18,7 +18,8 @@ namespace API.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserName = table.Column<string>(type: "nvarchar(256)", nullable: true),
                     PasswordHash = table.Column<byte[]>(type: "varbinary(max)", nullable: true),
-                    PasswordSalt = table.Column<byte[]>(type: "varbinary(max)", nullable: true)
+                    PasswordSalt = table.Column<byte[]>(type: "varbinary(max)", nullable: true),
+                    UserRolle = table.Column<string>(type: "nvarchar(100)", nullable: true)
                 },
                 constraints: table =>
                 {

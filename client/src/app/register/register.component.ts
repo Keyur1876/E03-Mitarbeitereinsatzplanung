@@ -6,30 +6,27 @@ import { AccountService } from '../services/account.service';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-export class RegisterComponent implements OnInit {
-
-
+export class RegisterComponent implements OnInit{
   @Output() cancelRegister = new EventEmitter();
   model: any = {}
 
+  constructor(private accountService: AccountService)  {}
 
-  constructor(private accountService : AccountService){}
   ngOnInit(): void {
-  
+    
   }
+  
 
   register(){
     this.accountService.register(this.model).subscribe({
-      next : response => {
-        console.log(response);
+      next: () => {
         this.cancel();
       },
-      error: error => console.log(error)
-      
+      error : error => console.log(error)
     })
   }
-
-  cancel(){
+  cancel()
+  {
     this.cancelRegister.emit(false);
   }
 

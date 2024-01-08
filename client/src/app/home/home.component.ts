@@ -60,17 +60,21 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  togglePasswordVisibility(): void {
-    const input = this.passwordInput.nativeElement;
-    const toggle = this.togglePassword.nativeElement;
-    const isPassword = input.type === 'password';
-    input.type = isPassword ? 'text' : 'password';
-    toggle.innerText = isPassword ? 'visibility' : 'visibility_off';
-  }
 
-  onLoginFormSubmit(event: Event): void {
-    event.preventDefault();
-    // Hier würde Ihre Logik zum Überprüfen der Anmeldeinformationen stehen
-    // und ggf. die Authentifizierung über den AccountService ausführen.
-  }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const accountSection = document.querySelector('.sidebar-section.account') as HTMLElement;
+
+  // Event-Listener, um die Klassen zu toggeln
+  accountSection.addEventListener('click', () => {
+    accountSection.classList.toggle('expanded');
+  });
+
+  // Event-Listener, um die Klasse zu entfernen, wenn außerhalb geklickt wird
+  document.addEventListener('click', (event) => {
+    if (!accountSection.contains(event.target as Node)) {
+      accountSection.classList.remove('expanded');
+    }
+  });
+});

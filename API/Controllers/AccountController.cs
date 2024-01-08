@@ -1,7 +1,5 @@
-﻿using System;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using API.Data;
 using API.DTOs;
 using API.Entities;
@@ -25,6 +23,8 @@ namespace API.Controllers
         {
             public string Username { get; set; }
             public string Password { get; set; }
+            public string UserRolle { get; set; }
+
         }
 
         public class LoginDto
@@ -47,7 +47,8 @@ namespace API.Controllers
             {
                 UserName = registerDto.Username,
                 PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
-                PasswordSalt = hmac.Key
+                PasswordSalt = hmac.Key,
+                UserRolle = registerDto.UserRolle
             };
 
             _context.Users.Add(user);

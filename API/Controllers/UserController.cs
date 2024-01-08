@@ -37,5 +37,20 @@ namespace API.Controllers
 
             return user;
         }
+        [AllowAnonymous]
+        [HttpGet("by-role")]
+    public async Task<ActionResult<IEnumerable<AppUser>>> GetUsersByRole([FromQuery] string UserRolle)
+{
+    var users = await _context.Users.Where(u => u.UserRolle == UserRolle).ToListAsync();
+
+    if (users == null || !users.Any())
+    {
+        return NotFound($"No users found with role '{UserRolle}'.");
+    }
+
+    return users;
+}
+
+        
     }
 }
