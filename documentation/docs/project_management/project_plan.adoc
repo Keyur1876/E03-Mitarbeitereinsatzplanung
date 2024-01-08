@@ -75,32 +75,47 @@ Die *Meetings mit* unserem *Auftraggeber* werden vorallem genutzt, um Lücken zu
 * Rollenverteilung im Team vornehmen
 * Entwürfe der Vision, Use-Cases, Use-Case-Model
 * detaillierte Anforderungen mit dem Auftraggeber herausarbeiten
+* Glossar ergänzen
 | 20.11.2023-03.12.2023
 | 14
 | I3 
 |
 * Meeting mit dem Coach durchführen
 * Meetings mit dem Auftraggeber durchführen
-* Entwürfe der Use-Cases, Use-Case-Model diskutieren und Änderungen besprechen
-* Anforderungen des Auftraggebers verfeinerter in die Use-Cases einbinden
+* Entwürfe der Vision und Use-Cases weiterbearbeiten, unter Berücksichtigung der detaillierten Anforderungen des Auftraggebers
+* Vision fertigstellen
 * Risikoliste aufstellen
-* Projektplan und Iterationspläne 1 und 2 aufstellen
+* Entwurf des Projektplans und Iterationsplans 1 
+* Glossar ergänzen
 | 04.12.2023-17.12.2023
 | 14
 | I4 
 |
 * Meeting mit dem Coach durchführen
 * Meetings mit dem Auftraggeber durchführen
-* Entwürfe der Vision, Use-Cases, Use-Case-Model, Wireframes final fertigstellen
+* Entwürfe der Use-Cases und Wireframes final fertigstellen
+* Entwurf des Iterationsplans 2
+* Systemweiten Anforderungen erfassen
+* Glossar ergänzen
+| 17.12.2023-07.01.2024
+| 14
+| I5 
+|
+* Meeting mit dem Coach durchführen
+* Meetings mit dem Auftraggeber durchführen
+* Use-Case-Modell erstellen
 * Projektplan und Iterationspläne 1 und 2 fertigstellen
-* alle weiteren geforderten Dokumente fertigstellen(glossary, system-wide_requirements usw.)
-| 17.12.2023-letzte Praktikumswoche
-
+* Glossar fertigstellen
+* Systemweiten Anforderungen fertigstellen
+* Domänenmodell und Architekturnotizbuch erstellen
+| 07.01.2024-21.01.2024
+| 14
 |===
 
 
 == Deployment
 //Outline the strategy for deploying the software (and its updates) into the production environment.
+
 
 
 == Erkenntnisse (Lessons learned)
