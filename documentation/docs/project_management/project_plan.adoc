@@ -17,9 +17,9 @@ Die in diesem Kontext erstellten Dokumente werden im Laufe der Projektarbeit erg
 |===
 | *Name* | *Informationen zur Person* | *Rolle*
 
-| Hoang Phuong Linh Nguyen | Wirtschaftsinformatik Eigenschaften: kommunikativ, neugierig| Architect 
+| Hoang Phuong Linh Nguyen | Wirtschaftsinformatik Eigenschaften: kommunikativ, neugierig| Architect/Analyst 
 | Nils Weber | Wirtschaftsingenieurwesen Eigenschaften: kommunikativ, zielstrebig | Project Manager 
-|Anh Thu Hoang  | Wirtschaftsinformatik Eigenschaften: kommunikativ, neugierig | Architect 
+|Anh Thu Hoang  | Wirtschaftsinformatik Eigenschaften: kommunikativ, neugierig | Architect/Analyst 
 |Luca Leon Wagner  | Wirtschaftsinformatik Eigenschaften: neugierig, kommunikativ, perfektionistisch | Developer 
 |Le Quoc Minh Tran  | Wirtschaftsinformatik Eigenschaften: ausdauernd, geduldig  | Architect/Developer
 |Tom Eckhardt   | Wirtschaftsingenieurwesen Eigenschaften: kommunikativ | Testing/Analyst
@@ -70,7 +70,21 @@ Die *Meetings mit* unserem *Auftraggeber* werden vorallem genutzt, um Lücken zu
 
 | I2
 |
-* Iterationsplan I02
+* Meeting mit dem Coach durchführen
+* Meetings mit dem Auftraggeber durchführen
+* Rollenverteilung im Team vornehmen
+* Entwürfe der Vision, Use-Cases, Use-Case-Model
+* detaillierte Anforderungen mit dem Auftraggeber herausarbeiten
+| 20.11.2023-03.12.2023
+| 14
+| I3 
+|
+* Meeting mit dem Coach durchführen
+* Meetings mit dem Auftraggeber durchführen
+* Entwürfe der Vision, Use-Cases, Use-Case-Model diskutieren und Änderungen besprechen
+* Anforderungen des Auftraggebers verfeinerter in die Use-Cases einbinden
+* Risikoliste aufstellen
+* Projektplan und Iterationspläne 1 und 2 aufstellen
 | 20.11.2023-03.12.2023
 | 14
 |===
@@ -82,3 +96,12 @@ Die *Meetings mit* unserem *Auftraggeber* werden vorallem genutzt, um Lücken zu
 
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
+
+*Problem 1*: Bei der Bearbeitung des Projektes haben wir Redundanzen festgestellt, sodass mehrere thematisch gleiche Dokumente erstllt wurden.
+*Lösung 1*: Bisher erstellte Dokumente (Use-Cases) wurden im Team besprochen und zusammengeführt, sodass Redundazen behoben wurden.
+
+*Problem 2*: Mangelhafte explizite Aufgabenverteilung im Team.
+*Lösung2*: Aufgabenverteilung erfolgt im Teammeeting und wird unter Git Hub dokumentiert.
+
+*Problem 3*: Aufkommen von Missverständnissen bezüglich der Umsetzung der Anforderungen des Arbeitgebers
+*Lösung 3*: Zusammenführung aller Ideen bezüglich der Use-Cases im Teammeeting und Veranschaulichung mithilfe eines Tafelbildes.
