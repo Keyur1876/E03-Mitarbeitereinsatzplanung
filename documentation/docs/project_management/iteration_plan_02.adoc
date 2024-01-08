@@ -27,13 +27,15 @@ include::../_includes/default-attributes.inc.adoc[]
 
 . Konsultation wahrnehmen, um Arbeitsweise im Team zu optimieren und Fragen zu klären 
 . Neue Fragen mit dem Auftraggeber klären
-. Use Cases aufstellen  (3. Entwurf)
-. Use Case Modell entwerfen (3. Entwurf)
+. Use Cases aufstellen  (2. Entwurf)
+. Use Case Modell entwerfen (2. Entwurf)
 . Neue Wireframes entwerfen (2. Entwurf)
 . Risikoplan entwerfen (1. Entwurf)
 . Aufgabenverteilung klar definieren, sodass ein effektives Arbeiten möglich ist
 . Glossary weiterergänzen
 . Prototyp der Software entsprechend der neuen Wireframes und Use-Cases entwerfen bzw. verfeinern
+. finale Version der Vision erstellen
+. Entwurf des Projektplans und Iterationsplans 1
 
 
 == Aufgabenzuordnung
