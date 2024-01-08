@@ -1,5 +1,6 @@
 = Iteration Plan 02: {E03-Projekteinsatzplanung}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Hoang Phuong Linh Nguyen <s83710@htw-dresden.de>;
+Nils Weber <s84281@htw-dresden.de>; Anh Thu Hoang <s85622@htw-dresden.de>; Luca Leon Wagner <s85265@htw-dresden.de>; Le Quoc Minh Tran <s87560@htw-dresden.de>; Tom Eckhardt <s00000@htw-dresden.de>; Keyur Hareshbhai Kachhadiya <s85495@htw-dresden.de>; Paulina Kostka <s85455@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -12,21 +13,27 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 | Meilenstein | Datum
 
-| Beginn der Iteration | 20.11.2023
-| Teammeeting | 21.11.2023
-| Teammeeting | 28.11.2023
-| Meeting mit Auftraggeber (Abgleich der erstellten Dokumente) | 30.11.2023
-| Ende der Iteration | 03.12.2023
+| Beginn der Iteration | 04.12.2023
+| Teammeeting | 05.12.2023
+| Teammeeting mit Coach | 12.12.2023
+| Meeting mit Auftraggeber (Abgleich der erstellten Dokumente) | 15.12.2023
+| Konsultationstermin | 19.12.2023
+| Teammeeting | 19.12.2023
+| Ende der Iteration | 17.12.2023
 |===
 
 
 == Wesentliche Ziele
 
-. Klare Rollenverteilung im Team, damit die Verantwortlichkeiten geklärt werden 
-. Vision ausarbeiten (1. Entwurf) und unklare Anforderungen an das System sammeln 
-. Use Cases aufstellen (1. Entwurf)
-. Use Case Modell entwerfen (1. Entwurf)
-. Teammitglieder mit der entsprechenden Rolle machen sich mit den einzusetzenden Programmen (Microsoft Azure, Azure DevOps) für die spätere Entwicklung vertraut
+. Konsultation wahrnehmen, um Arbeitsweise im Team zu optimieren und Fragen zu klären 
+. Neue Fragen mit dem Auftraggeber klären
+. Use Cases aufstellen  (3. Entwurf)
+. Use Case Modell entwerfen (3. Entwurf)
+. Neue Wireframes entwerfen (2. Entwurf)
+. Risikoplan entwerfen (1. Entwurf)
+. Aufgabenverteilung klar definieren, sodass ein effektives Arbeiten möglich ist
+. Glossary weiterergänzen
+. Prototyp der Software entsprechend der neuen Wireframes und Use-Cases entwerfen bzw. verfeinern
 
 
 == Aufgabenzuordnung
@@ -37,10 +44,11 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität (Skala 1-3, 1=höhste Priorität) | Schätzung der Größe (A-C, A=höhster Aufwand) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Vision erstellen mit den gegebenen Anforderungen | 1 | A | 28.11.2023: nicht vollständig fertiggestellt | Dokument mit der Beschreibung des Projektes der Develappers GmbH | I02 | Paulina Kostka | 4 | 1
-| Use Cases aufstellen | 1 | A | 30.11.2023: fertiggestellt | Dokument mit der Beschreibung des Projektes der Develappers GmbH| I02 | Paulina Kostka | 8 | 8
-| Use Cases Modell erstellen | 2 | B | 30.11.2023: fertiggestellt | Aufgestellte Use Cases| I02 | Anh Thu Hoang  | 3 | 1
-| Wireframe mit Funktionalitäten der Software entwerfen | 1 | A | 30.11.2023: fertiggestellt | Aufgestellte Use Cases| I02 | Le Quoc Minh Tran, Hoang Phuong Linh Nguyen, Anh Thu Hoang  | 4 | 5
+| Use-Cases neu aufstellen | 1 | A | 19.12.2023: konkrete Ausformulierung fehlt | Bisher erstellte Use-Cases (2 Versionen) und Konsultationstermin | I03 | alle Teammitglieder | 4 | 3
+| Use-Case Modell neu erstellen | 1 | B | 19.12.2023: fertiggestellt | Bisher erstellte Use-Cases (2 Versionen) und Konsultationstermin | I03 | alle Teammitglieder | 1 | 1
+| Neue Wireframes entsprechend der neuen Use-Cases erstellen | 1 | A | 19.12.2023: nicht fertiggestellt | Aufgestellte Use Cases| I03 | Le Quoc Minh Tran, Hoang Phuong Linh Nguyen, Anh Thu Hoang  | 4 | 5
+| Risikoliste erstellen | 1 | B | 19.12.2023: fertiggestellt | Beobachtungen hervorgehend aus der Projektarbeit| I03 | Tom Eckhardt, Nils Weber | 2 | 0
+
 |===
 
 
@@ -57,40 +65,47 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
-* Der erste Entwurf der Vision wurde abgeglichen beim Meeting mit dem Auftraggeber für gut befunden.
-* 7 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als .adoc vor)
+* Use Cases wurden entsprechend der Anforderungen des Auftraggebers und Anmerkungen vom Herrn Zirkelbach erstellt.
 * Ein zu den Use Cases passendes Modell wurde erstellt.
-* Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern.
+* Für jeden dokumentierten Use Case existiert ein Wireframe. 
+* Risikoliste wurde unter risk_list.adoc final erstellt.
+* Prototyp wurde anhand des neuen Erkentnissstandes erweitert. 
 
 == Assessment
 //In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommuniziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
 
 [%header, cols="1,3"]
 |===
-| Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
+| Assessment Ziel | I03
 
-| Assessment Datum | 30.11.2023
+| Assessment Datum | 19.12.2023
 | Teilnehmer | Hoang Phuong Linh Nguyen, Nils Weber, Anh Thu Hoang, Luca Leon Wagner, Le Quoc Minh Tran, Tom Eckhardt, Keyur Hareshbhai Kachhadiya, Paulina Kostka
 | Projektstatus	| gelb
 |===
 
 *Beurteilung im Vergleich zu den Zielen*
 
-*Ziel 1 erreicht:* jedes Teammitglied verfügt über eine Rolle und weiß über die jeweiligen Aufgaben bescheid.
-*Ziel 2 erreicht:* Der erste Entwurf der Vision wurde verfasst und offene Anforderungen mit dem Auftraggeber besprochen.
-*Ziel 3 erreicht:* Der erste Entwurf von 7 Use Cases wurde ausformuliert und mit dem Auftraggeber besprochen, mit Verbesserungsvorschlägen.
-*Ziel 4 erreicht:* Der erste Entwurf des Use Case Modells steht und muss nach Verbesserung der Use Cases abgeändert werden.
-*Ziel 5 erreicht:* Die entsprechenden Teammitglieder haben sich mit den Programmen: Microsoft Azure, Azure DevOps vertraut gemacht.
+*Ziel 1 erreicht:* Alle Fragen wurden bei der Konsultation beantwortet und gewonnene Erkentnisse dem Team übermittelt.
+*Ziel 2 erreicht:* Fragen wurden durch den Auftraggeber beantwortet.
+*Ziel 3 erreicht:* 10 neue Use-Cases wurden aufgestellt.
+*Ziel 4 erreicht:* Ein neues Use-Case Modell wurde entsprechend der neuen Use-Cases erstellt.
+*Ziel 5 nicht erreicht:* Neue Wireframes wurden theoretisch erstellt und müssen noch praktisch umgesetzt werden.
+*Ziel 6 erreicht:* Risikoplan wurde erstellt.
+*Ziel 7 nicht erreicht:* Abschließende Aufgabenverteilung erfolgt im 4. Iterationsschritt.
+*Ziel 8 erreicht:* Glossary wurde weiterbearbeitet
+*Ziel 9 nicht erreicht:* Prototyp wird im 4. Iterationsschritt fertiggestellt.
 
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
 
 *Geplante vs. erledigte Aufgaben*
 
-Es wurden alle für diesen Iterationsschritt geplanten Aufgaben umgesetzt.
+Es wurden alle für diesen Iterationsschritt geplanten Aufgaben umgesetzt. Im 4. Iterationsschritt werden alle Ziele und Aufgaben aus diesem Iterationsschritt zur Abgabe fertiggestellt.
 
 *Beurteilung im Vergleich zu den Bewertungskriterien*
 
-*Ziel 3:* Es fehlt noch ein Wireframe für einen Use Case.
+*Ziel 5:* Da neue Use-Cases aufgestellt wurde, müssen nun neue bzw. überarbeitete Wireframes erstellt werden.
+*Ziel 7:* Abschließende Aufgabenverteilung erfolgt am 08.01.2024.
+*Ziel 9:* Prototyp befindet sich in einem kontinuierlichem Prozess.
 
 
 //* Andere Belange und Abweichungen

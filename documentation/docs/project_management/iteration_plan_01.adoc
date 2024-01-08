@@ -39,8 +39,8 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Aufgabe bzw. Beschreibung | Priorität (Skala 1-3, 1=höhste Priorität) | Schätzung der Größe (A-C, A=höhster Aufwand) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
 | Vision erstellen mit den gegebenen Anforderungen | 1 | A | 28.11.2023: nicht vollständig fertiggestellt | Dokument mit der Beschreibung des Projektes der Develappers GmbH | I02 | Paulina Kostka | 4 | 1
-| Use Cases aufstellen | 1 | A | 30.11.2023: fertiggestellt | Dokument mit der Beschreibung des Projektes der Develappers GmbH| I02 | Paulina Kostka | 8 | 8
-| Use Cases Modell erstellen | 2 | B | 30.11.2023: fertiggestellt | Aufgestellte Use Cases| I02 | Anh Thu Hoang  | 3 | 1
+| Use-Cases aufstellen | 1 | A | 30.11.2023: fertiggestellt | Dokument mit der Beschreibung des Projektes der Develappers GmbH| I02 | Paulina Kostka | 8 | 8
+| Use-Case Modell erstellen | 2 | B | 30.11.2023: fertiggestellt | Aufgestellte Use Cases| I02 | Anh Thu Hoang  | 3 | 1
 | Wireframe mit Funktionalitäten der Software entwerfen | 1 | A | 30.11.2023: fertiggestellt | Aufgestellte Use Cases| I02 | Le Quoc Minh Tran, Hoang Phuong Linh Nguyen, Anh Thu Hoang  | 4 | 5
 | Entwickeln der Anmeldeoption | 1 | A |  | |  |    |  | 
 | Erste Umsetzung vom Frontend für die Startseite | 1 | A | In Arbeit | Code auf GitHub | I02 |  Luca Wagner  | 4 | 6
@@ -71,7 +71,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 [%header, cols="1,3"]
 |===
-| Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
+| Assessment Ziel | I02
 
 | Assessment Datum | 30.11.2023
 | Teilnehmer | Hoang Phuong Linh Nguyen, Nils Weber, Anh Thu Hoang, Luca Leon Wagner, Le Quoc Minh Tran, Tom Eckhardt, Keyur Hareshbhai Kachhadiya, Paulina Kostka
